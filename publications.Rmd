@@ -1,0 +1,24 @@
+---
+title: "Publications"
+---
+
+## 2016
+
+### Fast Inference of Individual Admixture Coefficients Using Geographic Data <a href="https://github.com/cayek/TESS3Article"><i class="fa fa-github" aria-hidden="true"></i></a>
+Kevin Caye, Flora Jay, Olivier Michel, Olivier François<br>
+*bioRxiv*; doi: http://dx.doi.org/10.1101/080291
+
+
+
+### Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics
+Helena Martins, Kevin Caye, Keurcien Luu, Michael GB Blum, Olivier François<br>
+*bioRxiv*; doi: http://dx.doi.org/10.1101/054585
+
+
+### Controlling false discoveries in genome scans for selection 
+Olivier François, Helena Martins, Kevin Caye, Sean D. Schoville<br>
+*Molecular ecology*, 2016, vol. 25, no 2, p. 454-469; doi: http://dx.doi.org/10.1111/mec.13513
+
+### TESS3: fast inference of spatial population structure and genome scans for selection
+Kevin Caye, Timo M. Deist, Helena Martins, Olivier François<br>
+*Molecular ecology resources*, 2016, vol. 16, no 2, p. 540-548; doi: http://dx.doi.org/10.1111/1755-0998.12471
