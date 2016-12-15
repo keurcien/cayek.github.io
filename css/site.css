@@ -321,107 +321,6 @@ p {
   display: none;
 }
 
-.gallerySection, .formatSection {
-  margin-bottom: 2em;
-}
-
-.gallerySection .gallerySectionTitle, .formatSection .formatSectionTitle {
-  font-size: 25px;
-  font-weight: 300;
-}
-
-.formatSection .formatSectionTitle {
-  margin-bottom: 10px;
-}
-
-.gallerySection .galleryIntro {
-  margin-bottom: 10px;
-}
-
-.gallerySection .galleryItems {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.gallerySection .galleryItems .galleryItem {
-  width: 24%;
-
-  border: 1px solid #f0f0f0;
-  margin-bottom: 20px;
-}
-
-.gallerySection .galleryItems .galleryItem:hover {
-
-}
-
-.gallerySection .galleryItems .galleryItem .galleryItemLabel {
-  display: block;
-  cursor: pointer;
-  border-top: 1px solid #f0f0f0;
-  padding: 10px 10px 5px 10px;
-}
-
-.gallerySection .galleryItems .galleryItem .galleryItemImage {
-  width: 100%;
-  height: auto;
-}
-
-.gallerySection .galleryItems .galleryItem .galleryItemDescription {
-  font-size: 12px;
-  padding: 0px 10px 10px 10px;
-}
-
-.formatSection a.doc, .formatSection a.pres, .formatSection a.more {
-  display: inline-block;
-  margin: 0 15px 15px 0;
-
-  color: #fff;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-
-  vertical-align: top;
-
-  background-color: #f0f0f0;
-}
-
-.formatTable {
-  display: table;
-  width: 100%;
-}
-
-.formatTable .formatTableRow {
-  display: table-row;
-  text-decoration: none;
-}
-
-.formatTable .formatTableRow:hover {
-  background-color: #f8f8f8;
-}
-
-.formatTable .formatName {
-  display: table-cell;
-  padding: 5px;
-  width: 200px;
-}
-
-.formatTable .formatDescription {
-  display: table-cell;
-  line-height: 15px;
-  padding-bottom: 5px;
-}
-
-.formatTable a.formatTableRow .formatDescription {
-  color: #404040;
-}
-
-
 #homeContent .tagline {
   padding-top: 100px;
   font-size: 32px;
@@ -576,31 +475,8 @@ p {
   background-image: url(../images/facebookLogo.svg);
 }
 
-.screenshot {
-  border: 1px solid #ccc;
-}
 
-.notebook-screenshot {
-  border: 1px solid #ccc;
-  margin-bottom: 8px;
-}
-
-/* Don't show link underlines in tables (too busy) */
-table.table td a:only-child:link,
-table.table td a:only-child:visited {
-  text-decoration: none;
-}
-table.table td a:only-child:hover,
-table.table td a:only-child:active {
-  text-decoration: underline;
-}
-
-/* Use the background color from the R logo for the floating toc nav */
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-  background-color: rgb(97,151,213);
-}
-
-/* offset scroll position for anchor links  */
+offset scroll position for anchor links
 
 .section h1 {
   padding-top: 58px;
@@ -626,65 +502,6 @@ table.table td a:only-child:active {
 .section h6 {
   padding-top: 58px;
   margin-top: -58px;
-}
-
-.lessonPage {
-  display: flex;
-  display: -ms-flexbox;
-}
-
-.lessonPage .lessonsNav {
-  margin-top: 23px;
-  min-width: 290px;
-  line-height: 40px;
-  padding-right: 30px;
-}
-
-.lessonPage .lessonsNav a {
-  display: block;
-  padding: 0 10px;
-}
-
-.lessonPage .lessonsNav a:hover {
-  text-decoration: none;
-  background-color: #f8f8f8;
-}
-
-.lessonPage .lessonsNav a.current {
-  background-color: #75aadb;
-  color: #fff;
-}
-
-.lessonPage .lessonContent #show-answer h2 {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 7px 20px;
-  background-color: #75aadb;
-  color: #fff;
-
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.lessonPage .lessonContent #show-answer.showing {
-  display: none;
-}
-
-.lessonPage .lessonContent #model-answer {
-  display: none;
-}
-
-.lessonPage .lessonContent #model-answer.showing {
-  display: block;
-}
-
-.lessonPage .lessonContent #continue-to-next-lesson h2 {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.lessonPage .continue-link {
-  font-size: 24px;
 }
 
 /* adjustments for smaller screens */
