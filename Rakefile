@@ -6,11 +6,15 @@ def colorizedsh(cmd)
 end
 
 namespace :website do
-
+  
   desc "Compile the site"
   task :render do
 
-    puts ("== Compiling website").green
+    puts ("== Compiling blog with jekyll").green
+    Dir.chdir("jekyll-now-master/") do
+    end
+
+    puts ("== Compiling website with Rmakrdown").green
     # build book
     sh 'Rscript -e "rmarkdown::render_site()"'
 
