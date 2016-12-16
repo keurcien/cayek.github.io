@@ -1,3 +1,6 @@
+# jekyll
+_site/
+
 # emacs
 *~
 
@@ -35,3 +38,6 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 .Rproj.user
+
+# sass
+.sass-cache/
