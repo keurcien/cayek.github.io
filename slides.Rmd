@@ -1,0 +1,57 @@
+---
+title: "Talks"
+---
+
+
+##Journées Ouvertes en Biologie, Informatique et Mathématiques (29/06/2016, <a href="https://r2016-toulouse.sciencesconf.org/">website</a>)
+
+### tess3r : étude du jeux de données Arabidopsis thaliana RegMap
+
+- <a href="assets/talks/rencontreR2016.pdf">Lighting talk sildes <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+----
+
+##Journées Ouvertes en Biologie, Informatique et Mathématiques (29/06/2016, <a href="https://jobim2016.sciencesconf.org/">website</a>)
+
+### tess3r : un package R pour l’estimation de la structure génétique des populations spatialisées
+
+- <a href="https://jobim2016.sciencesconf.org/conference/jobim2016/pages/book_jobim2016.pdf#page=77">Résumé <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+- <a href="assets/talks/jobim2016.pdf">Slides <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+----
+
+## 48èmes Journées de Statistique de la SFdS (2016, <a href="http://jds2016.sfds.asso.fr/">website</a>)
+
+### Algorithm for the ancestry coefficient estimation in spatial population
+
+- <a href="assets/talks/jds2016_resume.pdf">Résumé long <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+- <a href="assets/talks/jds2016_slides.pdf">Slides <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+----
+
+## Journée des doctorants TIMC-IMAG (2016)
+
+### Méthodes d'apprentissage statistique pour les tests d'association écologique
+
+- <a href="assets/talks/IXXI_08_12_2015.pptx.pdf">Slides <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+----
+
+## Journée IXXI : Signal, image, statistique pour la biologie (08/12/2015, <a href="http://www.ixxi.fr/agenda/seminaires/journee-ixxi">website</a>)
+
+### Spatially regularized NMF for population genetic applications 
+
+- <a href="assets/talks/IXXI_08_12_2015.pptx.pdf">Slides <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+----
+
+## Large-scale Learning Spring School, LabEx Persyval (01/04/2015, <a href="http://ama.liglab.fr/Khronos/index.php?title=KSS2015">website</a>)
+
+### Spatially regularized NMF for population genetic applications 
+
+- <a href="assets/talks/StatLearn2015.pdf">Slides <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+
+

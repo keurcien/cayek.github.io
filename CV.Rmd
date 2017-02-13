@@ -1,0 +1,42 @@
+---
+title: "Curriculum Vitae"
+---
+
+----
+
+## Skills
+
+**Fields**  
+Machine learning, data vizualisation, bioinformatics, statistical modelling
+
+**Computer science**
+
+R, python, C/C++, Cuda, OpenMP/MPI, OpenGL, Matlab, SQL, Latex, ruby
+
+**Languages** 
+
+- French: mother tong
+- English: good working knowledge
+- spanish: medium working knowledge  
+
+----
+
+## Education
+
+**2014 - 2017 ** PhD student, Univ. Grenoble Alpes  
+
+**2011 - 2014 ** Grenoble-INP, ENSIMAG  
+
+**2008 - 2011 ** Classe preparatoire aux grandes écoles MP*
+
+**June 2009 ** Scientific baccalareate
+
+----
+
+## Professional experience
+
+**Oct 2014 - 2017 ** PhD student, Univ. Grenoble Alpes  
+
+**Feb - Aug 2014** Research internship, Dassault Systèmes  
+
+**Jul - Aug 2013 ** R&D internship, Inria grenoble  
