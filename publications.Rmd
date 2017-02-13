@@ -6,8 +6,8 @@ title: "Publications"
 
 ### Fast Inference of Individual Admixture Coefficients Using Geographic Data <a href="https://github.com/cayek/TESS3Article"><i class="fa fa-github" aria-hidden="true"></i></a>
 Kevin Caye, Flora Jay, Olivier Michel, Olivier François<br>
-*bioRxiv*; doi: http://dx.doi.org/10.1101/080291
-
+*bioRxiv*; doi: http://dx.doi.org/10.1101/080291 <br>
+Code used for this article can be found <a href="https://github.com/cayek/TESS3Article">here <i class="fa fa-github" aria-hidden="true"></i></a>
 
 
 ### Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics
