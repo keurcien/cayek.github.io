@@ -4,14 +4,6 @@ title: "Talks"
 
 ----
 
-##Journées Ouvertes en Biologie, Informatique et Mathématiques (29/06/2016, <a href="https://r2016-toulouse.sciencesconf.org/">website</a>)
-
-### tess3r : étude du jeux de données Arabidopsis thaliana RegMap
-
-- <a href="assets/talks/rencontreR2016.pdf">Lighting talk sildes <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
-
-----
-
 ##Journées Ouvertes en Biologie, Informatique et Mathématiques (29/06/2016, <a href="https://jobim2016.sciencesconf.org/">website</a>)
 
 ### tess3r : un package R pour l’estimation de la structure génétique des populations spatialisées
@@ -19,6 +11,16 @@ title: "Talks"
 - <a href="https://jobim2016.sciencesconf.org/conference/jobim2016/pages/book_jobim2016.pdf#page=77">Résumé <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
 
 - <a href="assets/talks/jobim2016.pdf">Slides <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+----
+
+##Cinquièmes Rencontres R (24/06/2016, <a href="https://r2016-toulouse.sciencesconf.org/">website</a>)
+
+### tess3r : étude du jeux de données Arabidopsis thaliana RegMap
+
+- <a href="assets/talks/rencontreR2016.pdf">Lighting talk sildes <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+
+
 
 ----
 
