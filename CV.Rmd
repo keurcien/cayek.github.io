@@ -4,39 +4,31 @@ title: "Curriculum Vitae"
 
 ----
 
-## Skills
-
 **Fields**  
-Machine learning, data vizualisation, bioinformatics, statistical modelling
 
-**Computer science**
+Statistics, Machine learning, Population Genetics
 
-R, python, C/C++, Cuda, OpenMP/MPI, OpenGL, Matlab, SQL, Latex, ruby
+**Computational skills**
+
+R, C/C++, Matlab, Python, Latex
 
 **Languages** 
 
-- French: mother tong
-- English: good working knowledge
-- spanish: medium working knowledge  
+- French: native
+- English: fluent
+- Chinese: fluent
+- Italian: basic
 
 ----
 
 ## Education
 
-**2014 - 2017 ** PhD student, Univ. Grenoble Alpes  
+**2014 - 2017 ** Ph.D Student, TIMC-IMAG, France  
 
-**2011 - 2014 ** Grenoble-INP, ENSIMAG  
+**2010 - 2014 ** Ecole Normale Supérieure de Cachan, France
 
-**2008 - 2011 ** Classe preparatoire aux grandes écoles MP*
-
-**June 2009 ** Scientific baccalareate
+**2008 - 2011 ** Classe préparatoire aux grandes écoles MP*, Lycée Saint-Louis
 
 ----
 
-## Professional experience
 
-**Oct 2014 - 2017 ** PhD student, Univ. Grenoble Alpes  
-
-**Feb - Aug 2014** Research internship, Dassault Systèmes  
-
-**Jul - Aug 2013 ** R&D internship, Inria grenoble  

@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 
 <link rel="icon" type="image/png" href="images/favicon.png" />
 
@@ -38,10 +41,6 @@
 </script>
 
 <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/textmate.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -84,7 +83,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css/site.css" type="text/css" />
+<link rel="stylesheet" href="css\site.css" type="text/css" />
 
 </head>
 
@@ -117,7 +116,6 @@ button.code-folding-btn:focus {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -180,33 +178,24 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 
 <hr />
-<div id="skills" class="section level2">
-<h2>Skills</h2>
-<p><strong>Fields</strong><br />
-Machine learning, data vizualisation, bioinformatics, statistical modelling</p>
-<p><strong>Computer science</strong></p>
-<p>R, python, C/C++, Cuda, OpenMP/MPI, OpenGL, Matlab, SQL, Latex, ruby</p>
+<p><strong>Fields</strong></p>
+<p>Statistics, Machine learning, Population Genetics</p>
+<p><strong>Computational skills</strong></p>
+<p>R, C/C++, Matlab, Python, Latex</p>
 <p><strong>Languages</strong></p>
 <ul>
-<li>French: mother tong</li>
-<li>English: good working knowledge</li>
-<li>spanish: medium working knowledge</li>
+<li>French: native</li>
+<li>English: fluent</li>
+<li>Chinese: fluent</li>
+<li>Italian: basic</li>
 </ul>
 <hr />
-</div>
 <div id="education" class="section level2">
 <h2>Education</h2>
-<p><strong>2014 - 2017 </strong> PhD student, Univ. Grenoble Alpes</p>
-<p><strong>2011 - 2014 </strong> Grenoble-INP, ENSIMAG</p>
-<p><strong>2008 - 2011 </strong> Classe preparatoire aux grandes écoles MP*</p>
-<p><strong>June 2009 </strong> Scientific baccalareate</p>
+<p><strong>2014 - 2017 </strong> Ph.D Student, TIMC-IMAG, France</p>
+<p><strong>2010 - 2014 </strong> Ecole Normale Supérieure de Cachan, France</p>
+<p><strong>2008 - 2011 </strong> Classe préparatoire aux grandes écoles MP*, Lycée Saint-Louis</p>
 <hr />
-</div>
-<div id="professional-experience" class="section level2">
-<h2>Professional experience</h2>
-<p><strong>Oct 2014 - 2017 </strong> PhD student, Univ. Grenoble Alpes</p>
-<p><strong>Feb - Aug 2014</strong> Research internship, Dassault Systèmes</p>
-<p><strong>Jul - Aug 2013 </strong> R&amp;D internship, Inria grenoble</p>
 </div>
 
   </div> <!-- articleBandContent -->
@@ -230,8 +219,11 @@ Machine learning, data vizualisation, bioinformatics, statistical modelling</p>
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 

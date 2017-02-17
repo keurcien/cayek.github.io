@@ -11,7 +11,7 @@
 
 
 
-<title>Kevin Caye</title>
+<title>Keurcien Luu</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 
 <link rel="icon" type="image/png" href="images/favicon.png" />
 
@@ -38,10 +41,6 @@
 </script>
 
 <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/textmate.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -84,7 +83,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css/site.css" type="text/css" />
+<link rel="stylesheet" href="css\site.css" type="text/css" />
 
 </head>
 
@@ -117,7 +116,6 @@ button.code-folding-btn:focus {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -183,7 +181,7 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 
 
 
-<h1 class="title toc-ignore">Kevin Caye</h1>
+<h1 class="title toc-ignore">Keurcien Luu</h1>
 
 </div>
 
@@ -198,7 +196,7 @@ $("#pageContent").removeClass("standardPadding");
   <div class="band full blue first rightText">
     <div class="bandContent vCenter">
       <div class="blurb">
-        <div class="tagline">Hi I'm Kevin Caye.</div>
+        <div class="tagline">Hi I'm Keurcien Luu.</div>
         <div>PhD Student, Université Grenoble Alpes.</div>
       </div>
     </div>
@@ -210,7 +208,10 @@ $("#pageContent").removeClass("standardPadding");
 
         <div class="col-md-6">
         <p>
-            I am a Ph.D. student in the fields of statistics and genetics. I develop models and algorithms to help biologists analyse their data. I especially work on methods used to find genes associated with environmental pressures.
+            I am currently a Ph.D student at TIMC-IMAG, in Grenoble (France). I work in the field of statistics in population genetics. I graduated from the Ecole Normale Supérieure de Cachan (France) with a major in Mathematics. I have a particular interest in understanding how mathematics can contribute to solving real world problems and that led me to enroll in a Masters in Mathematics Applied to Biology. I have had the chance to work on diverse subjects (shape analysis, image segmentation, population genetics) and in different contexts (Chinese University of Hong Kong, CMLA, General Electric Healthcare, TIMC-IMAG), making all these experiences unique and very enriching. And as coding has become central in applied mathematics, I have taken advantage of these internships to develop good computational skills (R, C++, Python). I am looking for a new challenge where mathematics, coding, biology and data science fit together.
+
+
+
         </p>
         <p>
             My Ph.D. is supervised by Olivier François (TIMC-IMAG), Olivier Michel (GIPSA-lab) and Jean-Luc Bosson (TIMC-IMAG). My Ph.D. is supported by the LabEx PERSYVAL-Lab.
@@ -250,8 +251,11 @@ $("#pageContent").removeClass("standardPadding");
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 
