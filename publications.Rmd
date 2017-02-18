@@ -7,15 +7,8 @@ title: "Publications"
 ### Luu, Keurcien, Eric Bazin, and Michael GB Blum. "pcadapt: an R package to perform genome scans for selection based on principal component analysis." Molecular Ecology Resources 17.1 (2017): 67-77.
  <a href="http://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12592/full" aria-hidden="true"></i></a>
 
-### Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics
-Helena Martins, Kevin Caye, Keurcien Luu, Michael GB Blum, Olivier François<br>
-*bioRxiv*; doi: http://dx.doi.org/10.1101/054585
+### Duforet-Frebourg, Nicolas, et al. "Detecting genomic signatures of natural selection with principal component analysis: application to the 1000 Genomes data." Molecular biology and evolution (2015): msv334.
+ <a href="https://academic.oup.com/mbe/article/33/4/1082/2579427/Detecting-Genomic-Signatures-of-Natural-Selection" aria-hidden="true"></i></a>
 
-
-### Controlling false discoveries in genome scans for selection 
-Olivier François, Helena Martins, Kevin Caye, Sean D. Schoville<br>
-*Molecular ecology*, 2016, vol. 25, no 2, p. 454-469; doi: http://dx.doi.org/10.1111/mec.13513
-
-### TESS3: fast inference of spatial population structure and genome scans for selection
-Kevin Caye, Timo M. Deist, Helena Martins, Olivier François<br>
-*Molecular ecology resources*, 2016, vol. 16, no 2, p. 540-548; doi: http://dx.doi.org/10.1111/1755-0998.12471
+### Martins, H., Caye, K., Luu, K., Blum, M. G., & Francois, O. (2016). Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics. Molecular Ecology, 25(20), 5029-5042.
+ <a href="http://onlinelibrary.wiley.com/doi/10.1111/mec.13822/full" aria-hidden="true"></i></a>
