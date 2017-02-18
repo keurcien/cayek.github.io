@@ -4,11 +4,8 @@ title: "Publications"
 
 ## 2016
 
-### Fast Inference of Individual Admixture Coefficients Using Geographic Data <a href="https://github.com/cayek/TESS3Article"><i class="fa fa-github" aria-hidden="true"></i></a>
-Kevin Caye, Flora Jay, Olivier Michel, Olivier François<br>
-*bioRxiv*; doi: http://dx.doi.org/10.1101/080291 <br>
-Code used for this article can be found <a href="https://github.com/cayek/TESS3Article">here <i class="fa fa-github" aria-hidden="true"></i></a>
-
+### Luu, Keurcien, Eric Bazin, and Michael GB Blum. "pcadapt: an R package to perform genome scans for selection based on principal component analysis." Molecular Ecology Resources 17.1 (2017): 67-77.
+ <a href="http://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12592/full" aria-hidden="true"></i></a>
 
 ### Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics
 Helena Martins, Kevin Caye, Keurcien Luu, Michael GB Blum, Olivier François<br>
