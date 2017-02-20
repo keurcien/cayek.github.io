@@ -350,7 +350,7 @@ p {
 }
 
 #homeContent .band.blue {
-  background-color: #137396;
+  background-color: #3c9abc;
   color: #fff;
 }
 
@@ -401,7 +401,7 @@ p {
 
 #homeContent .bigButton.getStarted {
   color: #fff;
-  background-color: #137396;
+  background-color: #3c9abc;
 }
 
 #rStudioFooter {
@@ -414,7 +414,7 @@ p {
 
 #rStudioFooter.band {
 
-  background-color: #137396;
+  background-color: #3c9abc;
   padding: 30px 5%;
 
   color: #fff;
