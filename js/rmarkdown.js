@@ -6,16 +6,6 @@ var RMD = {};
   RMD.AppViewModel = function() {
     var self = this;
 
-    self.handleWindowScroll = function(event) {
-      var scrollPos = $(event.target).scrollTop();
-      if (scrollPos > 20) {
-        $('#rStudioHeader').addClass("shrunk");
-      }
-      else {
-        $('#rStudioHeader').removeClass("shrunk");
-      }
-    }
-
     var menuShowing = false;
     self.handleMenuTogglerClick = function(event) {
       menuShowing = !menuShowing;
