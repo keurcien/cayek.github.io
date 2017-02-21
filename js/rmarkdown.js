@@ -19,7 +19,6 @@ var RMD = {};
     }
 
     self.init = function() {
-      $(window).on('scroll', self.handleWindowScroll);
       $('#menuToggler').on('click', self.handleMenuTogglerClick);
     }
   }
