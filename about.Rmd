@@ -3,5 +3,5 @@ title: "About This Website"
 ---
 
 ### Credits
-This website is a fork of the <a href="https://github.com/rstudio/rmarkdown/tree/gh-pages">Rmarkdown</a> website. Html pages are build with Rmarkdown.
+This website is a fork of the <a href="https://github.com/rstudio/rmarkdown/tree/gh-pages">Rmarkdown</a> website. Html pages are built with Rmarkdown.
 The blog is built with knitr and jekyll.
