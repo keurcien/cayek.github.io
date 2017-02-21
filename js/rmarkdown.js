@@ -16,12 +16,12 @@ var RMD = {};
         $('#menuItems').removeClass("showMenu");
       }
 
-    }
+    };
 
     self.init = function() {
       $('#menuToggler').on('click', self.handleMenuTogglerClick);
-    }
-  }
+    };
+  };
 
 
 }());
