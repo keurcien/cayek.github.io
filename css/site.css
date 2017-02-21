@@ -20,7 +20,7 @@ p {
 }
 
 .band.full.first {
-  height: 500px;
+  height: 750px;
   background-image: url("../images/cover_lil.jpg");
   background-size: cover;
 }
