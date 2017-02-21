@@ -127,7 +127,7 @@ p {
 
 #rStudioHeader .productName {
   font-family: "Courier New", Courier, monospace;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 40px;
   color: inherit;
 
@@ -184,7 +184,7 @@ p {
 #rStudioHeader #menu {
   text-align: right;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 20px;
   white-space: nowrap;
 }
