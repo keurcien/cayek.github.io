@@ -1,9 +1,9 @@
 ---
-title: "Teaching"
+title: "Teachings"
 ---
 
 
-## 2016-2017:
+*2016-2017*
 
 
 - Location: Grenoble, France
@@ -12,7 +12,7 @@ title: "Teaching"
 - Chapters: sequences
 
 
-## 2015-2016:
+*2015-2016*
 
 - Location: Grenoble, France
 - University: Cycle Préparatoire Polytechnique Grenoble
