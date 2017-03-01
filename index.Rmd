@@ -38,7 +38,11 @@ $("#pageContent").removeClass("standardPadding");
         </div>
 
         <div class="col-md-6">
-          <img class="imageTwo" src="images/profile_pic.jpg"/>
+          <div id="lowerbottom">
+            <center>
+              <img class="imageTwo" src="images/profile_pic.jpg"/>
+            </center>
+          </div>
         </div>
 
       </div>

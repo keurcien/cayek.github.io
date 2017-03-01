@@ -130,6 +130,7 @@ p {
   font-weight: bold;
   font-size: 40px;
   color: inherit;
+  line-height: 20px;
 
   white-space: nowrap;
 
@@ -179,6 +180,43 @@ p {
 #rStudioHeader .rStudio a {
   text-decoration: none;
   color: inherit;
+}
+
+#rStudioHeader #name {
+  text-align: left;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+#rStudioHeader #name #nameItems {
+  display: block;
+}
+
+#rStudioHeader #name .nameItem {
+  display: inline-block;
+  padding: 5px 15px;
+
+  opacity: 1;
+  cursor: pointer;
+
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+
+  -webkit-transition-duration: .5s;
+  -moz-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+
+  color: inherit;
+}
+
+#rStudioHeader #name .nameItem:hover {
+  opacity: 1;
+  text-decoration: none;
 }
 
 #rStudioHeader #menu {
@@ -324,6 +362,7 @@ p {
 #homeContent .tagline {
   padding-top: 100px;
   font-size: 32px;
+  font-weight: 600; 
   margin-bottom: 16px;
 }
 
@@ -694,7 +733,12 @@ iframe.scale65 {
 }
 
 .holder {
-    padding-right: 5px;
+  padding-right: 5px;
   padding-bottom: 5px;
+}
+
+#lowerbottom
+{
+    padding-top: 15px;
 }
 
