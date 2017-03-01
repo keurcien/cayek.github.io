@@ -1,5 +1,6 @@
 ---
 title: "Curriculum Vitae"
+output: "html_document"
 ---
 
 ----
