@@ -1,0 +1,22 @@
+---
+title: "Teaching"
+---
+
+
+## 2016-2017:
+
+
+- Location: Grenoble, France
+- University: Cycle Préparatoire Polytechnique Grenoble
+- Subject: Mathematics
+- Chapters: sequences
+
+
+## 2015-2016:
+
+- Location: Grenoble, France
+- University: Cycle Préparatoire Polytechnique Grenoble
+- Subject: Mathematics
+- Chapters: improper integrals, series.
+
+
