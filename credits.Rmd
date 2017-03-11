@@ -1,5 +1,7 @@
 ---
-title: "Credits"
+title:  <span style="color:#3c9abc"><b>Credits</b></span>
 ---
 
-- R Markdown. Forked from Github: <a href="https://github.com/rstudio/rmarkdown/tree/gh-pages">Rmarkdown</a>. HTML pages were generated with R Markdown.
+- R Markdown: [Rmarkdown](https://github.com/rstudio/rmarkdown/tree/gh-pages)
+
+- Thomas Hardy: [Free Responsive HTML/CSS3 CV Template](http://www.thomashardy.me.uk/free-responsive-html-css3-cv-template)
