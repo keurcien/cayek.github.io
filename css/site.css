@@ -739,6 +739,18 @@ iframe.scale65 {
 
 #lowerbottom
 {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
+#resume {
+  color: black;    
+}
+
+#resume .section {
+  font-size: 1.2em;
+  color: blue;
+}
+
+#resume .text {
+  color: red;
+}

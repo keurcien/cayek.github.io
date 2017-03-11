@@ -1,35 +1,182 @@
 ---
 title: "Curriculum Vitae"
-output: "html_document"
 ---
 
-----
+<!--html_preserve-->
 
-**Fields**  
+<html>
+<head>
+<title>Joe Bloggs - Curriculum Vitae</title>
 
-Statistics, Machine learning, Population Genetics
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
 
-**Computational skills**
+<link type="text/css" rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
 
-R, C/C++, Matlab, Python, Latex
-
-**Languages** 
-
-- French: native
-- English: fluent
-- Chinese: fluent
-- Italian: basic
-
-----
-
-## Education
-
-**2014 - 2017 ** Ph.D Student, TIMC-IMAG, France  
-
-**2010 - 2014 ** Ecole Normale Supérieure de Cachan, France
-
-**2008 - 2011 ** Classe préparatoire aux grandes écoles MP*, Lycée Saint-Louis
-
-----
-
-
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="name">
+			<h1 class="quickFade delayTwo">Keurcien Luu</h1>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayTwo">
+			<ul>
+				<li>e: <a href="keurcien.luu@univ-grenoble-alpes.fr" target="_blank">keurcien.luu@univ-grenoble-alpes.fr</a></li>
+				<li>w: <a href="https://keurcien.github.io">https://keurcien.github.io</a></li>
+				<li>m: +33-6-47-99-38-44</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayTwo">
+		<section>
+			<div class="sectionTitle">
+				<h1>Professional Experience</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Ph.D Student</h2>
+					<p class="subDetails">November 2014 - Present</p>
+					<p>
+					Location: TIMC-IMAG, Grenoble, France<br/>
+					Subject: Large scale statistical methods for biological adaptation<br/>
+					Supervisor: Michael Blum, BCM team, TIMC-IMAG<br/>
+					</p>
+				</article>
+				
+				<article>
+					<h2>Intern - Master of Research</h2>
+					<p class="subDetails">April 2014 - October 2014</p>
+					<p>
+					Location: General Electric Healthcare, Buc, France<br/>
+					Subject: Segmentation and extraction of minimal path in brain imaging for arteriovenous malformations detection</br>
+					Supervisor: Vincent Jugnon, Premium Angiography department, Advanced Applications team, General Electric Healthcare
+					</p>
+				</article>
+				
+				<article>
+					<h2>Oral examinator in Mathematics for prepatory classes</h2>
+					<p class="subDetails">September 2013 - June 2014</p>
+					<p>
+					Location: Lyc&eacute;e Lakanal, Sceaux, France
+					</p>
+				</article>
+				
+				<article>
+					<h2>Intern - Master 1</h2>
+					<p class="subDetails">February 2012 - July 2012</p>
+					<p>
+					Location: Chinese University of Hong Kong, Hong Kong<br/>
+					Subject: Image segmentation based on a variational approach</br>
+					Supervisor: Professor Raymond Honfu Chan, departement of Mathematics, Chinese University of Hong Kong
+					</p>
+				</article>
+				
+				<article>
+					<h2>Intern - Licence 3</h2>
+					<p class="subDetails">February 2011 - July 2011</p>
+					<p>
+					Location: CMLA, Cachan, France<br/>
+					Subject: Multiscale approach in shape spaces</br>
+					Supervisor: Alain Trouv&eacute;, departement of Mathematics, ENS Cachan
+					</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Computer Skills</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>R/Rcpp</li>
+					<li>C/C++</li>
+					<li>Adobe Lightroom 5</li>
+					<li>Matlab</li>
+					<li>Python</li>
+					<li>HTML/CSS</li>
+					<li>Latex</li>
+					<li>Spark</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Master of Research</h2>
+					<p class="subDetails">2013-2014</p>
+					<p>ENS Cachan / Paris Sud-11 University</br>
+					Field: Mathematics Applied to Biology
+					</p>
+				</article>
+				
+				<article>
+					<h2>"Agr&eacute;gation" of Mathematics</h2>
+					<p class="subDetails">2012-2013</p>
+					<p>ENS Cachan</br>
+					Additional detail: ranked 102nd
+					</p>
+				</article>
+				
+				<article>
+					<h2>Licence 3 / Master 1</h2>
+					<p class="subDetails">2010-2012</p>
+					<p>ENS Cachan / Paris Diderot-7 University</br>
+					Field: Mathematics and Applications</br>
+					</p>
+				</article>
+				
+				<article>
+					<h2>Preparatory Class</h2>
+					<p class="subDetails">2007-2010</p>
+					<p>Lyc&eacute;e Saint-Louis</br>
+					Field: Mathematics and Physics</br>
+					Additional detail: admission to &Eacute;cole Normale Sup&eacute;rieure de Cachan
+					</p>
+				</article>
+				
+				<article>
+					<h2>French Baccalaureate</h2>
+					<p class="subDetails">2007</p>
+					<p>Lyc&eacute;e Charles le Chauve</br>
+					Additional detail: graduated from high school with honours
+					</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
+<!--/html_preserve-->
