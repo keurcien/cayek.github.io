@@ -117,6 +117,10 @@ section:last-child {
 	width: 25%;
 }
 
+.level {
+  float: right;
+}
+
 .sectionContent {
 	float: right;
 	width: 72.5%;
