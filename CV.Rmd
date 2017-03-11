@@ -1,5 +1,5 @@
 ---
-title: "Curriculum Vitae"
+title: Curriculum Vitae
 ---
 
 <!--html_preserve-->
@@ -161,6 +161,35 @@ title: "Curriculum Vitae"
 					<p>Lyc&eacute;e Charles le Chauve</br>
 					Additional detail: graduated from high school with honours
 					</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Languages</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>French</h2>
+					<p>Native</p>
+				</article>
+				
+				<article>
+					<h2>English</h2>
+					<p>Fluent</p>
+				</article>
+				
+				<article>
+					<h2>Chinese</h2>
+					<p>Intermediate</p>
+				</article>
+				
+				<article>
+					<h2>Italian</h2>
+					<p>Basic</p>
 				</article>
 			</div>
 			<div class="clear"></div>
