@@ -9,6 +9,8 @@ Methods to detect genetic markers involved in biological adaptation. 'pcadapt' p
 
 ### <span style="color:#3c9abc"><b>Tutorials</b></span>
 
+- [bioshock38.github.io](https://bioshock38.github.io/pcadapt/index.html)
+
 - [CRAN vignette](https://cran.r-project.org/web/packages/pcadapt/vignettes/pcadapt.html)
 
 - [popgen.nescent.org](http://popgen.nescent.org/2016-01-26-SNP-selection.html#section-2-pcadapt)
