@@ -8,12 +8,12 @@ title: Curriculum Vitae
 <head>
 <title>Curriculum Vitae</title>
 
-<meta name="viewport" content="width=device-width"/>
-<meta name="description" content="The Curriculum Vitae of Keurcien Luu."/>
-<meta charset="UTF-8"> 
+<!-- <meta name="viewport" content="width=device-width"/> -->
+<!-- <meta name="description" content="The Curriculum Vitae of Keurcien Luu."/> -->
+<!-- <meta charset="UTF-8">  -->
 
 <link type="text/css" rel="stylesheet" href="css/resume.css">
-<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+<!-- <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'> -->
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -98,28 +98,24 @@ title: Curriculum Vitae
 		<section>
 			<div class="sectionTitle">
 				<h1>Computer Skills</h1>
-				<p class="level">Advanced</br>
-					Intermediate</br>
-					Basic</br>
-				</p>
 			</div>
 			
 			<div class="sectionContent">
-			<p> </br>
-			R/Rcpp, C/C++, Adobe Lightroom </br>
-			Python, Matlab, Latex </br>
-			Spark, HTML/CSS
-			</p>
+			<p class="level">Advanced</p>
 				<ul class="keySkills">
 					<li>R/Rcpp</li>
-					<li>C/C++</li>
-					<li>Adobe Lightroom 5</li>
-				</ul>
-				<ul class="keySkills">
 					<li>Matlab</li>
+				</ul>
+			<p class="level">Intermediate</p>	
+				<ul class="keySkills">
+				  <li>C/C++</li>
 					<li>Python</li>
-					<li>HTML/CSS</li>
 					<li>Latex</li>
+				</ul>
+			<p class="level">Basic</p>
+			  <ul class="keySkills">
+					<li>HTML/CSS</li>
+					<li>Git</li>
 					<li>Spark</li>
 				</ul>
 			</div>

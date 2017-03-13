@@ -11,7 +11,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
 
-html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+html, body {
+  background: #181818; 
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #222;
+}
 
 .clear {clear: both;}
 
@@ -117,10 +122,6 @@ section:last-child {
 	width: 25%;
 }
 
-.level {
-  float: right;
-}
-
 .sectionContent {
 	float: right;
 	width: 72.5%;
@@ -142,6 +143,13 @@ section:last-child {
 
 .subDetails {
 	font-size: 0.8em;
+	font-weight: 700;
+	margin-bottom: 3px;
+}
+
+.level {
+  font-size: 1em;
+  color: #a6a6a6;
 	font-weight: 700;
 	margin-bottom: 3px;
 }

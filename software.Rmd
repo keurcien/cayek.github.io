@@ -7,3 +7,9 @@ title: <span style="color:#3c9abc"><b>Software</b></span>
 
 Methods to detect genetic markers involved in biological adaptation. 'pcadapt' provides statistical tools for outlier detection based on Principal Component Analysis. Implements the method described in (Luu, 2016) <doi:10.1111/1755-0998.12592>.
 
+### <span style="color:#3c9abc"><b>Tutorials</b></span>
+
+- [CRAN vignette](https://cran.r-project.org/web/packages/pcadapt/vignettes/pcadapt.html)
+
+- [popgen.nescent.org](http://popgen.nescent.org/2016-01-26-SNP-selection.html#section-2-pcadapt)
+
