@@ -1,5 +1,5 @@
 ---
-title: "Teachings"
+title: <span style="color:#3c9abc"><b>Teachings</b></span>
 ---
 
 
@@ -18,7 +18,7 @@ title: "Teachings"
 - Location: Grenoble, France
 - University: Cycle Préparatoire Polytechnique Grenoble
 - Subject: Mathematics
-- Chapters: improper integrals, series.
+- Chapters: improper integrals, series
 
 
 

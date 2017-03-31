@@ -1,7 +1,6 @@
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color:#fff;
-
   font-weight: normal;
   color: #404040;
 }
@@ -739,6 +738,18 @@ iframe.scale65 {
 
 #lowerbottom
 {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
+#resume {
+  color: black;    
+}
+
+#resume .section {
+  font-size: 1.2em;
+  color: blue;
+}
+
+#resume .text {
+  color: red;
+}
