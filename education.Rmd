@@ -1,28 +1,50 @@
 ---
-title: "Education"
+title: <span style="color:#3c9abc"><b>Education</b></span>
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+## **Ph.D**   
+*Grenoble Alpes University*
 
-## R Markdown
+**Courses followed:**
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+- [Advanced R](https://toltex.u-ga.fr/formation)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+- [Large-scale Learning Spring School](http://ama.liglab.fr/Khronos/index.php?title=KSS2015)
 
-```{r cars}
-summary(cars)
-```
+**Conferences:**
 
-## Including Plots
+- [SSMPG 2015: Software and Statistical Methods for Population Genetics](http://ssmpg2015.imag.fr/)
 
-You can also embed plots, for example:
+- [SMBEBA 2015: Investigating biological adaptation with NGS: data and models](http://smbeba2015.imag.fr/)
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+- [SMBE Satellite Meeting 2016: Genetics of Admixed Populations](http://anthgen.org/smbe2016/)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+- [The 48th Statistics Day](http://jds2016.sfds.asso.fr/?lang=en)
+
+- [useR!2017](https://user2017.brussels/) (not attended yet)
+
+## **Master 2 Research** Mathematics for Life Sciences  
+*École Normale Supérieur de Cachan, Paris-Sud University*
+
+**Courses followed:**
+
+- [Machine Learning with Kernel Methods](http://members.cbio.mines-paristech.fr/~jvert/svn/kernelcourse/course/2017mva/index.html)
+
+- [High-Dimensional Statistics](http://www.cmap.polytechnique.fr/~giraud/MSV/stats.html)
+
+- Stochastic Processes
+
+- Key concepts in biology and ecology
+
+- [Optimization and numerical simulation](http://www.di.ens.fr/~aspremon/MathSVM2.html)
+
+- [Deterministic Modeling](https://sites.google.com/site/stephanieallassonniere/enseignements/mathsv)
+
+- [IRMf and computer-brain interface](http://www-sop.inria.fr/members/Maureen.Clerc/documents/FunctionalBrainImaging_MVA_dec2008.pdf)
+
+- [Geometry and shape spaces](http://atrouve.perso.math.cnrs.fr/GEF/index.html)
+
+- Analysis and simulation for biomedical images
+
+**Link:** [https://www.math.u-psud.fr/-Mathematiques-Sciences-du-Vivant-#outil_sommaire_0](https://www.math.u-psud.fr/-Mathematiques-Sciences-du-Vivant-#outil_sommaire_0)

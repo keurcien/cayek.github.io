@@ -7,7 +7,7 @@ title: <span style="color:#3c9abc"><b>Software</b></span>
 
 Methods to detect genetic markers involved in biological adaptation. 'pcadapt' provides statistical tools for outlier detection based on Principal Component Analysis. Implements the method described in (Luu, 2016) <doi:10.1111/1755-0998.12592>.
 
-### <span style="color:#3c9abc"><b>Shiny App</b></span>
+#### <span style="color:#3c9abc"><b>Shiny App</b></span>
 
 - [app-pcadapt](https://keurcien.shinyapps.io/app-pcadapt/) 
 
@@ -16,7 +16,7 @@ You can test the Shiny App version of the software with the following files:
 - [pcadapt file](https://drive.google.com/file/d/0B9o4VIJJSodfOTNOelRKNm9MQ2M/view?usp=sharing)
 - [population file](https://drive.google.com/file/d/0B9o4VIJJSodfaUwwM3JZdVZTRWs/view?usp=sharing)
 
-### <span style="color:#3c9abc"><b>Tutorials</b></span>
+#### <span style="color:#3c9abc"><b>Tutorials</b></span>
 
 - [bioshock38.github.io](https://bioshock38.github.io/pcadapt/index.html)
 
