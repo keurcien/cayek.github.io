@@ -9,12 +9,13 @@ Methods to detect genetic markers involved in biological adaptation. 'pcadapt' p
 
 #### <span style="color:#3c9abc"><b>Shiny App</b></span>
 
+You can test out the Shiny App version of the software:
+
 - [app-pcadapt](https://keurcien.shinyapps.io/app-pcadapt/) 
 
-You can test the Shiny App version of the software with the following files:
+*NB: as it is hosted thanks to the shinyapps.io free plan, the online app will only work with small datasets (e.g 10MB). To use it with larger data, install the GitHub version of the package.*
 
-- [pcadapt file](https://drive.google.com/file/d/0B9o4VIJJSodfOTNOelRKNm9MQ2M/view?usp=sharing)
-- [population file](https://drive.google.com/file/d/0B9o4VIJJSodfaUwwM3JZdVZTRWs/view?usp=sharing)
+
 
 #### <span style="color:#3c9abc"><b>Tutorials</b></span>
 
