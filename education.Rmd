@@ -14,15 +14,17 @@ output: html_document
 
 **Conferences:**
 
-- [SSMPG 2015: Software and Statistical Methods for Population Genetics](http://ssmpg2015.imag.fr/)
+- [useR!2017](https://user2017.brussels/) (not attended yet)
 
-- [SMBEBA 2015: Investigating biological adaptation with NGS: data and models](http://smbeba2015.imag.fr/)
-
-- [SMBE Satellite Meeting 2016: Genetics of Admixed Populations](http://anthgen.org/smbe2016/)
+- [Epigenetic & High-Dimension Mediation Data Challenge](https://data-institute.univ-grenoble-alpes.fr/events/epigenetic-high-dimension-mediation-data-challenge-710076.htm?RH=10277933037836520)
 
 - [The 48th Statistics Day](http://jds2016.sfds.asso.fr/?lang=en)
 
-- [useR!2017](https://user2017.brussels/) (not attended yet)
+- [SMBE Satellite Meeting 2016: Genetics of Admixed Populations](http://anthgen.org/smbe2016/)
+
+- [SMBEBA 2015: Investigating biological adaptation with NGS: data and models](http://smbeba2015.imag.fr/)
+
+- [SSMPG 2015: Software and Statistical Methods for Population Genetics](http://ssmpg2015.imag.fr/)
 
 ## **Master 2 Research** Mathematics for Life Sciences  
 *École Normale Supérieur de Cachan, Paris-Sud University*
