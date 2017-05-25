@@ -3,22 +3,22 @@ title: <span style="color:#3c9abc"><b>Teachings</b></span>
 ---
 
 
-*2016-2017*
 
 
-- Location: Grenoble, France
-- University: Cycle Préparatoire Polytechnique Grenoble
-- Subject: Mathematics
-- Chapters: sequences
 
+**2016-2017**
 
-*2015-2016*
+**Sequences** - Undergraduate course at Cycle Préparatoire Polytechnique Grenoble
 
+**2016**
 
-- Location: Grenoble, France
-- University: Cycle Préparatoire Polytechnique Grenoble
-- Subject: Mathematics
-- Chapters: improper integrals, series
+[Selection footprints](https://www.adum.fr/script/formations.pl?mod=110750&site=mines) - Doctoral course at Agro Paritech
+
+**2015-2016**
+
+**Improper integrals** - Undergraduate course at Cycle Préparatoire Polytechnique Grenoble
+
+**Series** - Undergraduate course at Cycle Préparatoire Polytechnique Grenoble
 
 
 
