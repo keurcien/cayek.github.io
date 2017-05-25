@@ -16,7 +16,7 @@ output: html_document
 
 - [useR!2017](https://user2017.brussels/) (not attended yet)
 
-- [Epigenetic & High-Dimension Mediation Data Challenge](https://data-institute.univ-grenoble-alpes.fr/events/epigenetic-high-dimension-mediation-data-challenge-710076.htm?RH=10277933037836520)
+- [Epigenetic & High-Dimension Mediation Data Challenge](https://data-institute.univ-grenoble-alpes.fr/events/epigenetic-high-dimension-mediation-data-challenge-710076.htm?RH=10277933037836520) (not attended yet)
 
 - [The 48th Statistics Day](http://jds2016.sfds.asso.fr/?lang=en)
 
