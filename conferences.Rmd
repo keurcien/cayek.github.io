@@ -30,6 +30,10 @@ df <- data.frame(Date = list.date,
                  Topics = list.topic,
                  Webpage = list.webpage.link)
 
-DT::datatable(df, escape = FALSE, rownames = FALSE, options = list(dom = 't'))
+DT::datatable(df, escape = FALSE, rownames = FALSE, options = list(dom = 't',
+                             initComplete = DT::JS(
+                               "function(settings, json) {",
+                               "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
+                               "}")))
 ```
 

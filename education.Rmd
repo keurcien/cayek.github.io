@@ -46,6 +46,12 @@ df.courses <- data.frame(Course = list.courses.styled,
                          Referent = list.ref,
                          Webpage = list.webpage.link)
 
-DT::datatable(df.courses, escape = FALSE, rownames = FALSE, options = list(dom = 't'))
-
-```
+DT::datatable(df.courses, escape = FALSE, rownames = FALSE, 
+              options = list(dom = 't',
+                             initComplete = DT::JS(
+                               "function(settings, json) {",
+                               "$(this.api().table().header()).css({'background-color': '#000', 'color': '#fff'});",
+                               "}")))
+              
+              ```
+              
