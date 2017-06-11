@@ -3,8 +3,8 @@ title: <span style="color:#3c9abc"><b>Publications</b></span>
 ---
 
 
-### Luu, Keurcien, Eric Bazin, and Michael GB Blum. ["pcadapt: an R package to perform genome scans for selection based on principal component analysis."](http://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12592/full) Molecular Ecology Resources 17.1 (2017): 67-77.
+### Luu, Keurcien, Eric Bazin, and Michael GB Blum. (2017). ["pcadapt: an R package to perform genome scans for selection based on principal component analysis."](http://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12592/full) Molecular Ecology Resources 17.1 (2017): 67-77.
 
-### Martins, H., Caye, K., Luu, K., Blum, M. G., & Francois, O. (2016). [Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics.](http://onlinelibrary.wiley.com/doi/10.1111/mec.13822/full) Molecular Ecology, 25(20), 5029-5042.
+### Martins, Helena, Kevin Caye, Keurcien Luu, Michael GB Blum, and Olivier Francois. (2016). [Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics.](http://onlinelibrary.wiley.com/doi/10.1111/mec.13822/full) Molecular Ecology, 25(20), 5029-5042.
 
-### Duforet-Frebourg, Nicolas, et al. ["Detecting genomic signatures of natural selection with principal component analysis: application to the 1000 Genomes data."](https://academic.oup.com/mbe/article/33/4/1082/2579427/Detecting-Genomic-Signatures-of-Natural-Selection) Molecular biology and evolution (2015): msv334.
+### Duforet-Frebourg, Nicolas, Keurcien Luu, Guillaume Laval, Eric Bazin, and Michael GB Blum. (2015). ["Detecting genomic signatures of natural selection with principal component analysis: application to the 1000 Genomes data."](https://academic.oup.com/mbe/article/33/4/1082/2579427/Detecting-Genomic-Signatures-of-Natural-Selection) Molecular biology and evolution (2015): msv334.

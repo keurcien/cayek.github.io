@@ -2,7 +2,6 @@ var RMD = {};
 
 (function() {
 
-
   RMD.AppViewModel = function() {
     var self = this;
 

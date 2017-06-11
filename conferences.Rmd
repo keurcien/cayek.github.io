@@ -1,0 +1,35 @@
+---
+title: <span style="color:#3c9abc"><b>Conferences</b></span>
+output: html_document
+---
+
+```{r, echo=FALSE}
+list.conf <- c("useR!2017", 
+               "Epigenetic & High-Dimension Mediation Data Challenge",
+               "The 48th Statistics Day",
+               "SMBE Satellite Meeting 2016: Genetics of Admixed Populations",
+               "SSMPG 2015: Software and Statistical Methods for Population Genetics",
+               "SMBEBA 2015: Investigating biological adaptation with NGS: data and models"
+)
+list.conf.styled <- paste0('<b>', list.conf, '</b>')
+list.date <- c("Upcoming", "June 2017", "June 2016", "May 2016", "September 2015", "May 2015")
+list.topic <- c("R", "Mediation", "Statistics", "Population genetics", "Population genetics", "Population genetics")
+list.webpage <- c("https://user2017.brussels/",
+                  "https://data-institute.univ-grenoble-alpes.fr/events/epigenetic-high-dimension-mediation-data-challenge-710076.htm?RH=10277933037836520",
+                  "http://jds2016.sfds.asso.fr/?lang=en",
+                  "http://anthgen.org/smbe2016/",
+                  "http://ssmpg2015.imag.fr/",
+                  "http://smbeba2015.imag.fr/"
+                  
+)
+list.webpage.link <- paste0('<a href=', list.webpage, ' target=_blank>', list.webpage, '</a>')
+
+n.conf <- length(list.conf)
+df <- data.frame(Date = list.date,
+                 Conference = list.conf.styled,
+                 Topics = list.topic,
+                 Webpage = list.webpage.link)
+
+DT::datatable(df, escape = FALSE, rownames = FALSE, options = list(dom = 't'))
+```
+

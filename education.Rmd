@@ -3,50 +3,49 @@ title: <span style="color:#3c9abc"><b>Education</b></span>
 output: html_document
 ---
 
-## **Ph.D**   
-*Grenoble Alpes University*
+## **Ph.D - Master 2 Research ** Mathematics for Life Sciences
+*Grenoble Alpes University - École Normale Supérieur de Cachan, Paris-Sud University*
 
-**Courses followed:**
-
-- [Advanced R](https://toltex.u-ga.fr/formation)
-
-- [Large-scale Learning Spring School](http://ama.liglab.fr/Khronos/index.php?title=KSS2015)
-
-**Conferences:**
-
-- [useR!2017](https://user2017.brussels/) (not attended yet)
-
-- [Epigenetic & High-Dimension Mediation Data Challenge](https://data-institute.univ-grenoble-alpes.fr/events/epigenetic-high-dimension-mediation-data-challenge-710076.htm?RH=10277933037836520) (not attended yet)
-
-- [The 48th Statistics Day](http://jds2016.sfds.asso.fr/?lang=en)
-
-- [SMBE Satellite Meeting 2016: Genetics of Admixed Populations](http://anthgen.org/smbe2016/)
-
-- [SMBEBA 2015: Investigating biological adaptation with NGS: data and models](http://smbeba2015.imag.fr/)
-
-- [SSMPG 2015: Software and Statistical Methods for Population Genetics](http://ssmpg2015.imag.fr/)
-
-## **Master 2 Research** Mathematics for Life Sciences  
-*École Normale Supérieur de Cachan, Paris-Sud University*
-
-**Courses followed:**
-
-- [Machine Learning with Kernel Methods](http://members.cbio.mines-paristech.fr/~jvert/svn/kernelcourse/course/2017mva/index.html)
-
-- [High-Dimensional Statistics](http://www.cmap.polytechnique.fr/~giraud/MSV/stats.html)
-
-- Stochastic Processes
-
-- Key concepts in biology and ecology
-
-- [Optimization and numerical simulation](http://www.di.ens.fr/~aspremon/MathSVM2.html)
-
-- [Deterministic Modeling](https://sites.google.com/site/stephanieallassonniere/enseignements/mathsv)
-
-- [IRMf and computer-brain interface](http://www-sop.inria.fr/members/Maureen.Clerc/documents/FunctionalBrainImaging_MVA_dec2008.pdf)
-
-- [Geometry and shape spaces](http://atrouve.perso.math.cnrs.fr/GEF/index.html)
-
-- Analysis and simulation for biomedical images
 
 **Link:** [https://www.math.u-psud.fr/-Mathematiques-Sciences-du-Vivant-#outil_sommaire_0](https://www.math.u-psud.fr/-Mathematiques-Sciences-du-Vivant-#outil_sommaire_0)
+
+```{r, echo=FALSE}
+list.courses <- c("Machine Learning with Kernel Methods", 
+                  "High-Dimensional Statistics",
+                  "Large-scale Learning Spring School",
+                  "Advanced R",
+                  "Stochastic Processes",
+                  "Key concepts in biology and ecology",
+                  "Optimization and numerical simulation",
+                  "Deterministic Modeling",
+                  "IRMf and computer-brain interface",
+                  "Geometry and shape spaces",
+                  "Analysis and simulation for biomedical images"
+)
+list.courses.styled <- paste0('<b>', list.courses, '</b>')
+n.courses <- length(list.courses)
+list.ref <- rep(NA, n.courses)
+list.ref <- c("Jean-Philippe Vert", "Christophe Giraud", "Michael Blum", "Rémi Drouilhet", NA, NA, "Alexandre d'Aspremont", "Stéphanie Allasonnière", "Maureen Clerc", "Alain Trouvé", NA)
+list.webpage.link <- rep(NA, n.courses)
+list.webpage <- c("http://members.cbio.mines-paristech.fr/~jvert/svn/kernelcourse/course/2017mva/index.html",
+                  "http://www.cmap.polytechnique.fr/~giraud/MSV/stats.html",
+                  "http://ama.liglab.fr/Khronos/index.php?title=KSS2015",
+                  "https://toltex.u-ga.fr/formation",
+                  NA,
+                  NA,
+                  "http://www.di.ens.fr/~aspremon/MathSVM2.html",
+                  "https://sites.google.com/site/stephanieallassonniere/enseignements/mathsv",
+                  "http://www-sop.inria.fr/members/Maureen.Clerc/documents/FunctionalBrainImaging_MVA_dec2008.pdf",
+                  "http://atrouve.perso.math.cnrs.fr/GEF/index.html",
+                  NA
+)    
+
+list.webpage.link[!is.na(list.webpage)] <- paste0('<a href=', list.webpage[!is.na(list.webpage)], ' target=_blank>', list.webpage[!is.na(list.webpage)], '</a>')
+
+df.courses <- data.frame(Course = list.courses.styled,
+                         Referent = list.ref,
+                         Webpage = list.webpage.link)
+
+DT::datatable(df.courses, escape = FALSE, rownames = FALSE, options = list(dom = 't'))
+
+```

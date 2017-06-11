@@ -13,7 +13,7 @@
 
 <title>Education</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -22,7 +22,12 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
-
+<script src="site_libs/htmlwidgets-0.8/htmlwidgets.js"></script>
+<script src="site_libs/datatables-binding-0.2/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.12/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.12/js/jquery.dataTables.min.js"></script>
+<!DOCTYPE html>
 <link rel="icon" type="image/jpg" href="images/favicon.jpg" />
 
 <script type="text/javascript" src="js/rmarkdown.js"></script>
@@ -83,7 +88,7 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="css\site.css" type="text/css" />
+<link rel="stylesheet" href="css/site.css" type="text/css" />
 
 </head>
 
@@ -128,13 +133,9 @@ $(document).ready(function () {
 
 
 
-
+<!DOCTYPE html>
 <div id="rStudioHeader" class="alwaysShrunk">
   <div class="innards bandContent">
-    <!--<div>
-      <a class="productName" href="index.html">Keurcien Luu</a>-->
-    <!--</div> -->
-    
     <div id="name">
       <div id="nameItems">
         <a class="nameItem" href="index.html">Keurcien Luu</a>
@@ -148,8 +149,8 @@ $(document).ready(function () {
         <a class="menuItem" href="publications.html">Publications</a>
         <a class="menuItem" href="software.html">Software</a>
         <a class="menuItem" href="education.html">Education</a>
+        <a class="menuItem" href="conferences.html">Conferences</a>
         <a class="menuItem" href="teachings.html">Teachings</a>
-        <a class="menuItem" href="credits.html">Credits</a>
       </div>
     </div>
   </div>
@@ -179,40 +180,12 @@ $(".main-container").removeClass("main-container").removeClass("container-fluid"
 </div>
 
 
-<div id="ph.d" class="section level2">
-<h2><strong>Ph.D</strong></h2>
-<p><em>Grenoble Alpes University</em></p>
-<p><strong>Courses followed:</strong></p>
-<ul>
-<li><p><a href="https://toltex.u-ga.fr/formation">Advanced R</a></p></li>
-<li><p><a href="http://ama.liglab.fr/Khronos/index.php?title=KSS2015">Large-scale Learning Spring School</a></p></li>
-</ul>
-<p><strong>Conferences:</strong></p>
-<ul>
-<li><p><a href="https://user2017.brussels/">useR!2017</a> (not attended yet)</p></li>
-<li><p><a href="https://data-institute.univ-grenoble-alpes.fr/events/epigenetic-high-dimension-mediation-data-challenge-710076.htm?RH=10277933037836520">Epigenetic &amp; High-Dimension Mediation Data Challenge</a> (not attended yet)</p></li>
-<li><p><a href="http://jds2016.sfds.asso.fr/?lang=en">The 48th Statistics Day</a></p></li>
-<li><p><a href="http://anthgen.org/smbe2016/">SMBE Satellite Meeting 2016: Genetics of Admixed Populations</a></p></li>
-<li><p><a href="http://smbeba2015.imag.fr/">SMBEBA 2015: Investigating biological adaptation with NGS: data and models</a></p></li>
-<li><p><a href="http://ssmpg2015.imag.fr/">SSMPG 2015: Software and Statistical Methods for Population Genetics</a></p></li>
-</ul>
-</div>
-<div id="master-2-research-mathematics-for-life-sciences" class="section level2">
-<h2><strong>Master 2 Research</strong> Mathematics for Life Sciences</h2>
-<p><em>École Normale Supérieur de Cachan, Paris-Sud University</em></p>
-<p><strong>Courses followed:</strong></p>
-<ul>
-<li><p><a href="http://members.cbio.mines-paristech.fr/~jvert/svn/kernelcourse/course/2017mva/index.html">Machine Learning with Kernel Methods</a></p></li>
-<li><p><a href="http://www.cmap.polytechnique.fr/~giraud/MSV/stats.html">High-Dimensional Statistics</a></p></li>
-<li><p>Stochastic Processes</p></li>
-<li><p>Key concepts in biology and ecology</p></li>
-<li><p><a href="http://www.di.ens.fr/~aspremon/MathSVM2.html">Optimization and numerical simulation</a></p></li>
-<li><p><a href="https://sites.google.com/site/stephanieallassonniere/enseignements/mathsv">Deterministic Modeling</a></p></li>
-<li><p><a href="http://www-sop.inria.fr/members/Maureen.Clerc/documents/FunctionalBrainImaging_MVA_dec2008.pdf">IRMf and computer-brain interface</a></p></li>
-<li><p><a href="http://atrouve.perso.math.cnrs.fr/GEF/index.html">Geometry and shape spaces</a></p></li>
-<li><p>Analysis and simulation for biomedical images</p></li>
-</ul>
+<div id="ph.d---master-2-research-mathematics-for-life-sciences" class="section level2">
+<h2><strong>Ph.D - Master 2 Research </strong> Mathematics for Life Sciences</h2>
+<p><em>Grenoble Alpes University - École Normale Supérieur de Cachan, Paris-Sud University</em></p>
 <p><strong>Link:</strong> <a href="https://www.math.u-psud.fr/-Mathematiques-Sciences-du-Vivant-#outil_sommaire_0" class="uri">https://www.math.u-psud.fr/-Mathematiques-Sciences-du-Vivant-#outil_sommaire_0</a></p>
+<div id="htmlwidget-da336d39a341e9d86be2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-da336d39a341e9d86be2">{"x":{"filter":"none","data":[["<b>Machine Learning with Kernel Methods<\/b>","<b>High-Dimensional Statistics<\/b>","<b>Large-scale Learning Spring School<\/b>","<b>Advanced R<\/b>","<b>Stochastic Processes<\/b>","<b>Key concepts in biology and ecology<\/b>","<b>Optimization and numerical simulation<\/b>","<b>Deterministic Modeling<\/b>","<b>IRMf and computer-brain interface<\/b>","<b>Geometry and shape spaces<\/b>","<b>Analysis and simulation for biomedical images<\/b>"],["Jean-Philippe Vert","Christophe Giraud","Michael Blum","Rémi Drouilhet",null,null,"Alexandre d'Aspremont","Stéphanie Allasonnière","Maureen Clerc","Alain Trouvé",null],["<a href=http://members.cbio.mines-paristech.fr/~jvert/svn/kernelcourse/course/2017mva/index.html target=_blank>http://members.cbio.mines-paristech.fr/~jvert/svn/kernelcourse/course/2017mva/index.html<\/a>","<a href=http://www.cmap.polytechnique.fr/~giraud/MSV/stats.html target=_blank>http://www.cmap.polytechnique.fr/~giraud/MSV/stats.html<\/a>","<a href=http://ama.liglab.fr/Khronos/index.php?title=KSS2015 target=_blank>http://ama.liglab.fr/Khronos/index.php?title=KSS2015<\/a>","<a href=https://toltex.u-ga.fr/formation target=_blank>https://toltex.u-ga.fr/formation<\/a>",null,null,"<a href=http://www.di.ens.fr/~aspremon/MathSVM2.html target=_blank>http://www.di.ens.fr/~aspremon/MathSVM2.html<\/a>","<a href=https://sites.google.com/site/stephanieallassonniere/enseignements/mathsv target=_blank>https://sites.google.com/site/stephanieallassonniere/enseignements/mathsv<\/a>","<a href=http://www-sop.inria.fr/members/Maureen.Clerc/documents/FunctionalBrainImaging_MVA_dec2008.pdf target=_blank>http://www-sop.inria.fr/members/Maureen.Clerc/documents/FunctionalBrainImaging_MVA_dec2008.pdf<\/a>","<a href=http://atrouve.perso.math.cnrs.fr/GEF/index.html target=_blank>http://atrouve.perso.math.cnrs.fr/GEF/index.html<\/a>",null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Course<\/th>\n      <th>Referent<\/th>\n      <th>Webpage<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 
   </div> <!-- articleBandContent -->
