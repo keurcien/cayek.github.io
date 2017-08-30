@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>THÈSE</title>
+  <meta name="description" content="THÈSE">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="THÈSE" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="THÈSE" />
+  
+  
+  
+
+<meta name="author" content="Keurcien LUU">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="detection-doutliers.html">
+<link rel="next" href="aspect-computationnel.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#la-genetique-des-populations"><i class="fa fa-check"></i><b>1.1</b> La génétique des populations</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="introduction.html"><a href="introduction.html#levolution-comme-point-de-depart"><i class="fa fa-check"></i><b>1.1.1</b> L’évolution comme point de départ</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#a-lorigine-de-la-variabilite-genetique"><i class="fa fa-check"></i><b>1.2</b> À l’origine de la variabilité génétique</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="introduction.html"><a href="introduction.html#la-theorie-de-levolution"><i class="fa fa-check"></i><b>1.2.1</b> La théorie de l’évolution</a></li>
+<li class="chapter" data-level="1.2.2" data-path="introduction.html"><a href="introduction.html#levolution-dune-theorie"><i class="fa fa-check"></i><b>1.2.2</b> L’évolution d’une théorie</a></li>
+<li class="chapter" data-level="1.2.3" data-path="introduction.html"><a href="introduction.html#forces-evolutives"><i class="fa fa-check"></i><b>1.2.3</b> Forces évolutives</a></li>
+<li class="chapter" data-level="1.2.4" data-path="introduction.html"><a href="introduction.html#adaptation-locale"><i class="fa fa-check"></i><b>1.2.4</b> Adaptation locale</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#donnees-de-polymorphismes-genetiques"><i class="fa fa-check"></i><b>1.3</b> Données de polymorphismes génétiques</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="introduction.html"><a href="introduction.html#des-donnees-en-grande-dimension"><i class="fa fa-check"></i><b>1.3.1</b> Des données en grande dimension</a></li>
+<li class="chapter" data-level="1.3.2" data-path="introduction.html"><a href="introduction.html#les-marqueurs-genetiques"><i class="fa fa-check"></i><b>1.3.2</b> Les marqueurs génétiques</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#introgression-adaptative"><i class="fa fa-check"></i><b>1.4</b> Introgression adaptative</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="introduction.html"><a href="introduction.html#quest-ce-que-lintrogression"><i class="fa fa-check"></i><b>1.4.1</b> Qu’est-ce que l’introgression ?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#les-motivations-de-la-these"><i class="fa fa-check"></i><b>1.5</b> Les motivations de la thèse</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="etat-de-lart.html"><a href="etat-de-lart.html"><i class="fa fa-check"></i><b>2</b> État de l’art</a><ul>
+<li class="chapter" data-level="2.1" data-path="etat-de-lart.html"><a href="etat-de-lart.html#adaptation-locale-1"><i class="fa fa-check"></i><b>2.1</b> Adaptation locale</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="etat-de-lart.html"><a href="etat-de-lart.html#les-scans-genomiques"><i class="fa fa-check"></i><b>2.1.1</b> Les scans génomiques</a></li>
+<li class="chapter" data-level="2.1.2" data-path="etat-de-lart.html"><a href="etat-de-lart.html#lindice-de-fixation"><i class="fa fa-check"></i><b>2.1.2</b> L’indice de fixation</a></li>
+<li class="chapter" data-level="2.1.3" data-path="etat-de-lart.html"><a href="etat-de-lart.html#modele-de-flk"><i class="fa fa-check"></i><b>2.1.3</b> Modèle de FLK</a></li>
+<li class="chapter" data-level="2.1.4" data-path="etat-de-lart.html"><a href="etat-de-lart.html#modele-de-outflank"><i class="fa fa-check"></i><b>2.1.4</b> Modèle de OutFLANK</a></li>
+<li class="chapter" data-level="2.1.5" data-path="etat-de-lart.html"><a href="etat-de-lart.html#modele-du-logiciel-bayescan"><i class="fa fa-check"></i><b>2.1.5</b> Modèle du logiciel Bayescan</a></li>
+<li class="chapter" data-level="2.1.6" data-path="etat-de-lart.html"><a href="etat-de-lart.html#fast-pca"><i class="fa fa-check"></i><b>2.1.6</b> Fast PCA</a></li>
+<li class="chapter" data-level="2.1.7" data-path="etat-de-lart.html"><a href="etat-de-lart.html#analyse-en-composantes-principales-parcimonieuse"><i class="fa fa-check"></i><b>2.1.7</b> Analyse en Composantes Principales parcimonieuse</a></li>
+<li class="chapter" data-level="2.1.8" data-path="etat-de-lart.html"><a href="etat-de-lart.html#bootstrap-acp"><i class="fa fa-check"></i><b>2.1.8</b> Bootstrap ACP</a></li>
+<li class="chapter" data-level="2.1.9" data-path="etat-de-lart.html"><a href="etat-de-lart.html#contexte"><i class="fa fa-check"></i><b>2.1.9</b> Contexte</a></li>
+<li class="chapter" data-level="2.1.10" data-path="etat-de-lart.html"><a href="etat-de-lart.html#tests-multiples"><i class="fa fa-check"></i><b>2.1.10</b> Tests multiples</a></li>
+<li class="chapter" data-level="2.1.11" data-path="etat-de-lart.html"><a href="etat-de-lart.html#controle-du-taux-de-fausse-decouverte"><i class="fa fa-check"></i><b>2.1.11</b> Contrôle du taux de fausse découverte</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="etat-de-lart.html"><a href="etat-de-lart.html#introgression-adaptative-1"><i class="fa fa-check"></i><b>2.2</b> Introgression adaptative</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="etat-de-lart.html"><a href="etat-de-lart.html#coefficients-de-metissage-globaux-et-locaux"><i class="fa fa-check"></i><b>2.2.1</b> Coefficients de métissage globaux et locaux</a></li>
+<li class="chapter" data-level="2.2.2" data-path="etat-de-lart.html"><a href="etat-de-lart.html#lien-entre-analyse-en-composantes-principales-et-metissage-global."><i class="fa fa-check"></i><b>2.2.2</b> Lien entre Analyse en Composantes Principales et métissage global.</a></li>
+<li class="chapter" data-level="2.2.3" data-path="etat-de-lart.html"><a href="etat-de-lart.html#analyse-en-composantes-principales-locale"><i class="fa fa-check"></i><b>2.2.3</b> Analyse en Composantes Principales locale</a></li>
+<li class="chapter" data-level="2.2.4" data-path="etat-de-lart.html"><a href="etat-de-lart.html#sensibilite-a-limputation-des-donnees-manquantes"><i class="fa fa-check"></i><b>2.2.4</b> Sensibilité à l’imputation des données manquantes</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html"><i class="fa fa-check"></i><b>3</b> La communalité : une statistique proche de la <span class="math inline">\(F_{ST}\)</span></a><ul>
+<li class="chapter" data-level="3.1" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#contributions"><i class="fa fa-check"></i><b>3.1</b> Contributions</a></li>
+<li class="chapter" data-level="3.2" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#resume-de-larticle"><i class="fa fa-check"></i><b>3.2</b> Résumé de l’article</a></li>
+<li class="chapter" data-level="3.3" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#article-1"><i class="fa fa-check"></i><b>3.3</b> Article 1</a><ul>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#abstract"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#significance-statement"><i class="fa fa-check"></i>Significance Statement</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#introduction-1"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#new-method"><i class="fa fa-check"></i>New Method</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#results"><i class="fa fa-check"></i>Results</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#discussion"><i class="fa fa-check"></i>Discussion</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#materials-and-methods"><i class="fa fa-check"></i>Materials and Methods</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="3.3.1" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#analyses-supplementaires"><i class="fa fa-check"></i><b>3.3.1</b> Analyses supplémentaires</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="detection-doutliers.html"><a href="detection-doutliers.html"><i class="fa fa-check"></i><b>4</b> Détection d’outliers</a><ul>
+<li class="chapter" data-level="4.1" data-path="detection-doutliers.html"><a href="detection-doutliers.html#article-2"><i class="fa fa-check"></i><b>4.1</b> Article 2</a><ul>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#abstract-1"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#introduction-2"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#statistical-and-computational-approach"><i class="fa fa-check"></i>Statistical and computational approach</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#materials-and-methods-1"><i class="fa fa-check"></i>Materials and methods</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#results-1"><i class="fa fa-check"></i>Results</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#discussion-1"><i class="fa fa-check"></i>Discussion</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#data-accessibility"><i class="fa fa-check"></i>Data accessibility</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html"><i class="fa fa-check"></i><b>5</b> Introgression adaptative</a><ul>
+<li class="chapter" data-level="5.1" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#simulations"><i class="fa fa-check"></i><b>5.1</b> Simulations</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#donnees-de-peupliers"><i class="fa fa-check"></i><b>5.1.1</b> Données de peupliers</a></li>
+<li class="chapter" data-level="5.1.2" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#generation-aleatoire-dindividus-hybrides"><i class="fa fa-check"></i><b>5.1.2</b> Génération aléatoire d’individus hybrides</a></li>
+<li class="chapter" data-level="5.1.3" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#simulations-a-partir-de-ms-et-seq-gen"><i class="fa fa-check"></i><b>5.1.3</b> Simulations à partir de ms et Seq-Gen</a></li>
+<li class="chapter" data-level="5.1.4" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#resultats-de-la-comparaison-des-logiciels"><i class="fa fa-check"></i><b>5.1.4</b> Résultats de la comparaison des logiciels</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#article-3"><i class="fa fa-check"></i><b>5.2</b> Article 3</a><ul>
+<li class="chapter" data-level="" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#introduction-3"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#materials-and-methods-2"><i class="fa fa-check"></i>Materials and methods</a></li>
+<li class="chapter" data-level="" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#results-2"><i class="fa fa-check"></i>Results</a></li>
+<li class="chapter" data-level="" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#discussion-2"><i class="fa fa-check"></i>Discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html"><i class="fa fa-check"></i><b>6</b> Aspect computationnel</a></li>
+<li class="chapter" data-level="" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i>Conclusion</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="supplementary-information.html"><a href="supplementary-information.html"><i class="fa fa-check"></i><b>A</b> Supplementary Information</a><ul>
+<li class="chapter" data-level="" data-path="supplementary-information.html"><a href="supplementary-information.html#article-1-1"><i class="fa fa-check"></i>Article 1 </a></li>
+<li class="chapter" data-level="" data-path="supplementary-information.html"><a href="supplementary-information.html#article-2-1"><i class="fa fa-check"></i>Article 2</a></li>
+<li class="chapter" data-level="" data-path="supplementary-information.html"><a href="supplementary-information.html#article-3-1"><i class="fa fa-check"></i>Article 3</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="r-python.html"><a href="r-python.html"><i class="fa fa-check"></i><b>B</b> R &amp; Python</a><ul>
+<li class="chapter" data-level="B.1" data-path="r-python.html"><a href="r-python.html#simulations-et-modeles-demographiques"><i class="fa fa-check"></i><b>B.1</b> Simulations et modèles démographiques</a><ul>
+<li class="chapter" data-level="B.1.1" data-path="r-python.html"><a href="r-python.html#modele-en-ile"><i class="fa fa-check"></i><b>B.1.1</b> Modèle en île</a></li>
+<li class="chapter" data-level="B.1.2" data-path="r-python.html"><a href="r-python.html#modele-de-divergence"><i class="fa fa-check"></i><b>B.1.2</b> Modèle de divergence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliographie.html"><a href="bibliographie.html"><i class="fa fa-check"></i>Bibliographie</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">THÈSE</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introgression-adaptative-2" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Introgression adaptative</h1>
+<div id="simulations" class="section level2">
+<h2><span class="header-section-number">5.1</span> Simulations</h2>
+<div id="donnees-de-peupliers" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Données de peupliers</h3>
+<p>Le premier jeu de données est issu d’une étude d’introgression adaptative chez les peupliers d’Amérique du Nord <span class="citation">(Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>)</span>. La simulation d’haplotypes d’individus admixés est effectuée à partir des deux populations ancestrales qui y sont présentes. La première, <em>Populus Balsamifera</em>, est une espèce de peupliers qui peuple le nord du continent nord-américain, d’Est en Ouest, et se trouve exposée à des conditions climatiques peu clémentes.La seconde, <em>Populus Trichocarpa</em>, est principalement localisée en Californie, et bénéficie d’un climat continental.</p>
+<p>Chacune des simulations est constituée de <span class="math inline">\(50\)</span> haplotypes de la souche continentale, de <span class="math inline">\(50\)</span> haplotyêpes de la souche boréale, ainsi que de <span class="math inline">\(50\)</span> haplotypes d’individus hybrides générés à partir des haplotypes ancestraux. Ces haplotypes ancestraux ont été estimés à l’aide du logiciel Beagle. A partir des positions en paires de base, une carte de recombinaison génétique est générée en utilisant le taux de recombinaison moyen chez le peuplier. Le taux de recombinaison, noté <span class="math inline">\(\tau_r\)</span>, correspond au nombre moyen de paires de bases à parcourir pour qu’ait lieu un épisode de recombinaison génétique, <em>i.e.</em>, notant <span class="math inline">\(L\)</span> la longueur du chromosome en Morgans (<span class="math inline">\(M\)</span>), et <span class="math inline">\(N_{bp}\)</span> le nombre de paires de bases le constituant, le taux de recombinaison génétique pour ce chromosome est donné par la relation:</p>
+<p><span class="math display">\[\tau_r = \frac{L}{N_{bp}}\]</span></p>
+<p>Dans ce scénario, les simulations ont été produites en utilisant un taux de recombinaison génétique moyen <span class="math inline">\(\tau_r\)</span> de <span class="math inline">\(0.05\)</span> centiMorgans par million de paire de bases, correspondant à la valeur utilisée par les auteurs de l’étude avec le logiciel RASPberry (). A partir de la donnée de la position physique en paires de bases ainsi que du taux de recombinaison moyen, nous générons une carte de recombinaison génétique adaptée à nos simulations.</p>
+</div>
+<div id="generation-aleatoire-dindividus-hybrides" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Génération aléatoire d’individus hybrides</h3>
+<p>Pour simuler un individu métissé, il est d’abord nécessaire de simuler l’emplacement des évènements de recombinaison. Pour ce faire, nous utilisons le modèle décrit dans <span class="citation">(Price et al., <a href="#ref-price2009sensitive">2009</a>)</span>, en parcourant</p>
+
+</div>
+<div id="simulations-a-partir-de-ms-et-seq-gen" class="section level3">
+<h3><span class="header-section-number">5.1.3</span> Simulations à partir de ms et Seq-Gen</h3>
+<p>Dans le scénario d’introgression via flux de gènes, nous nous inspirons des modèles de simulation décrits dans <span class="citation">(S. H. Martin, Davey, &amp; Jiggins, <a href="#ref-martin2014evaluating">2014</a>)</span>. Ces modèles sont largement repris dans la littérature pour l’évaluation de statistiques telles que <span class="math inline">\(RND_{min}\)</span> <span class="citation">(Rosenzweig et al., <a href="#ref-rosenzweig2016powerful">2016</a>)</span> et <span class="math inline">\(Bd_f\)</span> <span class="citation">(Pfeifer &amp; Kapan, <a href="#ref-pfeifer2017estimates">2017</a>)</span>. Chaque simulation est constituée de 100 individus. Un individu est généré en concaténant un certain nombre de séquences de nucléotides, d’une longueur fixée à 5000 paires de bases par séquence. Chacune de ces séquences est elle-même simulée suivant un modèle neutre ou alternatif. Le modèle neutre décrit un scénario démographique classique de populations divergentes. Le modèle alternatif décrit quant à lui un scénario légèrement différent, et servira à caractériser les séquences <em>introgressées</em>. Les lignes de commande <em>ms</em> permettant de générer les séquences de nucléotides pour le modèle neutre ainsi que pour le modèle alternatif sont données ci-dessous :</p>
+<p> </p>
+<ul>
+<li>Modèle neutre :</li>
+</ul>
+<pre><code>./ms 200 1 -I 4 50 50 50 50 -ej 1 2 1 -ej 2 3 1 -ej 3 4 1 
+-r 50 5000 -T </code></pre>
+<div class="figure" style="text-align: center"><span id="fig:background"></span>
+<img src="figure/background.png" alt="Modèle neutre. $12N$ genérations auparavant, premier épisode de divergence donnant naissance à P1 et à O. $8N$ générations auparavant, deuxième épisode de divergence voyant l'apparition de P3. $4N$ générations auparavant, dernier épisode de divergence et apparition de P2." width="\textwidth" scale=0.5 />
+<p class="caption">
+Figure 5.1: Modèle neutre. <span class="math inline">\(12N\)</span> genérations auparavant, premier épisode de divergence donnant naissance à P1 et à O. <span class="math inline">\(8N\)</span> générations auparavant, deuxième épisode de divergence voyant l’apparition de P3. <span class="math inline">\(4N\)</span> générations auparavant, dernier épisode de divergence et apparition de P2.
+</p>
+</div>
+<p> </p>
+<ul>
+<li>Modèle alternatif :</li>
+</ul>
+<pre><code>./ms 200 1 -I 4 50 50 50 50 -ej 1 2 1 -ej 2 3 1 -ej 3 4 1 
+-es 0.1 2 0.8 -ej 0.1 5 3 -r 50 5000 -T</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:alternate"></span>
+<img src="figure/alternate.png" alt="Modèle alternatif. $12N$ genérations auparavant, premier épisode de divergence donnant naissance à P1 et à O. $8N$ générations auparavant, deuxième épisode de divergence voyant l'apparition de P3. $4N$ générations auparavant, dernier épisode de divergence et apparition de P2. $t$ unités de temps auparavant, épisode de flux de gènes de P3 vers la population P2." width="\textwidth" scale=0.5 />
+<p class="caption">
+Figure 5.2: Modèle alternatif. <span class="math inline">\(12N\)</span> genérations auparavant, premier épisode de divergence donnant naissance à P1 et à O. <span class="math inline">\(8N\)</span> générations auparavant, deuxième épisode de divergence voyant l’apparition de P3. <span class="math inline">\(4N\)</span> générations auparavant, dernier épisode de divergence et apparition de P2. <span class="math inline">\(t\)</span> unités de temps auparavant, épisode de flux de gènes de P3 vers la population P2.
+</p>
+</div>
+<p>La variable <span class="math inline">\(f\)</span> présente en figure <a href="introgression-adaptative-2.html#fig:alternate">5.2</a> représente le taux d’introgression, elle quantifie la proportion d’haplotypes présents dans la population P2 et qui proviennent de la population P3. Ainsi, une valeur de <span class="math inline">\(f\)</span> égale à <span class="math inline">\(1\)</span> reviendrait à simuler un épisode de divergence de la population P3, duquel découlerait la naissance de la population P2. La valeur de <span class="math inline">\(f\)</span> utilisée ci-dessus est <span class="math inline">\(0.2\)</span>, signifiant que 20% des haplotypes présents dans la population 2 sont issus de la population P3.</p>
+</div>
+<div id="resultats-de-la-comparaison-des-logiciels" class="section level3">
+<h3><span class="header-section-number">5.1.4</span> Résultats de la comparaison des logiciels</h3>
+<div id="scenario-de-metissage" class="section level5">
+<h5><span class="header-section-number">5.1.4.0.1</span> Scénario de métissage</h5>
+<p>Nous comparons ici notre méthode au logiciel RFMix destiné à la détermination de coefficients de métissage local.</p>
+<div class="figure" style="text-align: center"><span id="fig:ras10g"></span>
+<img src="figure/facet_admixture_setting_10_gen.pdf" alt="10 generations" width="500px" />
+<p class="caption">
+Figure 5.3: 10 generations
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:ras100g"></span>
+<img src="figure/facet_admixture_setting_100_gen.pdf" alt="100 generations" width="500px" />
+<p class="caption">
+Figure 5.4: 100 generations
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:ras1000g"></span>
+<img src="figure/facet_admixture_setting_1000_gen.pdf" alt="1000 generations" width="500px" />
+<p class="caption">
+Figure 5.5: 1000 generations
+</p>
+</div>
+</div>
+<div id="scenario-a-flux-de-genes" class="section level5">
+<h5><span class="header-section-number">5.1.4.0.2</span> Scénario à flux de gènes</h5>
+<p>Dans ce paragraphe, nous comparons notre statistique de test à un ensemble de statistiques implémentées dans le package R <em>PopGenome</em> : la statistique <span class="math inline">\(D\)</span> de Patterson, RNDmin <span class="citation">(Rosenzweig et al., <a href="#ref-rosenzweig2016powerful">2016</a>)</span> et BDF <span class="citation">(Pfeifer &amp; Kapan, <a href="#ref-pfeifer2017estimates">2017</a>)</span>.</p>
+</div>
+</div>
+</div>
+<div id="article-3" class="section level2">
+<h2><span class="header-section-number">5.2</span> Article 3</h2>
+<div id="introduction-3" class="section level3 unnumbered">
+<h3>Introduction</h3>
+<p>A potential source of adaptive genetic variation is adaptive introgression. Adaptive introgression occurs when selectively beneficial alleles are transferred between species <span class="citation">(M. L. Arnold &amp; Martin, <a href="#ref-arnold2009adaptation">2009</a>; Dasmahapatra et al., <a href="#ref-dasmahapatra2012butterfly">2012</a>; Fraïsse, Roux, Welch, &amp; Bierne, <a href="#ref-fraisse2014gene">2014</a>)</span>. Although adaptive genetic variation originates primarily from de novo mutation or standing variation, adaptive introgression is now acknowledged as an important source of genetic variation in plants but also in animals <span class="citation">(Hedrick, <a href="#ref-hedrick2013adaptive">2013</a>)</span>.</p>
+<p>To model adaptive introgression, there are at least two conceptual evolutionary scenario. In the first “admixture” scenario, two populations or two related species admixed to form a new hybrid population (Figure <a href="introgression-adaptative-2.html#fig:scenarios">5.6</a>). Adaptive introgression occurs when variation from one of the source population is adaptive in the environment of the admixed population. For instance, Tibetans are the results of admixture between Han and Sherpa populations, and alleles that confer adaptation to high altitude have been transmitted by the Sherpa population <span class="citation">(Jeong et al., <a href="#ref-jeong2014admixture">2014</a>)</span>. Evidence of adaptive introgression following admixture has been provided in several admixed populations or species, including Africanized honeybee, Populus species, North American canids, or human Bantu-speaking populations to name just a few examples <span class="citation">(R. M. Nelson, Wallberg, Simões, Lawson, &amp; Webster, <a href="#ref-nelson2017genome">2017</a>; Patin et al., <a href="#ref-patin2017dispersals">2017</a>; Payseur &amp; Rieseberg, <a href="#ref-payseur2016genomic">2016</a>; Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>; vonHoldt, Kays, Pollinger, &amp; Wayne, <a href="#ref-vonholdt2016admixture">2016</a>)</span>. The second evolutionary scenario assumes “gene flow” or “introgression” from a donor species to an introgressed species (Figure <a href="introgression-adaptative-2.html#fig:scenarios">5.6</a>). For instance, house mice became resistant to a warfarin pesticide because of selection on VKORC1 polymorphisms that has been acquired from the Algerian mouse (<em>M. spretus</em>) through introgression <span class="citation">(Y. Song et al., <a href="#ref-song2011adaptive">2011</a>)</span>. Another classical example of introgression followed by adaption include colour adaptations in Heliconius species <span class="citation">(Pardo-Diaz et al., <a href="#ref-pardo2012adaptive">2012</a>)</span>. Whereas detection of loci involved in adaptive introgression are performed with different statistical methods for the admixture and gene flow evolutionary models, we propose a statistical approach that is valid in both evolutionary models.</p>
+<p>In the admixture model, outlier loci are found by looking for genomic regions harboring excess of ancestry from the donor population <span class="citation">(Buerkle &amp; Lexer, <a href="#ref-buerkle2008admixture">2008</a>)</span>. Excess of ancestry are obtained using local ancestry inference (LAI) that computes for admixed individuals the number of chromosome copies coming from the ancestral populations. There are several software available for LAI including EILA, HAPMIX, LAMP-LD, or RFMIX <span class="citation">(Baran et al., <a href="#ref-baran2012fast">2012</a>; Jeong et al., <a href="#ref-jeong2014admixture">2014</a>; Maples et al., <a href="#ref-maples2013rfmix">2013</a>; Price et al., <a href="#ref-price2009sensitive">2009</a>)</span>. Except for EILA, LAI software can require biological information that can be difficult to obtain especially for non-model species. For instance, HAPMIX or RFMIX require phased haplotypes for the ancestral populations and RFMIX also require phased haplotypes for the admixed individuals. In addition, a recombination map and an estimate of the admixture date between the ancestral populations should be provided for both HAPMIX and RFMIX <span class="citation">(Baran et al., <a href="#ref-baran2012fast">2012</a>; Jeong et al., <a href="#ref-jeong2014admixture">2014</a>; Maples et al., <a href="#ref-maples2013rfmix">2013</a>; Price et al., <a href="#ref-price2009sensitive">2009</a>)</span>.</p>
+<p>In the “gene flow” or “introgression” scenario, there have also been attempts to find introgressed regions with outlier detection methods <span class="citation">(Rheindt, Fujita, Wilton, &amp; Edwards, <a href="#ref-rheindt2013introgression">2013</a>; J. Smith &amp; Kronforst, <a href="#ref-smith2013heliconius">2013</a>; W. Zhang, Dasmahapatra, Mallet, Moreira, &amp; Kronforst, <a href="#ref-zhang2016genome">2016</a>)</span>. A common approachis to test for an excess of shared derived variants in the donor and recipient populations using the <span class="math inline">\(D\)</span> or ABBA-ABBA test statistic <span class="citation">(Durand et al., <a href="#ref-durand2011testing">2011</a>)</span>. However, extreme <span class="math inline">\(D\)</span> values occur disproportionately in genomic regions with lower diversity <span class="citation">(S. H. Martin et al., <a href="#ref-martin2014evaluating">2014</a>)</span>. Because genome scans with the <span class="math inline">\(D\)</span> statistic generates too many false positives, more powerful statistics have been developed such as the <span class="math inline">\(f_D\)</span> or <span class="math inline">\(BDF\)</span> statistic <span class="citation">(S. H. Martin et al., <a href="#ref-martin2014evaluating">2014</a>; Pfeifer &amp; Kapan, <a href="#ref-pfeifer2017estimates">2017</a>)</span>. In addition, the <span class="math inline">\(D\)</span> statistic and its extensions cannot be used to identify introgressed regions between sister species (see Figure x panel B); it should be used with three or more lineages to detect the different topologies produced by hybridization <span class="citation">(Rosenzweig et al., <a href="#ref-rosenzweig2016powerful">2016</a>)</span>. To identify introgression between sister species, various alternative statistics have been developed including <span class="math inline">\(RND_{min}\)</span>, which computes the minimum pairwise distance between the two sister species relative to the divergence to an outgroup. By contrast, to the <span class="math inline">\(D\)</span> statistic and its extension, <span class="math inline">\(RND_{min}\)</span> requires phased data <span class="citation">(Rosenzweig et al., <a href="#ref-rosenzweig2016powerful">2016</a>)</span>.</p>
+<p>We propose a statistical method to detect candidates for adaptive introgression that is valid in both the admixture scenario and the introgression scenarios. The proposed approach is based on principal component analysis (PCA), which is well-suited to ascertain population structure of large scale genome-wide dataset <span class="citation">(G. McVean, <a href="#ref-mcvean2009genealogical">2009</a>; Patterson et al., <a href="#ref-patterson2006population">2006</a>)</span>. Numerical solutions to compute principal component scores can be obtained rapidly even with large scale data <span class="citation">(Abraham, Qiu, &amp; Inouye, <a href="#ref-abraham2017flashpca2">2017</a>; Duforet-Frebourg et al., <a href="#ref-duforet2015detecting">2015</a>; Galinsky et al., <a href="#ref-galinsky2016fast">2016</a>)</span>. The proposed approach does not require any biological information in addition to the genome-wide genotype data and should therefore be valuable especially for non-model species where recombination map are not available and where haplotype phasing can be a daunting task. The statistical method we propose ascertains population structure locally in the genome by computing local principal components. Candidate SNPs for local introgression correspond to genomic regions for which population structure of the admixed or introgressed population deviates significantly from genome-wide population structure (Figure <a href="introgression-adaptative-2.html#fig:scenarios">5.6</a>). To capture population structure of the admixed or introgressed individuals with respect to the other individuals, the method computes an average ancestry coefficient. In the following, we investigate to what extent the PCA-based approach provides an alternative to LAI and to the aforementioned phylogenetic statistics in the admixture and introgression scenario. We show the potential of the method to detect adaptive introgression in a hybrid <em>Populus</em> species resulting from a 2-way admixture model <span class="citation">(Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>)</span> TO COMPLETE. The PCA-based method is implemented in the R package pcadapt <span class="citation">(Luu, Bazin, &amp; Blum, <a href="#ref-luu2017pcadapt">2017</a>)</span>.</p>
+</div>
+<div id="materials-and-methods-2" class="section level3 unnumbered">
+<h3>Materials and methods</h3>
+<div id="a-pca-based-approach-to-detect-local-introgression" class="section level4 unnumbered">
+<h4>A PCA-based approach to detect local introgression</h4>
+<p>The objective of PCA is to find a new set of orthogonal variables called the principal components, which are linear combinations of (centered and standardized) allele counts, such that the projections of the data onto these axes lead to an optimal summary of the data. To present the method, we introduce the truncated singular value decomposition (SVD) that approximates the <span class="math inline">\((n \times p)\)</span> centered and scaled genotype matrix <span class="math inline">\({\bf Y}\)</span> by a matrix of smaller rank</p>
+<span class="math display" id="eq:svd-intro">\[\begin{equation}
+  {\bf Y}\approx{\bf U}{\bf \Sigma} {\bf V}^T,
+  \tag{5.1}
+\end{equation}\]</span>
+<p>where <span class="math inline">\({\bf U}\)</span> is a <span class="math inline">\((n \times K)\)</span> orthonormal matrix, <span class="math inline">\({\bf V}\)</span> is a <span class="math inline">\((p \times K)\)</span> orthonormal matrix, <span class="math inline">\({\bf \Sigma}\)</span> is a diagonal <span class="math inline">\((K \times K)\)</span> matrix and <span class="math inline">\(K\)</span> corresponds to the rank of the approximation. The solution of PCA with <span class="math inline">\(K\)</span> components can be obtained using the truncated SVD of equation <a href="introgression-adaptative-2.html#eq:svd-intro">(5.1)</a>: the <span class="math inline">\(K\)</span> columns of <span class="math inline">\({\bf V}\)</span> contain the loadings, which correspond to the contribution of each SNP to the PCs and the <span class="math inline">\(K\)</span> columns of <span class="math inline">\({\bf U}\)</span> contain the PC <em>scores</em> that are usually displayed to visualize population structure <span class="citation">(Duforet-Frebourg et al., <a href="#ref-duforet2015detecting">2015</a>; Patterson et al., <a href="#ref-patterson2006population">2006</a>)</span>.</p>
+<p>To provide local measure of population structure, we compute local PCA scores. For a SNP <span class="math inline">\(j\)</span>, we compute the vector of <em>local scores</em> <span class="math inline">\({\bf U_j}\)</span> that measures population structure locally in the genome</p>
+<span class="math display" id="eq:local-scores">\[\begin{equation}
+  {\bf U}_j = {\bf Y_j}{\bf V_j}{\bf \Sigma}^{-1},
+  \tag{5.2}
+\end{equation}\]</span>
+<p>where <span class="math inline">\({\bf Y_j}\)</span> correspond to the genotype restrained to a genomic window around SNP <span class="math inline">\(j\)</span> and <span class="math inline">\({\bf V_j}\)</span> corresponds to the loadings restrained to a genomic window around SNP <span class="math inline">\(j\)</span>. RAJOUTER CALCUL ONLINE DES SCORES.</p>
+<p>An average local ancestry coefficient <span class="math inline">\(q\)</span> is then obtained from the local scores <span class="math inline">\({\bf U}_j\)</span> using barycentric coordinates for the barycenter <span class="math inline">\(B\)</span> of the local scores of admixed or introgressed individuals. Barycentric coordinates of <span class="math inline">\(B\)</span> correspond to the <span class="math inline">\(K\)</span> coefficients <span class="math inline">\(q_1,\dots,q_K\)</span> (<span class="math inline">\(q_1+\dots+q_K=1\)</span>) such as <span class="math inline">\(B\)</span> can be written as a linear combination <span class="math inline">\(B = q_1 B_1 + \dots + q_K B_K\)</span> where <span class="math inline">\(B_1, \dots, B_K\)</span> are the barycenters of local scores for the <span class="math inline">\(K\)</span> source populations. In the admixture scenario, barycentric coordinates are always between 0 and 1 because local scores of admixed individuals are always contained in the simplex determined by the barycenters of the ancestral populations (Figure <a href="supplementary-information.html#fig:admixture">A.13</a>). By contrasts, barycentric coordinates can be negative or larger than 1 for the introgression scenario (<a href="supplementary-information.html#fig:introgression">A.12</a>). To find outlier regions with excess of ancestry from the donor population <span class="math inline">\(j\)</span> that is one of the <span class="math inline">\(K\)</span> source populations, we compute robust mean <span class="math inline">\(\mu_j\)</span> and variance <span class="math inline">\(\sigma^2_j\)</span> of the average ancestry coefficients using the median absolute deviation and we consider the standardized average ancestry coefficient <span class="math inline">\((q_j - \mu_j) / \sigma_j\)</span>, <span class="math inline">\(j = 1, \dots, K\)</span>.</p>
+</div>
+<div id="parameter-settings-for-local-ancestry-and-adaptive-introgression-software" class="section level4 unnumbered">
+<h4>Parameter settings for local ancestry and adaptive introgression software</h4>
+<p>For the admixture scenario, we consider three software of local ancestry inference, which are EILA, Loter and RFMix <span class="citation">(Maples et al., <a href="#ref-maples2013rfmix">2013</a>; J. J. Yang et al., <a href="#ref-yang2013efficient">2013</a>)</span>. EILA considers genotypes as input and we consider a regularization parameter of <span class="math inline">\(\lambda=0.1\)</span>. Loter uses haplotypes as input data and has no tuning parameter. RFMix uses haplotypes as input data and we consider the default parameter except the window size that was set at 0.002cm. Using the default window size generates error message and as recommended by the manual of RFMix, we reduce window size to overcome this issue. When analyzing Populus data, we consider the same averaging strategy as implemented in the initial analysis with RASPberry and average local ancestry coefficients obtained with RFMix and loter using 250kb windows <span class="citation">(Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>)</span>.</p>
+<p>For the introgression scenario, we compared pcadapt to the <span class="math inline">\(Bd_f\)</span>, <span class="math inline">\(D\)</span>, <span class="math inline">\(f_D\)</span>, and <span class="math inline">\(RND_{min}\)</span> test statistics <span class="citation">(Durand et al., <a href="#ref-durand2011testing">2011</a>; S. H. Martin et al., <a href="#ref-martin2014evaluating">2014</a>; Pfeifer &amp; Kapan, <a href="#ref-pfeifer2017estimates">2017</a>; Rosenzweig et al., <a href="#ref-rosenzweig2016powerful">2016</a>)</span>. The <span class="math inline">\(D\)</span>, <span class="math inline">\(Bd_f\)</span> and <span class="math inline">\(f_D\)</span> statistics require genotype data for the three related species as well as from an outgroup species, for which we also simulate genotypes (@ref(tab:stats_introgression)). Because <span class="math inline">\(RND_{min}\)</span> tests for introgression between sister species, we provide sequence (haplotype) data from 3 species, which are the introgressed, and donor species as well as an outgroup species (Figure <a href="introgression-adaptative-2.html#fig:scenarios">5.6</a>). When using pcadapt, we provide genotype data from three species, which are introgressed, donor and sister species (Figure <a href="introgression-adaptative-2.html#fig:scenarios">5.6</a>).</p>
+
+<div class="figure" style="text-align: center"><span id="fig:scenarios"></span>
+<img src="figure/pca.png" alt="Principal components obtained for a neutral region and an outlier region in the admixture scenario (left panels) and in the introgression scenario (right panels). For the admixture scenario, simulations use phased genotype data from P. balsamifera and P. trichocarpa individuals and we assume that the difference \(\Delta_q\) of ancestry between outlier and neutral regions is of \(50\%\) and that admixture took place \(\lambda = 100\) generations ago. For the introgression scenario, the gene flow parameter \(f = 0.5\)." width="\textwidth" />
+<p class="caption">
+Figure 5.6: Principal components obtained for a neutral region and an outlier region in the admixture scenario (left panels) and in the introgression scenario (right panels). For the admixture scenario, simulations use phased genotype data from <em>P. balsamifera</em> and <em>P. trichocarpa</em> individuals and we assume that the difference <span class="math inline">\(\Delta_q\)</span> of ancestry between outlier and neutral regions is of <span class="math inline">\(50\%\)</span> and that admixture took place <span class="math inline">\(\lambda = 100\)</span> generations ago. For the introgression scenario, the gene flow parameter <span class="math inline">\(f = 0.5\)</span>.
+</p>
+</div>
+</div>
+<div id="simulations-under-an-admixture-scenario" class="section level4 unnumbered">
+<h4>Simulations under an admixture scenario</h4>
+<p>We consider the example of admixture of two <em>Populus</em> species in North America to simulate admixed individuals <span class="citation">(Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>)</span>. We considered genotypes from chromosome 6 of <span class="math inline">\(25\)</span> individuals from the species <em>Populus balsamifera}</em> (balsam poplar) and <span class="math inline">\(25\)</span> individuals from the species <em>Populus trichocarpa</em> (black cottonwood) <span class="citation">(Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>)</span>. In order to generate admixed individuals, we phase the 50 genotypes using BEAGLE <span class="citation">(S. R. Browning &amp; Browning, <a href="#ref-browning2007rapid">2007</a>)</span>. To construct admixed genomes, we began at the first marker on each chromosome and sampled <em>Populus balsamifera</em> ancestry with probability <span class="math inline">\(\alpha=70\%\)</span> and <em>Populus trichocarpa</em> ancestry with probability <span class="math inline">\((1 - \alpha) = 30\%\)</span>. Haplotype of the admixed genome was form by sampling at random one of the haplotype coming from the <em>P. balsamifera</em> or <em>P. trichocarpa</em> species. Ancestry was resampled based on an exponential distribution with weight <span class="math inline">\(\lambda\)</span>, which corresponds to the number of generations since admixture <span class="citation">(Price et al., <a href="#ref-price2009sensitive">2009</a>)</span>. A new ancestry tract was sampled with probability <span class="math inline">\(1 - e^{-\lambda g}\)</span> when traversing a genetic distance of <span class="math inline">\(g\)</span> Morgans. Each time ancestry was resampled, we sampled <em>P. balsamifera</em> ancestry with probability <span class="math inline">\(\alpha = 70\%\)</span> and <em>P. trichocarpa</em> ancestry with probability <span class="math inline">\((1 - \alpha) = 30\%\)</span>. In the simulations, we consider the first <span class="math inline">\(100,000\)</span> SNPs of the chromosome 6 of Populus individuals. To model adaptive introgression, we assume that there is a region containing <span class="math inline">\(1,000\)</span> SNPs where <em>P. balsamifera</em> ancestry was equal to <span class="math inline">\(70\%-\Delta_q\)</span> instead of <span class="math inline">\(70\%\)</span>. We consider different values for <span class="math inline">\(\Delta_q\)</span> which are equal to <span class="math inline">\(5\%\)</span>, <span class="math inline">\(10\%\)</span>, <span class="math inline">\(15\%\)</span>, <span class="math inline">\(20\%\)</span>, <span class="math inline">\(30\%\)</span>, <span class="math inline">\(40\%\)</span>, or <span class="math inline">\(50\%\)</span>. Simulations correspond to a model of soft sweep where different alleles of <em>P. balsamifera</em> ancestry, which span the <span class="math inline">\(500\)</span> SNPs genomic regions, are adaptive <span class="citation">(Messer &amp; Petrov, <a href="#ref-messer2013population">2013</a>)</span>. Because there is no recombination map available in <em>Populus</em>, we assume a constant recombination rate of 0.05cM/Mbp <span class="citation">(Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>)</span>. We consider three different values for the time since admixture <span class="math inline">\(\lambda\)</span>, which is equal to <span class="math inline">\(10\)</span>, <span class="math inline">\(100\)</span>, or <span class="math inline">\(1000\)</span> generations. For each value of <span class="math inline">\(\lambda\)</span> and of <span class="math inline">\(\Delta_q\)</span>, we generate <span class="math inline">\(50\)</span> replicates containing <span class="math inline">\(25\)</span> admixed individuals each. When looking for adaptive introgression in admixed <em>P. trichocarpa</em> individuals, we consider <span class="math inline">\(1,418,814\)</span> SNPs typed in <span class="math inline">\(36\)</span> admixed individuals <span class="citation">(Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>)</span>.</p>
+</div>
+<div id="simulations-under-an-introgression-scenario" class="section level4 unnumbered">
+<h4>Simulations under an introgression scenario</h4>
+<p>We consider simulations of introgression as described by <span class="citation">(S. H. Martin et al., <a href="#ref-martin2014evaluating">2014</a>)</span>. To simulate genomes, we concatenate 45 <span class="math inline">\(5,000\)</span> bp regions without introgression and 5 <span class="math inline">\(5,000\)</span> bp regions where each individuals from the introgressed species is drawn from the donor population with a probability <span class="math inline">\(f\)</span> (Supplementary Figure <a href="supplementary-information.html#fig:introgression">A.12</a>). The parameter <span class="math inline">\(f\)</span> measures the extent of introgression for introgressed regions. When <span class="math inline">\(f = 1\)</span> all individuals from the introgressed species come from the donor population and <span class="math inline">\(f = 0\)</span> correspond to the genomic windows without introgression. The <em>ms</em> command lines for simulating neutral and introgressed (<span class="math inline">\(f = 20\%\)</span>) regions for <span class="math inline">\(25\)</span> individuals in each population are given as follows <span class="citation">(Hudson, <a href="#ref-hudson2002generating">2002</a>)</span></p>
+<pre><code>./ms 200 1 -I 4 50 50 50 50
+
+-ej 1 2 1 -ej 2 3 1 -ej 3 4 1
+
+-r 50 5000 -T #non-introgressed
+
+./ms 200 1 -I 4 50 50 50 50
+
+-ej 1 2 1 -ej 2 3 1 -ej 3 4 1 -es 0.2 2 0.8 -ej 0.2 5 3
+
+-r 50 5000 -T #introgressed</code></pre>
+<p>Sequence data were then generated using the software Seq-Gen using the Hasegawa-Kishino-Yano substitution model and a branch scaling factor of 0.01 ( <code>./seq-gen -mHKY -l 5000 -s 0.01</code>) <span class="citation">(Rambaut &amp; Grass, <a href="#ref-rambaut1997seq">1997</a>)</span>.</p>
+</div>
+<div id="evaluation-rules-for-simulations" class="section level4 unnumbered">
+<h4>Evaluation rules for simulations</h4>
+<p>For admixture scenarios, we consider the 50,000 first SNPs of chromosome 6 when evaluating different software. To evaluate statistical power, we consider 50 windows containing 1,000 SNPs each. To compute a score for each window, we consider two methods: averaging ancestry coefficients over all SNPs within a window or considering the maximum of ancestry coefficients within a window. For a fixed number of regions considered as outliers, we report statistical power defined as the average over simulations of the number of detected outlier regions divided by five, which are the true number of outlier regions.</p>
+<p>For introgression scenarios, we simulated 50 windows of <span class="math inline">\(5,000\)</span> bp. All statistics but pcadapt are computed using <span class="math inline">\(5,000\)</span> bp windows. Statistical power is returned when considering the 5 top hits, which corresponds to the 5 largest values of the test statistics.</p>
+</div>
+</div>
+<div id="results-2" class="section level3 unnumbered">
+<h3>Results</h3>
+<div id="simulations-under-an-admixture-scenario-1" class="section level4 unnumbered">
+<h4>Simulations under an admixture scenario</h4>
+<p>For a simulated admixture scenario between two <em>Populus</em> species, we display standardized ancestry coefficients computed by pcadapt and LAI software (Supplementary Figure <a href="supplementary-information.html#fig:ancestry">A.8</a>). When simulating admixed individuals, we assume that there are five outlier regions where the amount of <em>P. trichocarpa</em> ancestry is increased by an amount of <span class="math inline">\(\Delta_q\)</span> compared to other regions. In the genome scans where <span class="math inline">\(\Delta_q=xx\)</span> and admixture occurred <span class="math inline">\(\lambda = xx\)</span> generations ago, the top 5 peaks obtained with all software correspond to the peaks that should be detected (Figure <a href="supplementary-information.html#fig:ancestry">A.8</a>). The power of LAI software based on haplotypes (Loter and RFMix), when varying values of <span class="math inline">\(\Delta_q\)</span> and of <span class="math inline">\(\lambda\)</span>, is comparable to the power obtained by an ideal method called <em>oracle</em>, which would know ancestry chunks for each admixed individual (Figure <a href="introgression-adaptative-2.html#fig:power-admix">5.7</a>). For Loter, the loss of power—averaged over <span class="math inline">\(\Delta_q\)</span>—is comprised between <span class="math inline">\(1\%\)</span> and <span class="math inline">\(19\%\)</span> depending on the number of generations since admixture (Supplementary Figure <a href="supplementary-information.html#fig:losspower-admix">A.9</a>). For RFMix, the loss of power is comprised between <span class="math inline">\(3\%\)</span> and <span class="math inline">\(11\%\)</span>. When considering methods based on genotypes, we find that the power obtained with EILA is considerably reduced compared to an oracle because loss of power is always larger than <span class="math inline">\(55\%\)</span>. When considering other values of the regularization parameter <span class="math inline">\(\lambda\)</span> for EILA, statistical power was further reduced. By contrast, the power of pcadapt is comparable to the power obtained with haplotype-based methods. Compared to an oracle, the loss of power of pcadapt is comprised between <span class="math inline">\(3\%\)</span> and <span class="math inline">\(7\%\)</span>. The power of pcadapt is increased compared to haplotype-based methods for ancient admixture events (<span class="math inline">\(\lambda=1,000\)</span> generations) whereas it is decreased for recent admixture events (<span class="math inline">\(\lambda=10\)</span> generations) (Figure <a href="introgression-adaptative-2.html#fig:power-admix">5.7</a>). Because we evaluate statistical power on a genomic region-by-region basis, we had to define a compound ancestry measure for each genomic region and Figure <a href="introgression-adaptative-2.html#fig:power-admix">5.7</a> correspond to results obtained when considering the averaging ancestry coefficient within each genomic region. If we rather compute the maximum of ancestry coefficients within each window, the power of pcadapt is again increased compared to haplotype-based methods for ancient admixture events whereas results are more balanced for recent admixture events (Supplementary Figure <a href="supplementary-information.html#fig:power-admix-max">A.10</a>). Although pcadapt considers genotypes only, we find that it provides statistical power comparable to LAI software that make use of haplotypes. When considering additional hits to the five top hits, the statistical power of pcadapt is again comparable to the one obtained with haplotype-based methods (Supplementary Figure <a href="supplementary-information.html#fig:si-power-admix">A.11</a>).</p>
+
+<div class="figure" style="text-align: center"><span id="fig:power-admix"></span>
+<img src="figure/power_Dq.png" alt="Proportion of true outlier peaks among the five top peaks found with pcadapt and different LAI methods (EILA, Loter and RFMix) in a scenario where 2 Populus populations experienced admixture. Proportion of true outlier peaks is displayed as a function of the difference \(\Delta_q\) of ancestry between outlier and neutral regions. The three panels correspond to the three different possible values (\(\lambda=10\) or \(100\) or \(1000\)) of the number of generations since admixture." width="\textwidth" />
+<p class="caption">
+Figure 5.7: Proportion of true outlier peaks among the five top peaks found with pcadapt and different LAI methods (EILA, Loter and RFMix) in a scenario where 2 Populus populations experienced admixture. Proportion of true outlier peaks is displayed as a function of the difference <span class="math inline">\(\Delta_q\)</span> of ancestry between outlier and neutral regions. The three panels correspond to the three different possible values (<span class="math inline">\(\lambda=10\)</span> or <span class="math inline">\(100\)</span> or <span class="math inline">\(1000\)</span>) of the number of generations since admixture.
+</p>
+</div>
+</div>
+<div id="adaptive-introgression-in-populus-admixed-individuals" class="section level4 unnumbered">
+<h4>Adaptive introgression in Populus admixed individuals</h4>
+<p>We replicated the search for adaptive introgression in admixed Populus species <span class="citation">(Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>)</span>. We searched for genomic regions with excess of <em>P. balsamifera</em> ancestry (boreal species) in admixed <em>P. trichocarpa</em> individuals (temperate species). We compare outlier regions found with RFMix, pcadapt and Loter to the regions already found by <span class="citation">Suarez-Gonzalez (<a href="#ref-suarez2016">2016</a>)</span> with the software RASPberry, which implements the HAPMIX model for local ancestry. All software found the peak in chromosome 6 that is located 3.36Mb away from the start of the chromosome (@ref(fig:ancestry_chr6)) <span class="citation">(Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>)</span>. In addition to this peak, there are 2 additional peaks above the 3 s.d. threshold that are found with pcadapt. These peaks are also found with RFMix and one of this peak is at 2.5 s.d. when using Loter. The first peak corresponds to a 200kbp region that starts at 14.150 Mb away from the start of the chromosome and the second peak corresponds to a 150 kbp region that starts at 15,500,500bp away from the start. The functional annotation of the transcript Potri.006G161900.1 found in the second region is “Vernalization intensive protein” and vernalization is a trait known to be involved in an adaptation to extreme winter in Arabidopsis <span class="citation">(Duncan et al., <a href="#ref-duncan2015seasonal">2015</a>)</span>. The list of other transcripts and of corresponding functional annotations are provided in Supplementary Table <a href="supplementary-information.html#tab:annotation">A.1</a>.</p>
+</div>
+<div id="simulations-under-an-introgression-scenario-1" class="section level4 unnumbered">
+<h4>Simulations under an introgression scenario</h4>
+<p>We compared power of several introgression statistics in introgression scenarios. When the proportion <span class="math inline">\(f\)</span> of introgression for introgressed region is equal to 1, all individual from the introgressed population descend from the donor population. In this situation of massive introgression, the power of all statistics is equal to <span class="math inline">\(100\%\)</span> except for the <span class="math inline">\(D\)</span> statistics, which has a power of <span class="math inline">\(94\%\)</span> (Figure @ref(fig:power_introgression)). The power of all statistics remains at <span class="math inline">\(100\%\)</span> when <span class="math inline">\(f \geq 0.7\)</span> except the <span class="math inline">\(D\)</span> statistic whose power decreases to <span class="math inline">\(80\%\)</span> for <span class="math inline">\(f = 80\%\)</span>. When <span class="math inline">\(f\)</span> further decreases, powers of all statistics also decrease with the <span class="math inline">\(D\)</span> statistics being the less powerful statistic. The more powerful statistics is <span class="math inline">\(RND_{min}\)</span>, followed by <span class="math inline">\(f_D\)</span>, <span class="math inline">\(Bd_f\)</span>, and pcadapt. For the most difficult scenarios where <span class="math inline">\(f = 5\%\)</span>, the power of <span class="math inline">\(RND_{min}\)</span> is <span class="math inline">\(68\%\)</span>, the power of <span class="math inline">\(f_d\)</span> is <span class="math inline">\(64\%\)</span>, the power of <span class="math inline">\(Bd_f\)</span> is <span class="math inline">\(60\%\)</span>, the power of pcadapt is <span class="math inline">\(56\%\)</span> and the power of <span class="math inline">\(D\)</span> is <span class="math inline">\(38\%\)</span>.</p>
+<p>We consider <em>Populus</em> simulated admixed individuals to evaluate if the PCA-based approach manages to identify true outliers for local ancestry. By considering the 5 peaks with highest values of local ancestry, we compare statistical power obtained with the PCA-based approach and with LAI software. For each software, statistical power decreases as a function of <span class="math inline">\(\Delta_q\)</span> as it was expected (Figure <a href="introgression-adaptative-2.html#fig:power-admix">5.7</a>). Among all software we consider, RFMix and Loter maximize statistical power whatever the value of the time since admixture <span class="math inline">\(\lambda\)</span> and of the difference of allele frequency between introgressed and non-introgressed regions (Figure <a href="introgression-adaptative-2.html#fig:power-admix">5.7</a>). Although the power of the PCA approach is reduced, the loss of power is very small because the relative loss of power when compared to RFMix or Loter is comprised between <span class="math inline">\(xx\%\)</span> and <span class="math inline">\(xx\%\)</span>. By contrast, the reduction of power obtained with EILA, which is another method that use genotype only, is considerable because it ranges between <span class="math inline">\(xx\%\)</span> and <span class="math inline">\(xx\%\)</span> when compared to Loter.</p>
+</div>
+<div id="effect-of-window-size" class="section level4 unnumbered">
+<h4>Effect of window size</h4>
+<p>We consider simulations in a scenario of admixture between <em>Populus balsamifera</em> and <em>Populus trichocarpa</em> where a given portion of the genome was involved in adaptive introgression (Figure x). We consider that outlier regions corresponds to SNPs for which the average <em>balsamifera</em> ancestry coefficient is beyond three standard deviations of the average ancestry coefficients. Provided that the window size <span class="math inline">\(s\)</span> used to estimate local PCA scores is smaller than 0.11cM, we found that the FDR is between <span class="math inline">\(ff\)</span> and <span class="math inline">\(ff\)</span>. When <span class="math inline">\(s \leq 0.11\)</span>cM, the minimal value of <span class="math inline">\(ss\%\)</span> is obtained for the smallest window size and the largest number of generations since admixture whereas the largest value of FDR is obtained for the largest value of window size. When the window size <span class="math inline">\(s&gt;0.11cM\)</span>, largest values of FDR can be obtained. For <span class="math inline">\(s = d\)</span> and <span class="math inline">\(xx\)</span> generations occurred since admixture, the FDR is of <span class="math inline">\(ee\%\)</span>.</p>
+</div>
+<div id="comparison-with-software-for-local-ancestry-inference" class="section level4 unnumbered">
+<h4>Comparison with software for Local Ancestry Inference</h4>
+</div>
+</div>
+<div id="discussion-2" class="section level3 unnumbered">
+<h3>Discussion</h3>
+
+<div class="figure" style="text-align: center"><span id="fig:power-chr6"></span>
+<img src="figure/Chr06_window_size_250kbp.png" alt="Standardized average Populus balsamifera ancestry coefficient computed with pcadapt, Loter, RFmix, and RASPberry for admixed Populus trichocarpa individuals at chromosome 6. We report the RASPberry genome scan that has initially been performed to detect adaptive introgression and which is based on 77,447 SNPs (Suarez-Gonzalez, 2016). Genome scans reported with all other software are based on 1,418,814 SNPs." width="\textwidth" />
+<p class="caption">
+Figure 5.8: Standardized average <em>Populus balsamifera</em> ancestry coefficient computed with pcadapt, Loter, RFmix, and RASPberry for admixed <em>Populus trichocarpa</em> individuals at chromosome 6. We report the RASPberry genome scan that has initially been performed to detect adaptive introgression and which is based on 77,447 SNPs <span class="citation">(Suarez-Gonzalez, <a href="#ref-suarez2016">2016</a>)</span>. Genome scans reported with all other software are based on 1,418,814 SNPs.
+</p>
+</div>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-suarez2016">
+<p>Suarez-Gonzalez, et a., Adriana. (2016). Genomic and functional approaches reveal a case of adaptive introgression from populus balsamifera (balsam poplar) in p. trichocarpa (black cottonwood). <em>Molecular Ecology</em>, 2427–2442.</p>
+</div>
+<div id="ref-price2009sensitive">
+<p>Price, A. L., Tandon, A., Patterson, N., Barnes, K. C., Rafaels, N., Ruczinski, I., … Myers, S. (2009). Sensitive detection of chromosomal segments of distinct ancestry in admixed populations. <em>PLoS Genetics</em>, <em>5</em>(6), e1000519.</p>
+</div>
+<div id="ref-martin2014evaluating">
+<p>Martin, S. H., Davey, J. W., &amp; Jiggins, C. D. (2014). Evaluating the use of abba–BABA statistics to locate introgressed loci. <em>Molecular Biology and Evolution</em>, <em>32</em>(1), 244–257.</p>
+</div>
+<div id="ref-rosenzweig2016powerful">
+<p>Rosenzweig, B. K., Pease, J. B., Besansky, N. J., &amp; Hahn, M. W. (2016). Powerful methods for detecting introgressed regions from population genomic data. <em>Molecular Ecology</em>, <em>25</em>(11), 2387–2397.</p>
+</div>
+<div id="ref-pfeifer2017estimates">
+<p>Pfeifer, B., &amp; Kapan, D. D. (2017). Estimates of introgression as a function of pairwise distances. <em>BioRxiv</em>, 154377.</p>
+</div>
+<div id="ref-arnold2009adaptation">
+<p>Arnold, M. L., &amp; Martin, N. H. (2009). Adaptation by introgression. <em>Journal of Biology</em>, <em>8</em>(9), 82.</p>
+</div>
+<div id="ref-dasmahapatra2012butterfly">
+<p>Dasmahapatra, K. K., Walters, J. R., Briscoe, A. D., Davey, J. W., Whibley, A., Nadeau, N. J., … others. (2012). Butterfly genome reveals promiscuous exchange of mimicry adaptations among species. <em>Nature</em>, <em>487</em>(7405), 94.</p>
+</div>
+<div id="ref-fraisse2014gene">
+<p>Fraïsse, C., Roux, C., Welch, J. J., &amp; Bierne, N. (2014). Gene-flow in a mosaic hybrid zone: Is local introgression adaptive? <em>Genetics</em>, <em>197</em>(3), 939–951.</p>
+</div>
+<div id="ref-hedrick2013adaptive">
+<p>Hedrick, P. W. (2013). Adaptive introgression in animals: Examples and comparison to new mutation and standing variation as sources of adaptive variation. <em>Molecular Ecology</em>, <em>22</em>(18), 4606–4618.</p>
+</div>
+<div id="ref-jeong2014admixture">
+<p>Jeong, C., Alkorta-Aranburu, G., Basnyat, B., Neupane, M., Witonsky, D. B., Pritchard, J. K., … Di Rienzo, A. (2014). Admixture facilitates genetic adaptations to high altitude in tibet. <em>Nature Communications</em>, <em>5</em>, 3281.</p>
+</div>
+<div id="ref-nelson2017genome">
+<p>Nelson, R. M., Wallberg, A., Simões, Z. L. P., Lawson, D. J., &amp; Webster, M. T. (2017). Genome-wide analysis of admixture and adaptation in the africanized honeybee. <em>Molecular Ecology</em>.</p>
+</div>
+<div id="ref-patin2017dispersals">
+<p>Patin, E., Lopez, M., Grollemund, R., Verdu, P., Harmant, C., Quach, H., … others. (2017). Dispersals and genetic adaptation of bantu-speaking populations in africa and north america. <em>Science</em>, <em>356</em>(6337), 543–546.</p>
+</div>
+<div id="ref-payseur2016genomic">
+<p>Payseur, B. A., &amp; Rieseberg, L. H. (2016). A genomic perspective on hybridization and speciation. <em>Molecular Ecology</em>, <em>25</em>(11), 2337–2360.</p>
+</div>
+<div id="ref-vonholdt2016admixture">
+<p>vonHoldt, B. M., Kays, R., Pollinger, J. P., &amp; Wayne, R. K. (2016). Admixture mapping identifies introgressed genomic regions in north american canids. <em>Molecular Ecology</em>, <em>25</em>(11), 2443–2453.</p>
+</div>
+<div id="ref-song2011adaptive">
+<p>Song, Y., Endepols, S., Klemann, N., Richter, D., Matuschka, F.-R., Shih, C.-H., … Kohn, M. H. (2011). Adaptive introgression of anticoagulant rodent poison resistance by hybridization between old world mice. <em>Current Biology</em>, <em>21</em>(15), 1296–1301.</p>
+</div>
+<div id="ref-pardo2012adaptive">
+<p>Pardo-Diaz, C., Salazar, C., Baxter, S. W., Merot, C., Figueiredo-Ready, W., Joron, M., … Jiggins, C. D. (2012). Adaptive introgression across species boundaries in heliconius butterflies. <em>PLoS Genetics</em>, <em>8</em>(6), e1002752.</p>
+</div>
+<div id="ref-buerkle2008admixture">
+<p>Buerkle, C. A., &amp; Lexer, C. (2008). Admixture as the basis for genetic mapping. <em>Trends in Ecology &amp; Evolution</em>, <em>23</em>(12), 686–694.</p>
+</div>
+<div id="ref-baran2012fast">
+<p>Baran, Y., Pasaniuc, B., Sankararaman, S., Torgerson, D. G., Gignoux, C., Eng, C., … others. (2012). Fast and accurate inference of local ancestry in latino populations. <em>Bioinformatics</em>, <em>28</em>(10), 1359–1367.</p>
+</div>
+<div id="ref-maples2013rfmix">
+<p>Maples, B. K., Gravel, S., Kenny, E. E., &amp; Bustamante, C. D. (2013). RFMix: A discriminative modeling approach for rapid and robust local-ancestry inference. <em>The American Journal of Human Genetics</em>, <em>93</em>(2), 278–288.</p>
+</div>
+<div id="ref-rheindt2013introgression">
+<p>Rheindt, F. E., Fujita, M. K., Wilton, P. R., &amp; Edwards, S. V. (2013). Introgression and phenotypic assimilation in zimmerius flycatchers (tyrannidae): Population genetic and phylogenetic inferences from genome-wide snps. <em>Systematic Biology</em>, <em>63</em>(2), 134–152.</p>
+</div>
+<div id="ref-smith2013heliconius">
+<p>Smith, J., &amp; Kronforst, M. R. (2013). Do heliconius butterfly species exchange mimicry alleles? <em>Biology Letters</em>, <em>9</em>(4), 20130503.</p>
+</div>
+<div id="ref-zhang2016genome">
+<p>Zhang, W., Dasmahapatra, K. K., Mallet, J., Moreira, G. R., &amp; Kronforst, M. R. (2016). Genome-wide introgression among distantly related heliconius butterfly species. <em>Genome Biology</em>, <em>17</em>(1), 25.</p>
+</div>
+<div id="ref-durand2011testing">
+<p>Durand, E. Y., Patterson, N., Reich, D., &amp; Slatkin, M. (2011). Testing for ancient admixture between closely related populations. <em>Molecular Biology and Evolution</em>, <em>28</em>(8), 2239–2252.</p>
+</div>
+<div id="ref-mcvean2009genealogical">
+<p>McVean, G. (2009). A genealogical interpretation of principal components analysis. <em>PLoS Genetics</em>, <em>5</em>(10), e1000686.</p>
+</div>
+<div id="ref-patterson2006population">
+<p>Patterson, N., Price, A. L., &amp; Reich, D. (2006). Population structure and eigenanalysis. <em>PLoS Genetics</em>, <em>2</em>(12), e190.</p>
+</div>
+<div id="ref-abraham2017flashpca2">
+<p>Abraham, G., Qiu, Y., &amp; Inouye, M. (2017). FlashPCA2: Principal component analysis of biobank-scale genotype datasets. <em>Bioinformatics</em>.</p>
+</div>
+<div id="ref-duforet2015detecting">
+<p>Duforet-Frebourg, N., Luu, K., Laval, G., Bazin, E., &amp; Blum, M. G. (2015). Detecting genomic signatures of natural selection with principal component analysis: Application to the 1000 genomes data. <em>Molecular Biology and Evolution</em>, <em>33</em>(4), 1082–1093.</p>
+</div>
+<div id="ref-galinsky2016fast">
+<p>Galinsky, K. J., Bhatia, G., Loh, P.-R., Georgiev, S., Mukherjee, S., Patterson, N. J., &amp; Price, A. L. (2016). Fast principal-component analysis reveals convergent evolution of adh1b in europe and east asia. <em>The American Journal of Human Genetics</em>, <em>98</em>(3), 456–472.</p>
+</div>
+<div id="ref-luu2017pcadapt">
+<p>Luu, K., Bazin, E., &amp; Blum, M. G. (2017). Pcadapt: An r package to perform genome scans for selection based on principal component analysis. <em>Molecular Ecology Resources</em>, <em>17</em>(1), 67–77.</p>
+</div>
+<div id="ref-yang2013efficient">
+<p>Yang, J. J., Li, J., Buu, A., &amp; Williams, L. K. (2013). Efficient inference of local ancestry. <em>Bioinformatics</em>, <em>29</em>(21), 2750–2756.</p>
+</div>
+<div id="ref-browning2007rapid">
+<p>Browning, S. R., &amp; Browning, B. L. (2007). Rapid and accurate haplotype phasing and missing-data inference for whole-genome association studies by use of localized haplotype clustering. <em>The American Journal of Human Genetics</em>, <em>81</em>(5), 1084–1097.</p>
+</div>
+<div id="ref-messer2013population">
+<p>Messer, P. W., &amp; Petrov, D. A. (2013). Population genomics of rapid adaptation by soft selective sweeps. <em>Trends in Ecology &amp; Evolution</em>, <em>28</em>(11), 659–669.</p>
+</div>
+<div id="ref-hudson2002generating">
+<p>Hudson, R. R. (2002). Generating samples under a wright–Fisher neutral model of genetic variation. <em>Bioinformatics</em>, <em>18</em>(2), 337–338.</p>
+</div>
+<div id="ref-rambaut1997seq">
+<p>Rambaut, A., &amp; Grass, N. C. (1997). Seq-gen: An application for the monte carlo simulation of dna sequence evolution along phylogenetic trees. <em>Bioinformatics</em>, <em>13</em>(3), 235–238.</p>
+</div>
+<div id="ref-duncan2015seasonal">
+<p>Duncan, S., Holm, S., Questa, J., Irwin, J., Grant, A., &amp; Dean, C. (2015). Seasonal shift in timing of vernalization as an adaptation to extreme winter. <em>Elife</em>, <em>4</em>, e06620.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="detection-doutliers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="aspect-computationnel.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

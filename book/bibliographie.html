@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>THÈSE</title>
+  <meta name="description" content="THÈSE">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="THÈSE" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="THÈSE" />
+  
+  
+  
+
+<meta name="author" content="Keurcien LUU">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="r-python.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#la-genetique-des-populations"><i class="fa fa-check"></i><b>1.1</b> La génétique des populations</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="introduction.html"><a href="introduction.html#levolution-comme-point-de-depart"><i class="fa fa-check"></i><b>1.1.1</b> L’évolution comme point de départ</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#a-lorigine-de-la-variabilite-genetique"><i class="fa fa-check"></i><b>1.2</b> À l’origine de la variabilité génétique</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="introduction.html"><a href="introduction.html#la-theorie-de-levolution"><i class="fa fa-check"></i><b>1.2.1</b> La théorie de l’évolution</a></li>
+<li class="chapter" data-level="1.2.2" data-path="introduction.html"><a href="introduction.html#levolution-dune-theorie"><i class="fa fa-check"></i><b>1.2.2</b> L’évolution d’une théorie</a></li>
+<li class="chapter" data-level="1.2.3" data-path="introduction.html"><a href="introduction.html#forces-evolutives"><i class="fa fa-check"></i><b>1.2.3</b> Forces évolutives</a></li>
+<li class="chapter" data-level="1.2.4" data-path="introduction.html"><a href="introduction.html#adaptation-locale"><i class="fa fa-check"></i><b>1.2.4</b> Adaptation locale</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#donnees-de-polymorphismes-genetiques"><i class="fa fa-check"></i><b>1.3</b> Données de polymorphismes génétiques</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="introduction.html"><a href="introduction.html#des-donnees-en-grande-dimension"><i class="fa fa-check"></i><b>1.3.1</b> Des données en grande dimension</a></li>
+<li class="chapter" data-level="1.3.2" data-path="introduction.html"><a href="introduction.html#les-marqueurs-genetiques"><i class="fa fa-check"></i><b>1.3.2</b> Les marqueurs génétiques</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#introgression-adaptative"><i class="fa fa-check"></i><b>1.4</b> Introgression adaptative</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="introduction.html"><a href="introduction.html#quest-ce-que-lintrogression"><i class="fa fa-check"></i><b>1.4.1</b> Qu’est-ce que l’introgression ?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="introduction.html"><a href="introduction.html#les-motivations-de-la-these"><i class="fa fa-check"></i><b>1.5</b> Les motivations de la thèse</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="etat-de-lart.html"><a href="etat-de-lart.html"><i class="fa fa-check"></i><b>2</b> État de l’art</a><ul>
+<li class="chapter" data-level="2.1" data-path="etat-de-lart.html"><a href="etat-de-lart.html#adaptation-locale-1"><i class="fa fa-check"></i><b>2.1</b> Adaptation locale</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="etat-de-lart.html"><a href="etat-de-lart.html#les-scans-genomiques"><i class="fa fa-check"></i><b>2.1.1</b> Les scans génomiques</a></li>
+<li class="chapter" data-level="2.1.2" data-path="etat-de-lart.html"><a href="etat-de-lart.html#lindice-de-fixation"><i class="fa fa-check"></i><b>2.1.2</b> L’indice de fixation</a></li>
+<li class="chapter" data-level="2.1.3" data-path="etat-de-lart.html"><a href="etat-de-lart.html#modele-de-flk"><i class="fa fa-check"></i><b>2.1.3</b> Modèle de FLK</a></li>
+<li class="chapter" data-level="2.1.4" data-path="etat-de-lart.html"><a href="etat-de-lart.html#modele-de-outflank"><i class="fa fa-check"></i><b>2.1.4</b> Modèle de OutFLANK</a></li>
+<li class="chapter" data-level="2.1.5" data-path="etat-de-lart.html"><a href="etat-de-lart.html#modele-du-logiciel-bayescan"><i class="fa fa-check"></i><b>2.1.5</b> Modèle du logiciel Bayescan</a></li>
+<li class="chapter" data-level="2.1.6" data-path="etat-de-lart.html"><a href="etat-de-lart.html#fast-pca"><i class="fa fa-check"></i><b>2.1.6</b> Fast PCA</a></li>
+<li class="chapter" data-level="2.1.7" data-path="etat-de-lart.html"><a href="etat-de-lart.html#analyse-en-composantes-principales-parcimonieuse"><i class="fa fa-check"></i><b>2.1.7</b> Analyse en Composantes Principales parcimonieuse</a></li>
+<li class="chapter" data-level="2.1.8" data-path="etat-de-lart.html"><a href="etat-de-lart.html#bootstrap-acp"><i class="fa fa-check"></i><b>2.1.8</b> Bootstrap ACP</a></li>
+<li class="chapter" data-level="2.1.9" data-path="etat-de-lart.html"><a href="etat-de-lart.html#contexte"><i class="fa fa-check"></i><b>2.1.9</b> Contexte</a></li>
+<li class="chapter" data-level="2.1.10" data-path="etat-de-lart.html"><a href="etat-de-lart.html#tests-multiples"><i class="fa fa-check"></i><b>2.1.10</b> Tests multiples</a></li>
+<li class="chapter" data-level="2.1.11" data-path="etat-de-lart.html"><a href="etat-de-lart.html#controle-du-taux-de-fausse-decouverte"><i class="fa fa-check"></i><b>2.1.11</b> Contrôle du taux de fausse découverte</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="etat-de-lart.html"><a href="etat-de-lart.html#introgression-adaptative-1"><i class="fa fa-check"></i><b>2.2</b> Introgression adaptative</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="etat-de-lart.html"><a href="etat-de-lart.html#coefficients-de-metissage-globaux-et-locaux"><i class="fa fa-check"></i><b>2.2.1</b> Coefficients de métissage globaux et locaux</a></li>
+<li class="chapter" data-level="2.2.2" data-path="etat-de-lart.html"><a href="etat-de-lart.html#lien-entre-analyse-en-composantes-principales-et-metissage-global."><i class="fa fa-check"></i><b>2.2.2</b> Lien entre Analyse en Composantes Principales et métissage global.</a></li>
+<li class="chapter" data-level="2.2.3" data-path="etat-de-lart.html"><a href="etat-de-lart.html#analyse-en-composantes-principales-locale"><i class="fa fa-check"></i><b>2.2.3</b> Analyse en Composantes Principales locale</a></li>
+<li class="chapter" data-level="2.2.4" data-path="etat-de-lart.html"><a href="etat-de-lart.html#sensibilite-a-limputation-des-donnees-manquantes"><i class="fa fa-check"></i><b>2.2.4</b> Sensibilité à l’imputation des données manquantes</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html"><i class="fa fa-check"></i><b>3</b> La communalité : une statistique proche de la <span class="math inline">\(F_{ST}\)</span></a><ul>
+<li class="chapter" data-level="3.1" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#contributions"><i class="fa fa-check"></i><b>3.1</b> Contributions</a></li>
+<li class="chapter" data-level="3.2" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#resume-de-larticle"><i class="fa fa-check"></i><b>3.2</b> Résumé de l’article</a></li>
+<li class="chapter" data-level="3.3" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#article-1"><i class="fa fa-check"></i><b>3.3</b> Article 1</a><ul>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#abstract"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#significance-statement"><i class="fa fa-check"></i>Significance Statement</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#introduction-1"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#new-method"><i class="fa fa-check"></i>New Method</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#results"><i class="fa fa-check"></i>Results</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#discussion"><i class="fa fa-check"></i>Discussion</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#materials-and-methods"><i class="fa fa-check"></i>Materials and Methods</a></li>
+<li class="chapter" data-level="" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#acknowledgments"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="3.3.1" data-path="la-communalite-une-statistique-proche-de-la-f-st.html"><a href="la-communalite-une-statistique-proche-de-la-f-st.html#analyses-supplementaires"><i class="fa fa-check"></i><b>3.3.1</b> Analyses supplémentaires</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="detection-doutliers.html"><a href="detection-doutliers.html"><i class="fa fa-check"></i><b>4</b> Détection d’outliers</a><ul>
+<li class="chapter" data-level="4.1" data-path="detection-doutliers.html"><a href="detection-doutliers.html#article-2"><i class="fa fa-check"></i><b>4.1</b> Article 2</a><ul>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#abstract-1"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#introduction-2"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#statistical-and-computational-approach"><i class="fa fa-check"></i>Statistical and computational approach</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#materials-and-methods-1"><i class="fa fa-check"></i>Materials and methods</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#results-1"><i class="fa fa-check"></i>Results</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#discussion-1"><i class="fa fa-check"></i>Discussion</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="detection-doutliers.html"><a href="detection-doutliers.html#data-accessibility"><i class="fa fa-check"></i>Data accessibility</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html"><i class="fa fa-check"></i><b>5</b> Introgression adaptative</a><ul>
+<li class="chapter" data-level="5.1" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#simulations"><i class="fa fa-check"></i><b>5.1</b> Simulations</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#donnees-de-peupliers"><i class="fa fa-check"></i><b>5.1.1</b> Données de peupliers</a></li>
+<li class="chapter" data-level="5.1.2" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#generation-aleatoire-dindividus-hybrides"><i class="fa fa-check"></i><b>5.1.2</b> Génération aléatoire d’individus hybrides</a></li>
+<li class="chapter" data-level="5.1.3" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#simulations-a-partir-de-ms-et-seq-gen"><i class="fa fa-check"></i><b>5.1.3</b> Simulations à partir de ms et Seq-Gen</a></li>
+<li class="chapter" data-level="5.1.4" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#resultats-de-la-comparaison-des-logiciels"><i class="fa fa-check"></i><b>5.1.4</b> Résultats de la comparaison des logiciels</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#article-3"><i class="fa fa-check"></i><b>5.2</b> Article 3</a><ul>
+<li class="chapter" data-level="" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#introduction-3"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#materials-and-methods-2"><i class="fa fa-check"></i>Materials and methods</a></li>
+<li class="chapter" data-level="" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#results-2"><i class="fa fa-check"></i>Results</a></li>
+<li class="chapter" data-level="" data-path="introgression-adaptative-2.html"><a href="introgression-adaptative-2.html#discussion-2"><i class="fa fa-check"></i>Discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html"><i class="fa fa-check"></i><b>6</b> Aspect computationnel</a></li>
+<li class="chapter" data-level="" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i>Conclusion</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="supplementary-information.html"><a href="supplementary-information.html"><i class="fa fa-check"></i><b>A</b> Supplementary Information</a><ul>
+<li class="chapter" data-level="" data-path="supplementary-information.html"><a href="supplementary-information.html#article-1-1"><i class="fa fa-check"></i>Article 1 </a></li>
+<li class="chapter" data-level="" data-path="supplementary-information.html"><a href="supplementary-information.html#article-2-1"><i class="fa fa-check"></i>Article 2</a></li>
+<li class="chapter" data-level="" data-path="supplementary-information.html"><a href="supplementary-information.html#article-3-1"><i class="fa fa-check"></i>Article 3</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="r-python.html"><a href="r-python.html"><i class="fa fa-check"></i><b>B</b> R &amp; Python</a><ul>
+<li class="chapter" data-level="B.1" data-path="r-python.html"><a href="r-python.html#simulations-et-modeles-demographiques"><i class="fa fa-check"></i><b>B.1</b> Simulations et modèles démographiques</a><ul>
+<li class="chapter" data-level="B.1.1" data-path="r-python.html"><a href="r-python.html#modele-en-ile"><i class="fa fa-check"></i><b>B.1.1</b> Modèle en île</a></li>
+<li class="chapter" data-level="B.1.2" data-path="r-python.html"><a href="r-python.html#modele-de-divergence"><i class="fa fa-check"></i><b>B.1.2</b> Modèle de divergence</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliographie.html"><a href="bibliographie.html"><i class="fa fa-check"></i>Bibliographie</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">THÈSE</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="bibliographie" class="section level1 unnumbered">
+<h1>Bibliographie</h1>
+<!--
+To remove the indentation of the first entry.
+-->
+<p></p>
+<!--
+To create a hanging indent and spacing between entries. These three lines may need to be removed for styles that don't require the hanging indent.
+-->
+<p>  </p>
+
+<div id="refs" class="references">
+<div>
+<p>Abraham, G., &amp; Inouye, M. (2014). Fast principal component analysis of large-scale genome-wide data. <em>PloS One</em>, <em>9</em>(4), e93766.</p>
+</div>
+<div>
+<p>Abraham, G., Qiu, Y., &amp; Inouye, M. (2017). FlashPCA2: Principal component analysis of biobank-scale genotype datasets. <em>Bioinformatics</em>.</p>
+</div>
+<div>
+<p>Ahmed, S., Thomas, G., Ghoussaini, M., Healey, C. S., Humphreys, M. K., Platte, R., … others. (2009). Newly discovered breast cancer susceptibility loci on 3p24 and 17q23. 2. <em>Nature Genetics</em>, <em>41</em>(5), 585–590.</p>
+</div>
+<div>
+<p>Alexander, D. H., Novembre, J., &amp; Lange, K. (2009). Fast model-based estimation of ancestry in unrelated individuals. <em>Genome Research</em>, <em>19</em>(9), 1655–1664.</p>
+</div>
+<div>
+<p>Anderson, E., Bai, Z., Bischof, C., Blackford, S., Demmel, J., Dongarra, J., … others. (1999). LAPACK users’ guide 3rd edn (philadelphia, pa: Society for industrial and applied mathematics).</p>
+</div>
+<div>
+<p>Arnold, B., Corbett-Detig, R. B., Hartl, D., &amp; Bomblies, K. (2013). RADseq underestimates diversity and introduces genealogical biases due to nonrandom haplotype sampling. <em>Molecular Ecology</em>, <em>22</em>(11), 3179–3190.</p>
+</div>
+<div>
+<p>Arnold, M. L., &amp; Martin, N. H. (2009). Adaptation by introgression. <em>Journal of Biology</em>, <em>8</em>(9), 82.</p>
+</div>
+<div>
+<p>Baran, Y., Pasaniuc, B., Sankararaman, S., Torgerson, D. G., Gignoux, C., Eng, C., … others. (2012). Fast and accurate inference of local ancestry in latino populations. <em>Bioinformatics</em>, <em>28</em>(10), 1359–1367.</p>
+</div>
+<div>
+<p>Barreiro, L. B., &amp; Quintana-Murci, L. (2010). From evolutionary genetics to human immunology: How selection shapes host defence genes. <em>Nature Reviews. Genetics</em>, <em>11</em>(1), 17.</p>
+</div>
+<div>
+<p>Barreiro, L. B., Laval, G., Quach, H., Patin, E., &amp; Quintana-Murci, L. (2008). Natural selection has driven population differentiation in modern humans. <em>Nature Genetics</em>, <em>40</em>(3), 340–345.</p>
+</div>
+<div>
+<p>Bateson, W., &amp; Mendel, G. (1913). <em>Mendel’s principles of heredity</em>. University press.</p>
+</div>
+<div>
+<p>Bazin, E., Dawson, K. J., &amp; Beaumont, M. A. (2010). Likelihood-free inference of population structure and local adaptation in a bayesian hierarchical model. <em>Genetics</em>, <em>185</em>(2), 587–602.</p>
+</div>
+<div>
+<p>Beall, C. M. (2007). Two routes to functional adaptation: Tibetan and andean high-altitude natives. <em>Proceedings of the National Academy of Sciences</em>, <em>104</em>(suppl 1), 8655–8660.</p>
+</div>
+<div>
+<p>Beaumont, M. A., &amp; Balding, D. J. (2004). Identifying adaptive genetic divergence among populations from genome scans. <em>Molecular Ecology</em>, <em>13</em>(4), 969–980.</p>
+</div>
+<div>
+<p>Bersaglieri, T., Sabeti, P. C., Patterson, N., Vanderploeg, T., Schaffner, S. F., Drake, J. A., … Hirschhorn, J. N. (2004). Genetic signatures of strong recent positive selection at the lactase gene. <em>The American Journal of Human Genetics</em>, <em>74</em>(6), 1111–1120.</p>
+</div>
+<div>
+<p>Bierne, N., Roze, D., &amp; Welch, J. J. (2013). Pervasive selection or is it…? Why are fst outliers sometimes so frequent? <em>Molecular Ecology</em>, <em>22</em>(8), 2061–2064.</p>
+</div>
+<div>
+<p>Bonhomme, M., Chevalet, C., Servin, B., Boitard, S., Abdallah, J., Blott, S., &amp; SanCristobal, M. (2010). Detecting selection in population trees: The lewontin and krakauer test extended. <em>Genetics</em>, <em>186</em>(1), 241–262.</p>
+</div>
+<div>
+<p>Bromham, L., &amp; Penny, D. (2003). The modern molecular clock. <em>Nature Reviews. Genetics</em>, <em>4</em>(3), 216.</p>
+</div>
+<div>
+<p>Browning, S. R., &amp; Browning, B. L. (2007). Rapid and accurate haplotype phasing and missing-data inference for whole-genome association studies by use of localized haplotype clustering. <em>The American Journal of Human Genetics</em>, <em>81</em>(5), 1084–1097.</p>
+</div>
+<div>
+<p>Buerkle, C. A., &amp; Lexer, C. (2008). Admixture as the basis for genetic mapping. <em>Trends in Ecology &amp; Evolution</em>, <em>23</em>(12), 686–694.</p>
+</div>
+<div>
+<p>Cadima, J., &amp; Jolliffe, I. T. (1995). Loading and correlations in the interpretation of principle compenents. <em>Journal of Applied Statistics</em>, <em>22</em>(2), 203–214.</p>
+</div>
+<div>
+<p>Cagliani, R., Fumagalli, M., Riva, S., Pozzoli, U., Comi, G. P., Menozzi, G., … Sironi, M. (2008). The signature of long-standing balancing selection at the human defensin <span class="math inline">\(\beta\)</span>-1 promoter. <em>Genome Biology</em>, <em>9</em>(9), R143.</p>
+</div>
+<div>
+<p>Carlson, C. S., Thomas, D. J., Eberle, M. A., Swanson, J. E., Livingston, R. J., Rieder, M. J., &amp; Nickerson, D. A. (2005). Genomic regions exhibiting positive selection identified from dense genotype data. <em>Genome Research</em>, <em>15</em>(11), 1553–1565.</p>
+</div>
+<div>
+<p>Cattell, R. B. (1966). The scree test for the number of factors. <em>Multivariate Behavioral Research</em>, <em>1</em>(2), 245–276.</p>
+</div>
+<div>
+<p>Cavalli-Sforza, L. (1994). Francesco. qui sommes-nous? Une histoire de diversité humaine. <em>Trans. Brun, Françoise. Flammarion Ed. Paris: Centre National Des Lettres</em>.</p>
+</div>
+<div>
+<p>Caye, K., Deist, T. M., Martins, H., Michel, O., &amp; François, O. (2016). TESS3: Fast inference of spatial population structure and genome scans for selection. <em>Molecular Ecology Resources</em>, <em>16</em>(2), 540–548.</p>
+</div>
+<div>
+<p>Charlesworth, B., &amp; Charlesworth, D. (2009). Darwin and genetics. <em>Genetics</em>, <em>183</em>(3), 757–766.</p>
+</div>
+<div>
+<p>Chen, G., Lee, S., Zhu, Z., Benyamin, B., &amp; Robinson, M. (2016). EigenGWAS: Finding loci under selection through genome-wide association studies of eigenvectors in structured populations. <em>Heredity</em>, <em>117</em>(1), 51.</p>
+</div>
+<div>
+<p>Chen, H., Patterson, N., &amp; Reich, D. (2010). Population differentiation as a test for selective sweeps. <em>Genome Research</em>, <em>20</em>(3), 393–402.</p>
+</div>
+<div>
+<p>Colonna, V., Ayub, Q., Chen, Y., Pagani, L., Luisi, P., Pybus, M., … Tyler-Smith, C. (2014). Human genomic regions with exceptionally high levels of population differentiation identified from 911 whole-genome sequences. <em>Genome Biology</em>, <em>15</em>(6), R88.</p>
+</div>
+<div>
+<p>Consortium, 1. G. P., &amp; others. (2012). An integrated map of genetic variation from 1,092 human genomes. <em>Nature</em>, <em>491</em>(7422), 56.</p>
+</div>
+<div>
+<p>Darwin, C. (1980). L’Origine des espèces, trad. <em>Edmond Barbier (1876), Paris, Maspero</em>.</p>
+</div>
+<div>
+<p>Dasmahapatra, K. K., Walters, J. R., Briscoe, A. D., Davey, J. W., Whibley, A., Nadeau, N. J., … others. (2012). Butterfly genome reveals promiscuous exchange of mimicry adaptations among species. <em>Nature</em>, <em>487</em>(7405), 94.</p>
+</div>
+<div>
+<p>Daub, J. T., Hofer, T., Cutivet, E., Dupanloup, I., Quintana-Murci, L., Robinson-Rechavi, M., &amp; Excoffier, L. (2013). Evidence for polygenic adaptation to pathogens in the human genome. <em>Molecular Biology and Evolution</em>, <em>30</em>(7), 1544–1558.</p>
+</div>
+<div>
+<p>Devlin, B., &amp; Roeder, K. (1999). Genomic control for association studies. <em>Biometrics</em>, <em>55</em>(4), 997–1004.</p>
+</div>
+<div>
+<p>Drake, J. W., Charlesworth, B., Charlesworth, D., &amp; Crow, J. F. (1998). Rates of spontaneous mutation. <em>Genetics</em>, <em>148</em>(4), 1667–1686.</p>
+</div>
+<div>
+<p>Dray, S., &amp; Josse, J. (2015). Principal component analysis with missing values: A comparative survey of methods. <em>Plant Ecology</em>, <em>216</em>(5), 657–667.</p>
+</div>
+<div>
+<p>Duforet-Frebourg, N. (2014). <em>Statistiques bayésiennes en génétique des populations: Modèle à facteurs et processus gaussiens pour étudier la variation génétique neutre et adaptative</em> (PhD thesis). Grenoble.</p>
+</div>
+<div>
+<p>Duforet-Frebourg, N., Bazin, E., &amp; Blum, M. G. (2014). Genome scans for detecting footprints of local adaptation using a bayesian factor model. <em>Molecular Biology and Evolution</em>, <em>31</em>(9), 2483–2495.</p>
+</div>
+<div>
+<p>Duforet-Frebourg, N., Luu, K., Laval, G., Bazin, E., &amp; Blum, M. G. (2015). Detecting genomic signatures of natural selection with principal component analysis: Application to the 1000 genomes data. <em>Molecular Biology and Evolution</em>, <em>33</em>(4), 1082–1093.</p>
+</div>
+<div>
+<p>Duncan, S., Holm, S., Questa, J., Irwin, J., Grant, A., &amp; Dean, C. (2015). Seasonal shift in timing of vernalization as an adaptation to extreme winter. <em>Elife</em>, <em>4</em>, e06620.</p>
+</div>
+<div>
+<p>Durand, E. Y., Patterson, N., Reich, D., &amp; Slatkin, M. (2011). Testing for ancient admixture between closely related populations. <em>Molecular Biology and Evolution</em>, <em>28</em>(8), 2239–2252.</p>
+</div>
+<div>
+<p>Excoffier, L., Hofer, T., &amp; Foll, M. (2009). Detecting loci under selection in a hierarchically structured population. <em>Heredity</em>, <em>103</em>(4), 285.</p>
+</div>
+<div>
+<p>Excoffier, L., Smouse, P. E., &amp; Quattro, J. M. (1992). Analysis of molecular variance inferred from metric distances among dna haplotypes: Application to human mitochondrial dna restriction data. <em>Genetics</em>, <em>131</em>(2), 479–491.</p>
+</div>
+<div>
+<p>Fagny, M., Patin, E., Enard, D., Barreiro, L. B., Quintana-Murci, L., &amp; Laval, G. (2014). Exploring the occurrence of classic selective sweeps in humans using whole-genome sequencing data sets. <em>Molecular Biology and Evolution</em>, <em>31</em>(7), 1850–1868.</p>
+</div>
+<div>
+<p>Fariello, M. I., Boitard, S., Naya, H., SanCristobal, M., &amp; Servin, B. (2013). Detecting signatures of selection through haplotype differentiation among hierarchically structured populations. <em>Genetics</em>, <em>193</em>(3), 929–941.</p>
+</div>
+<div>
+<p>Foll, M., &amp; Gaggiotti, O. (2008). A genome-scan method to identify selected loci appropriate for both dominant and codominant markers: A bayesian perspective. <em>Genetics</em>, <em>180</em>(2), 977–993.</p>
+</div>
+<div>
+<p>Foll, M., Gaggiotti, O. E., Daub, J. T., Vatsiou, A., &amp; Excoffier, L. (2014). Widespread signals of convergent adaptation to high altitude in asia and america. <em>The American Journal of Human Genetics</em>, <em>95</em>(4), 394–407.</p>
+</div>
+<div>
+<p>Fraïsse, C., Roux, C., Welch, J. J., &amp; Bierne, N. (2014). Gene-flow in a mosaic hybrid zone: Is local introgression adaptive? <em>Genetics</em>, <em>197</em>(3), 939–951.</p>
+</div>
+<div>
+<p>François, O., Martins, H., Caye, K., &amp; Schoville, S. D. (2016). Controlling false discoveries in genome scans for selection. <em>Molecular Ecology</em>, <em>25</em>(2), 454–469.</p>
+</div>
+<div>
+<p>Frichot, E., &amp; François, O. (2015). LEA: An r package for landscape and ecological association studies. <em>Methods in Ecology and Evolution</em>, <em>6</em>(8), 925–929.</p>
+</div>
+<div>
+<p>Frichot, E., Mathieu, F., Trouillon, T., Bouchard, G., &amp; François, O. (2014). Fast and efficient estimation of individual ancestry coefficients. <em>Genetics</em>, <em>196</em>(4), 973–983.</p>
+</div>
+<div>
+<p>Fumagalli, M., Pozzoli, U., Cagliani, R., Comi, G. P., Bresolin, N., Clerici, M., &amp; Sironi, M. (2010). Genome-wide identification of susceptibility alleles for viral infections through a population genetics approach. <em>PLoS Genetics</em>, <em>6</em>(2), e1000849.</p>
+</div>
+<div>
+<p>Fumagalli, M., Sironi, M., Pozzoli, U., Ferrer-Admettla, A., Pattini, L., &amp; Nielsen, R. (2011). Signatures of environmental genetic adaptation pinpoint pathogens as the main selective pressure through human evolution. <em>PLoS Genetics</em>, <em>7</em>(11), e1002355.</p>
+</div>
+<div>
+<p>Galinsky, K. J., Bhatia, G., Loh, P.-R., Georgiev, S., Mukherjee, S., Patterson, N. J., &amp; Price, A. L. (2016). Fast principal-component analysis reveals convergent evolution of adh1b in europe and east asia. <em>The American Journal of Human Genetics</em>, <em>98</em>(3), 456–472.</p>
+</div>
+<div>
+<p>Gautier, M., Gharbi, K., Cezard, T., Foucaud, J., Kerdelhué, C., Pudlo, P., … Estoup, A. (2013). The effect of rad allele dropout on the estimation of genetic variation within and between populations. <em>Molecular Ecology</em>, <em>22</em>(11), 3165–3178.</p>
+</div>
+<div>
+<p>Gayon, J. (1992). Darwin et l’après-darwin: Une histoire de l’hypothèse de sélection dans la théorie de l’évolution. Kimé.</p>
+</div>
+<div>
+<p>Geneva, A. J., Muirhead, C. A., Kingan, S. B., &amp; Garrigan, D. (2015). A new method to scan genomes for introgression in a secondary contact model. <em>PloS One</em>, <em>10</em>(4), e0118621.</p>
+</div>
+<div>
+<p>Gerbault, P., Liebert, A., Itan, Y., Powell, A., Currat, M., Burger, J., … Thomas, M. G. (2011). Evolution of lactase persistence: An example of human niche construction. <em>Philosophical Transactions of the Royal Society of London B: Biological Sciences</em>, <em>366</em>(1566), 863–877.</p>
+</div>
+<div>
+<p>Gillespie, J. H. (2010). <em>Population genetics: A concise guide</em>. JHU Press.</p>
+</div>
+<div>
+<p>Giraud, C. (2014). <em>Introduction to high-dimensional statistics</em> (Vol. 138). CRC Press.</p>
+</div>
+<div>
+<p>Gogol-Döring, A., &amp; Chen, W. (2012). An overview of the analysis of next generation sequencing data. <em>Next Generation Microarray Bioinformatics: Methods and Protocols</em>, 249–257.</p>
+</div>
+<div>
+<p>Grossman, S. R., Andersen, K. G., Shlyakhter, I., Tabrizi, S., Winnicki, S., Yen, A., … others. (2013). Identifying recent adaptations in large-scale genomic data. <em>Cell</em>, <em>152</em>(4), 703–713.</p>
+</div>
+<div>
+<p>Gurdasani, D., Carstensen, T., Tekola-Ayele, F., Pagani, L., Tachmazidou, I., Hatzikotoulas, K., … others. (2015). The african genome variation project shapes medical genetics in africa. <em>Nature</em>, <em>517</em>(7534), 327.</p>
+</div>
+<div>
+<p>Günther, T., &amp; Coop, G. (2013). Robust identification of local adaptation from allele frequencies. <em>Genetics</em>, <em>195</em>(1), 205–220.</p>
+</div>
+<div>
+<p>Haasl, R. J., &amp; Payseur, B. A. (2016). DETECTING selection in natural populations: MAKING sense of genome scans and towards alternative solutions: Fifteen years of genomewide scans for selection: Trends, lessons and unaddressed genetic sources of complication. <em>Molecular Ecology</em>, <em>25</em>(1), 5.</p>
+</div>
+<div>
+<p>Halko, N., Martinsson, P.-G., &amp; Tropp, J. A. (2011). Finding structure with randomness: Probabilistic algorithms for constructing approximate matrix decompositions. <em>SIAM Review</em>, <em>53</em>(2), 217–288.</p>
+</div>
+<div>
+<p>Hamblin, M. T., Thompson, E. E., &amp; Di Rienzo, A. (2002). Complex signatures of natural selection at the duffy blood group locus. <em>The American Journal of Human Genetics</em>, <em>70</em>(2), 369–383.</p>
+</div>
+<div>
+<p>Han, Y., Gu, S., Oota, H., Osier, M. V., Pakstis, A. J., Speed, W. C., … Kidd, K. K. (2007). Evidence of positive selection on a class i adh locus. <em>The American Journal of Human Genetics</em>, <em>80</em>(3), 441–456.</p>
+</div>
+<div>
+<p>Hancock, A. M., Witonsky, D. B., Ehler, E., Alkorta-Aranburu, G., Beall, C., Gebremedhin, A., … others. (2010). Human adaptations to diet, subsistence, and ecoregion are due to subtle shifts in allele frequency. <em>Proceedings of the National Academy of Sciences</em>, <em>107</em>(Supplement 2), 8924–8930.</p>
+</div>
+<div>
+<p>Hancock, A. M., Witonsky, D. B., Gordon, A. S., Eshel, G., Pritchard, J. K., Coop, G., &amp; Di Rienzo, A. (2008). Adaptations to climate in candidate genes for common metabolic disorders. <em>PLoS Genetics</em>, <em>4</em>(2), e32.</p>
+</div>
+<div>
+<p>Hao, W., Song, M., &amp; Storey, J. D. (2015). Probabilistic models of genetic variation in structured populations applied to global human studies. <em>Bioinformatics</em>, <em>32</em>(5), 713–721.</p>
+</div>
+<div>
+<p>Harrison, R. G., &amp; others. (1990). Hybrid zones: Windows on evolutionary process. <em>Oxford Surveys in Evolutionary Biology</em>, <em>7</em>, 69–128.</p>
+</div>
+<div>
+<p>Hedrick, P. W. (2013). Adaptive introgression in animals: Examples and comparison to new mutation and standing variation as sources of adaptive variation. <em>Molecular Ecology</em>, <em>22</em>(18), 4606–4618.</p>
+</div>
+<div>
+<p>Hernandez, R. D., Kelley, J. L., Elyashiv, E., Melton, S. C., Auton, A., McVean, G., … others. (2011). Classic selective sweeps were rare in recent human evolution. <em>Science</em>, <em>331</em>(6019), 920–924.</p>
+</div>
+<div>
+<p>Hollox, E. J., &amp; Armour, J. A. (2008). Directional and balancing selection in human beta-defensins. <em>BMC Evolutionary Biology</em>, <em>8</em>(1), 113.</p>
+</div>
+<div>
+<p>Holsinger, K., &amp; Weir, B. (2009). Genetics in geographically structured populations: Defining, estimating and interpreting fst. eeb articles. paper 22.</p>
+</div>
+<div>
+<p>Hudson, R. R. (2002). Generating samples under a wright–Fisher neutral model of genetic variation. <em>Bioinformatics</em>, <em>18</em>(2), 337–338.</p>
+</div>
+<div>
+<p>Itan, Y., Powell, A., Beaumont, M. A., Burger, J., &amp; Thomas, M. G. (2009). The origins of lactase persistence in europe. <em>PLoS Computational Biology</em>, <em>5</em>(8), e1000491.</p>
+</div>
+<div>
+<p>Jackson, D. A. (1993). Stopping rules in principal components analysis: A comparison of heuristical and statistical approaches. <em>Ecology</em>, <em>74</em>(8), 2204–2214.</p>
+</div>
+<div>
+<p>Jay, F., Sjödin, P., Jakobsson, M., &amp; Blum, M. G. (2012). Anisotropic isolation by distance: The main orientations of human genetic differentiation. <em>Molecular Biology and Evolution</em>, <em>30</em>(3), 513–525.</p>
+</div>
+<div>
+<p>Jeong, C., &amp; Di Rienzo, A. (2014). Adaptations to local environments in modern human populations. <em>Current Opinion in Genetics &amp; Development</em>, <em>29</em>, 1–8.</p>
+</div>
+<div>
+<p>Jeong, C., Alkorta-Aranburu, G., Basnyat, B., Neupane, M., Witonsky, D. B., Pritchard, J. K., … Di Rienzo, A. (2014). Admixture facilitates genetic adaptations to high altitude in tibet. <em>Nature Communications</em>, <em>5</em>, 3281.</p>
+</div>
+<div>
+<p>Jiao, H., Arner, P., Hoffstedt, J., Brodin, D., Dubern, B., Czernichow, S., … others. (2011). Genome wide association study identifies kcnma1 contributing to human obesity. <em>BMC Medical Genomics</em>, <em>4</em>(1), 51.</p>
+</div>
+<div>
+<p>Jolliffe, I. T. (1986). Principal component analysis and factor analysis. In <em>Principal component analysis</em> (pp. 115–128). Springer.</p>
+</div>
+<div>
+<p>Joly, S., McLenachan, P. A., &amp; Lockhart, P. J. (2009). A statistical approach for distinguishing hybridization and incomplete lineage sorting. <em>The American Naturalist</em>, <em>174</em>(2), E54–E70.</p>
+</div>
+<div>
+<p>Kimura, M. (1983). <em>The neutral theory of molecular evolution</em>. Cambridge University Press.</p>
+</div>
+<div>
+<p>Kofler, R., &amp; Schlötterer, C. (2012). Gowinda: Unbiased analysis of gene set enrichment for genome-wide association studies. <em>Bioinformatics</em>, <em>28</em>(15), 2084–2085.</p>
+</div>
+<div>
+<p>Kudaravalli, S., Veyrieras, J.-B., Stranger, B. E., Dermitzakis, E. T., &amp; Pritchard, J. K. (2008). Gene expression levels are a target of recent natural selection in the human genome. <em>Molecular Biology and Evolution</em>, <em>26</em>(3), 649–658.</p>
+</div>
+<div>
+<p>Lange, K., Papp, J. C., Sinsheimer, J. S., &amp; Sobel, E. M. (2014). Next-generation statistical genetics: Modeling, penalization, and optimization in high-dimensional data. <em>Annual Review of Statistics and Its Application</em>, <em>1</em>, 279–300.</p>
+</div>
+<div>
+<p>Lewontin, R., &amp; Krakauer, J. (1973). Distribution of gene frequency as a test of the theory of the selective neutrality of polymorphisms. <em>Genetics</em>, <em>74</em>(1), 175–195.</p>
+</div>
+<div>
+<p>Li, J., Liu, Y., Xin, X., Kim, T. S., Cabeza, E. A., Ren, J., … Zhang, Z. (2012). Evidence for positive selection on a number of microrna regulatory interactions during recent human evolution. <em>PLoS Genetics</em>, <em>8</em>(3), e1002578.</p>
+</div>
+<div>
+<p>Lotterhos, K. E., &amp; Whitlock, M. C. (2014). Evaluation of demographic history and neutral parameterization on the performance of fst outlier tests. <em>Molecular Ecology</em>, <em>23</em>(9), 2178–2192.</p>
+</div>
+<div>
+<p>Lotterhos, K. E., &amp; Whitlock, M. C. (2015). The relative power of genome scans to detect local adaptation depends on sampling design and statistical method. <em>Molecular Ecology</em>, <em>24</em>(5), 1031–1046.</p>
+</div>
+<div>
+<p>Luikart, G., England, P. R., Tallmon, D., Jordan, S., &amp; Taberlet, P. (2003). The power and promise of population genomics: From genotyping to genome typing. <em>Nature Reviews. Genetics</em>, <em>4</em>(12), 981.</p>
+</div>
+<div>
+<p>Luu, K., Bazin, E., &amp; Blum, M. G. (2017). Pcadapt: An r package to perform genome scans for selection based on principal component analysis. <em>Molecular Ecology Resources</em>, <em>17</em>(1), 67–77.</p>
+</div>
+<div>
+<p>Maples, B. K., Gravel, S., Kenny, E. E., &amp; Bustamante, C. D. (2013). RFMix: A discriminative modeling approach for rapid and robust local-ancestry inference. <em>The American Journal of Human Genetics</em>, <em>93</em>(2), 278–288.</p>
+</div>
+<div>
+<p>Maronna, R. A., &amp; Zamar, R. H. (2002). Robust estimates of location and dispersion for high-dimensional datasets. <em>Technometrics</em>, <em>44</em>(4), 307–317.</p>
+</div>
+<div>
+<p>Martin, S. H., Davey, J. W., &amp; Jiggins, C. D. (2014). Evaluating the use of abba–BABA statistics to locate introgressed loci. <em>Molecular Biology and Evolution</em>, <em>32</em>(1), 244–257.</p>
+</div>
+<div>
+<p>Martins, H., Caye, K., Luu, K., Blum, M. G., &amp; Francois, O. (2016). Identifying outlier loci in admixed and in continuous populations using ancestral population differentiation statistics. <em>Molecular Ecology</em>, <em>25</em>(20), 5029–5042.</p>
+</div>
+<div>
+<p>McVean, G. (2009). A genealogical interpretation of principal components analysis. <em>PLoS Genetics</em>, <em>5</em>(10), e1000686.</p>
+</div>
+<div>
+<p>Menozzi, P., Piazza, A., &amp; Cavalli-Sforza, L. (1978). Synthetic maps of human gene frequencies in europeans. <em>Science</em>, <em>201</em>(4358), 786–792.</p>
+</div>
+<div>
+<p>Messer, P. W., &amp; Petrov, D. A. (2013). Population genomics of rapid adaptation by soft selective sweeps. <em>Trends in Ecology &amp; Evolution</em>, <em>28</em>(11), 659–669.</p>
+</div>
+<div>
+<p>Muir, P., Li, S., Lou, S., Wang, D., Spakowicz, D. J., Salichos, L., … others. (2016). The real cost of sequencing: Scaling computation to keep pace with data generation. <em>Genome Biology</em>, <em>17</em>(1), 53.</p>
+</div>
+<div>
+<p>Nelson, M. R., Bryc, K., King, K. S., Indap, A., Boyko, A. R., Novembre, J., … others. (2008). The population reference sample, popres: A resource for population, disease, and pharmacological genetics research. <em>The American Journal of Human Genetics</em>, <em>83</em>(3), 347–358.</p>
+</div>
+<div>
+<p>Nelson, R. M., Wallberg, A., Simões, Z. L. P., Lawson, D. J., &amp; Webster, M. T. (2017). Genome-wide analysis of admixture and adaptation in the africanized honeybee. <em>Molecular Ecology</em>.</p>
+</div>
+<div>
+<p>Nicholson, G., Smith, A. V., Jónsson, F., Gústafsson, Ó., Stefánsson, K., &amp; Donnelly, P. (2002). Assessing population differentiation and isolation from single-nucleotide polymorphism data. <em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em>, <em>64</em>(4), 695–715.</p>
+</div>
+<div>
+<p>Nielsen, R. (2005). Molecular signatures of natural selection. <em>Annu. Rev. Genet.</em>, <em>39</em>, 197–218.</p>
+</div>
+<div>
+<p>Novembre, J., Johnson, T., Bryc, K., Kutalik, Z., Boyko, A. R., Auton, A., … others. (2008). Genes mirror geography within europe. <em>Nature</em>, <em>456</em>(7218), 98.</p>
+</div>
+<div>
+<p>Oeggerli, M., Tian, Y., Ruiz, C., Wijker, B., Sauter, G., Obermann, E., … others. (2012). Role of kcnma1 in breast cancer. <em>PloS One</em>, <em>7</em>(8), e41664.</p>
+</div>
+<div>
+<p>Pardo-Diaz, C., Salazar, C., Baxter, S. W., Merot, C., Figueiredo-Ready, W., Joron, M., … Jiggins, C. D. (2012). Adaptive introgression across species boundaries in heliconius butterflies. <em>PLoS Genetics</em>, <em>8</em>(6), e1002752.</p>
+</div>
+<div>
+<p>Patin, E., Lopez, M., Grollemund, R., Verdu, P., Harmant, C., Quach, H., … others. (2017). Dispersals and genetic adaptation of bantu-speaking populations in africa and north america. <em>Science</em>, <em>356</em>(6337), 543–546.</p>
+</div>
+<div>
+<p>Patterson, N., Price, A. L., &amp; Reich, D. (2006). Population structure and eigenanalysis. <em>PLoS Genetics</em>, <em>2</em>(12), e190.</p>
+</div>
+<div>
+<p>Payseur, B. A., &amp; Rieseberg, L. H. (2016). A genomic perspective on hybridization and speciation. <em>Molecular Ecology</em>, <em>25</em>(11), 2337–2360.</p>
+</div>
+<div>
+<p>Peng, B., &amp; Kimmel, M. (2005). SimuPOP: A forward-time population genetics simulation environment. <em>Bioinformatics</em>, <em>21</em>(18), 3686–3687.</p>
+</div>
+<div>
+<p>Peng, Y., Shi, H., Qi, X.-b., Xiao, C.-j., Zhong, H., Run-lin, Z. M., &amp; Su, B. (2010). The adh1b arg47his polymorphism in east asian populations and expansion of rice domestication in history. <em>BMC Evolutionary Biology</em>, <em>10</em>(1), 15.</p>
+</div>
+<div>
+<p>Pfeifer, B., &amp; Kapan, D. D. (2017). Estimates of introgression as a function of pairwise distances. <em>BioRxiv</em>, 154377.</p>
+</div>
+<div>
+<p>Pickrell, J. K., Coop, G., Novembre, J., Kudaravalli, S., Li, J. Z., Absher, D., … others. (2009). Signals of recent positive selection in a worldwide sample of human populations. <em>Genome Research</em>, <em>19</em>(5), 826–837.</p>
+</div>
+<div>
+<p>Price, A. L., Tandon, A., Patterson, N., Barnes, K. C., Rafaels, N., Ruczinski, I., … Myers, S. (2009). Sensitive detection of chromosomal segments of distinct ancestry in admixed populations. <em>PLoS Genetics</em>, <em>5</em>(6), e1000519.</p>
+</div>
+<div>
+<p>Pritchard, J. K., Stephens, M., &amp; Donnelly, P. (2000). Inference of population structure using multilocus genotype data. <em>Genetics</em>, <em>155</em>(2), 945–959.</p>
+</div>
+<div>
+<p>Rambaut, A., &amp; Grass, N. C. (1997). Seq-gen: An application for the monte carlo simulation of dna sequence evolution along phylogenetic trees. <em>Bioinformatics</em>, <em>13</em>(3), 235–238.</p>
+</div>
+<div>
+<p>Rheindt, F. E., Fujita, M. K., Wilton, P. R., &amp; Edwards, S. V. (2013). Introgression and phenotypic assimilation in zimmerius flycatchers (tyrannidae): Population genetic and phylogenetic inferences from genome-wide snps. <em>Systematic Biology</em>, <em>63</em>(2), 134–152.</p>
+</div>
+<div>
+<p>Riebler, A., Held, L., &amp; Stephan, W. (2008). Bayesian variable selection for detecting adaptive genomic differences among populations. <em>Genetics</em>, <em>178</em>(3), 1817–1829.</p>
+</div>
+<div>
+<p>Roll-Hansen, N. (2014). The holist tradition in twentieth century genetics. wilhelm johannsen’s genotype concept. <em>The Journal of Physiology</em>, <em>592</em>(11), 2431–2438.</p>
+</div>
+<div>
+<p>Rosenzweig, B. K., Pease, J. B., Besansky, N. J., &amp; Hahn, M. W. (2016). Powerful methods for detecting introgressed regions from population genomic data. <em>Molecular Ecology</em>, <em>25</em>(11), 2387–2397.</p>
+</div>
+<div>
+<p>Roux, C., Pauwels, M., Ruggiero, M.-V., Charlesworth, D., Castric, V., &amp; Vekemans, X. (2012). Recent and ancient signature of balancing selection around the s-locus in arabidopsis halleri and a. lyrata. <em>Molecular Biology and Evolution</em>, <em>30</em>(2), 435–447.</p>
+</div>
+<div>
+<p>Sabeti, P. C., Schaffner, S. F., Fry, B., Lohmueller, J., Varilly, P., Shamovsky, O., … Lander, E. (2006). Positive natural selection in the human lineage. <em>Science</em>, <em>312</em>(5780), 1614–1620.</p>
+</div>
+<div>
+<p>Sabeti, P. C., Varilly, P., Fry, B., Lohmueller, J., Hostetter, E., Cotsapas, C., … others. (2007). Genome-wide detection and characterization of positive selection in human populations. <em>Nature</em>, <em>449</em>(7164), 913.</p>
+</div>
+<div>
+<p>Smith, J., &amp; Kronforst, M. R. (2013). Do heliconius butterfly species exchange mimicry alleles? <em>Biology Letters</em>, <em>9</em>(4), 20130503.</p>
+</div>
+<div>
+<p>Song, Y., Endepols, S., Klemann, N., Richter, D., Matuschka, F.-R., Shih, C.-H., … Kohn, M. H. (2011). Adaptive introgression of anticoagulant rodent poison resistance by hybridization between old world mice. <em>Current Biology</em>, <em>21</em>(15), 1296–1301.</p>
+</div>
+<div>
+<p>Storey, J. D., &amp; Tibshirani, R. (2003). Statistical significance for genomewide studies. <em>Proceedings of the National Academy of Sciences</em>, <em>100</em>(16), 9440–9445.</p>
+</div>
+<div>
+<p>Suarez-Gonzalez, et a., Adriana. (2016). Genomic and functional approaches reveal a case of adaptive introgression from populus balsamifera (balsam poplar) in p. trichocarpa (black cottonwood). <em>Molecular Ecology</em>, 2427–2442.</p>
+</div>
+<div>
+<p>Tajima, F. (1989). Statistical method for testing the neutral mutation hypothesis by dna polymorphism. <em>Genetics</em>, <em>123</em>(3), 585–595.</p>
+</div>
+<div>
+<p>Team, R. C. (2015). R: A language and environment for statistical computing [internet]. vienna, austria: R foundation for statistical computing; 2014.</p>
+</div>
+<div>
+<p>Thornton, T. A., &amp; Bermejo, J. L. (2014). Local and global ancestry inference and applications to genetic association analysis for admixed populations. <em>Genetic Epidemiology</em>, <em>38</em>(S1).</p>
+</div>
+<div>
+<p>Vitti, J. J., Grossman, S. R., &amp; Sabeti, P. C. (2013). Detecting natural selection in genomic data. <em>Annual Review of Genetics</em>, <em>47</em>, 97–120.</p>
+</div>
+<div>
+<p>vonHoldt, B. M., Kays, R., Pollinger, J. P., &amp; Wayne, R. K. (2016). Admixture mapping identifies introgressed genomic regions in north american canids. <em>Molecular Ecology</em>, <em>25</em>(11), 2443–2453.</p>
+</div>
+<div>
+<p>Waples, R. S., &amp; Gaggiotti, O. (2006). INVITED review: What is a population? An empirical evaluation of some genetic methods for identifying the number of gene pools and their degree of connectivity. <em>Molecular Ecology</em>, <em>15</em>(6), 1419–1439.</p>
+</div>
+<div>
+<p>Weir, B. S., &amp; Cockerham, C. C. (1984). Estimating f-statistics for the analysis of population structure. <em>Evolution</em>, <em>38</em>(6), 1358–1370.</p>
+</div>
+<div>
+<p>Wetterstrand, K. A. (2013). DNA sequencing costs: Data from the nhgri genome sequencing program (gsp).</p>
+</div>
+<div>
+<p>Whitlock, M. C., &amp; Lotterhos, K. E. (2015). Reliable detection of loci responsible for local adaptation: Inference of a null model through trimming the distribution of f st. <em>The American Naturalist</em>, <em>186</em>(S1), S24–S36.</p>
+</div>
+<div>
+<p>Wilde, S., Timpson, A., Kirsanow, K., Kaiser, E., Kayser, M., Unterländer, M., … others. (2014). Direct evidence for positive selection of skin, hair, and eye pigmentation in europeans during the last 5,000 y. <em>Proceedings of the National Academy of Sciences</em>, <em>111</em>(13), 4832–4837.</p>
+</div>
+<div>
+<p>Williamson, S. H., Hubisz, M. J., Clark, A. G., Payseur, B. A., Bustamante, C. D., &amp; Nielsen, R. (2007). Localizing recent adaptive evolution in the human genome. <em>PLoS Genetics</em>, <em>3</em>(6), e90.</p>
+</div>
+<div>
+<p>Wu, D.-D., &amp; Zhang, Y.-P. (2010). Positive selection drives population differentiation in the skeletal genes in modern humans. <em>Human Molecular Genetics</em>, <em>19</em>(12), 2341–2346.</p>
+</div>
+<div>
+<p>Yang, J. J., Li, J., Buu, A., &amp; Williams, L. K. (2013). Efficient inference of local ancestry. <em>Bioinformatics</em>, <em>29</em>(21), 2750–2756.</p>
+</div>
+<div>
+<p>Yang, W.-Y., Novembre, J., Eskin, E., &amp; Halperin, E. (2012). A model-based approach for analysis of spatial structure in genetic data. <em>Nature Genetics</em>, <em>44</em>(6), 725–731.</p>
+</div>
+<div>
+<p>Yuan, K.-H., &amp; Bentler, P. M. (2010). Two simple approximations to the distributions of quadratic forms. <em>British Journal of Mathematical and Statistical Psychology</em>, <em>63</em>(2), 273–291.</p>
+</div>
+<div>
+<p>Zhang, W., Dasmahapatra, K. K., Mallet, J., Moreira, G. R., &amp; Kronforst, M. R. (2016). Genome-wide introgression among distantly related heliconius butterfly species. <em>Genome Biology</em>, <em>17</em>(1), 25.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="r-python.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": [["thesis.pdf", "PDF"], ["thesis.epub", "EPUB"], ["thesis.docx", "Word"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
