@@ -14,7 +14,7 @@
             function check(form) { /*function to check userid & password*/
                 /*the following code checkes whether the entered userid and password are matching*/
                 if(form.userid.value == "bcm-uga" && form.pswrd.value == "bcm-uga") {
-                    window.open('book/introduction.html')/*opens the target page while Id & password matches*/
+                    window.open("book/introduction.html", "_self")/*opens the target page while Id & password matches*/
                 }
                 else {
                     alert("Error Password or Username")/*displays error message*/
