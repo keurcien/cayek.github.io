@@ -222,8 +222,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="aspect-computationnel" class="section level1">
 <h1><span class="header-section-number">Chapitre 4</span> Aspect computationnel</h1>
-<iframe src="https://keurcien.shinyapps.io/app-pcadapt/?showcase=0" width="\textwidth" height="400px">
-</iframe>
 <p>Dans cette partie, nous nous intéresserons brièvement à l’aspect computationnel des méthodes qui ont été présentées dans les chapitres précédents. Le développement d’outils logiciels destinés à l’exploration de données génétiques volumineuses requiert qu’une attention toute particulière soit portée à l’utilisation des ressources de calcul. Étant donné que nous nous intéressons à la possibilité de réaliser des scans génomiques pour des données génétiques de grande taille, il me semble intéressant de préciser les points sur lesquels des améliorations ont été faites d’un point de vue computationnel.</p>
 <p>Blockwise computation of covariance matrix Random SVD Storage in binary format Memory-mapping</p>
 <div id="donnees-dentree" class="section level2">
@@ -253,6 +251,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="interface-shiny" class="section level2">
 <h2><span class="header-section-number">4.3</span> Interface Shiny</h2>
 <p>Grâce au logiciel R, il est possible de pousser encore plus loin la simplification d’utilisation des logiciels et des packages développés. À l’instar du package adegenet, nous proposons une interface web utilisable localement et facilement déployable sur des serveurs distants.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:shiny-app"></span>
+<iframe src="https://keurcien.shinyapps.io/app-pcadapt?showcase=0" width="100%" height="400px">
+</iframe>
+<p class="caption">
+Figure 4.1: Interface Shiny de la librairie pcadapt.
+</p>
+</div>
 </div>
 <div id="acp-et-donnees-manquantes" class="section level2">
 <h2><span class="header-section-number">4.4</span> ACP et données manquantes</h2>
