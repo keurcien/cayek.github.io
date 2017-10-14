@@ -4,7 +4,8 @@ output: html_document
 ---
 
 ```{r, echo=FALSE}
-list.conf <- c("useR!2017", 
+list.conf <- c("SSMPG 2017: Software and Statistical Methods for Population Genetics",
+               "useR!2017", 
                "Epigenetic & High-Dimension Mediation Data Challenge",
                "The 48th Statistics Day",
                "SMBE Satellite Meeting 2016: Genetics of Admixed Populations",
@@ -12,9 +13,10 @@ list.conf <- c("useR!2017",
                "SMBEBA 2015: Investigating biological adaptation with NGS: data and models"
 )
 list.conf.styled <- paste0('<b>', list.conf, '</b>')
-list.date <- c("Upcoming", "June 2017", "June 2016", "May 2016", "September 2015", "May 2015")
-list.topic <- c("R", "Mediation", "Statistics", "Population genetics", "Population genetics", "Population genetics")
-list.webpage <- c("https://user2017.brussels/",
+list.date <- c("September 2017", "July 2017", "June 2017", "June 2016", "May 2016", "September 2015", "May 2015")
+list.topic <- c("Population genetics", "R", "Mediation", "Statistics", "Population genetics", "Population genetics", "Population genetics")
+list.webpage <- c("https://data-institute.univ-grenoble-alpes.fr/data-institute/news-and-events/data-challenge-on-software-and-statistical-methods-for-population-genetics-ssmpg-2017--713800.htm", 
+                  "https://user2017.brussels/",
                   "https://data-institute.univ-grenoble-alpes.fr/events/epigenetic-high-dimension-mediation-data-challenge-710076.htm?RH=10277933037836520",
                   "http://jds2016.sfds.asso.fr/?lang=en",
                   "http://anthgen.org/smbe2016/",
