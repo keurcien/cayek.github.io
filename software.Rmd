@@ -4,22 +4,19 @@ title: <span style="color:#3c9abc"><b>Software</b></span>
 
 ### <a href="https://cran.r-project.org/web/packages/pcadapt/index.html">pcadapt</a>
 
-
 Methods to detect genetic markers involved in biological adaptation. 'pcadapt' provides statistical tools for outlier detection based on Principal Component Analysis. Implements the method described in (Luu, 2016) <doi:10.1111/1755-0998.12592>.
 
-#### <span style="color:#3c9abc"><b>Shiny App</b></span>
-
-You can test out the Shiny App version of the software:
-
-- [app-pcadapt](https://keurcien.shinyapps.io/app-pcadapt/) 
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_app("https://keurcien.shinyapps.io/app-pcadapt", 
+                   height = "600px")
+```
 
 *NB: as it is hosted thanks to the shinyapps.io free plan, the online app will only work with small datasets (e.g 10MB). To use it with larger data, install the GitHub version of the package.*
 
 
-
 #### <span style="color:#3c9abc"><b>Tutorials</b></span>
 
-- [bioshock38.github.io](https://bioshock38.github.io/pcadapt/index.html)
+- [bcm-uga.github.io](https://bcm-uga.github.io/pcadapt/)
 
 - [CRAN vignette](https://cran.r-project.org/web/packages/pcadapt/vignettes/pcadapt.html)
 
