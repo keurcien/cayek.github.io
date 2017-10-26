@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="perspectives-et-conclusions.html">
-<link rel="next" href="informations-supplementaires.html">
+<link rel="prev" href="aspect-computationnel.html">
+<link rel="next" href="details.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -226,96 +226,75 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="details" class="section level1">
-<h1><span class="header-section-number">A</span> Détails</h1>
-<div id="rapport-entre-la-communalite-et-lindice-de-fixation" class="section level3 unnumbered">
-<h3>Rapport entre la communalité et l’indice de fixation</h3>
-<p>Pour faire le parallèle avec la communalité, il est nécessaire de trouver une matrice colonne <span class="math inline">\(U_{\delta}^{\prime} \in M_{n, 1}(\mathbb{R})\)</span> telle que <span class="math inline">\(F_{ST} = ||\tilde{G}^T U_{\delta}^{\prime}||_2^2\)</span>. Pour ce faire, plaçons-nous dans le cas <span class="math inline">\(N=2\)</span> et cherchons une matrice de rotation telle que <span class="math inline">\(U_{\delta}R\)</span> ait sa première colonne constante, c’est-à-dire telle que :</p>
-<span class="math display" id="eq:condition-1">\[\begin{equation}
-  \begin{pmatrix}\frac{1}{\sqrt{2}n_1} &amp; 0\\
-    0 &amp; \frac{1}{\sqrt{2}n_2}
-  \end{pmatrix}R =
-  \begin{pmatrix} a &amp; x\\
-    a &amp; y
-  \end{pmatrix}
-  \tag{A.1}
-\end{equation}\]</span>
-<p>où <span class="math inline">\(x, y, a\)</span> sont des réels à déterminer. Soit <span class="math inline">\(R \in M_2(\mathbb{R})\)</span> une matrice de rotation :</p>
-<p><span class="math display">\[R = \begin{pmatrix}\cos\theta &amp; -\sin\theta\\
-\sin\theta &amp; \cos\theta
-\end{pmatrix}\]</span></p>
-<p>En injectant <span class="math inline">\(R\)</span> dans <a href="details.html#eq:condition-1">(A.1)</a>, on obtient :</p>
-<span class="math display" id="eq:condition-2">\[\begin{equation}
-  \begin{pmatrix}\frac{\cos\theta}{\sqrt{2}n_1} &amp; -\frac{\sin\theta}{\sqrt{2}n_1}\\
-    \frac{\sin\theta}{\sqrt{2}n_2} &amp; \frac{\cos\theta}{\sqrt{2}n_2}
-  \end{pmatrix} =
-  \begin{pmatrix} a &amp; x\\
-    a &amp; y
-  \end{pmatrix}
-  \tag{A.2}
-\end{equation}\]</span>
-<p><a href="details.html#eq:condition-2">(A.2)</a> implique que l’angle de la rotation vérifie la relation <span class="math inline">\(\frac{\cos\theta}{\sqrt{2}n_1} = \frac{\sin\theta}{\sqrt{2}n_2}\)</span>, d’où <span class="math inline">\(\theta = \arctan(\frac{n_2}{n_1})\)</span>. Nous en déduisons ainsi les valeurs de <span class="math inline">\(x\)</span> et de <span class="math inline">\(y\)</span> :</p>
-<span class="math display" id="eq:xy">\[\begin{equation}
-  \begin{split}
-  x &amp; = -\frac{\sin(\arctan(\frac{n_2}{n_1}))}{n_1} \\
-  y &amp; = \frac{\cos(\arctan(\frac{n_2}{n_1}))}{n_2} \\
-  \end{split}
-  \tag{A.3}
-\end{equation}\]</span>
-<p>Or :</p>
-<span class="math display" id="eq:trigo">\[\begin{equation}
-  \begin{split}
-  \sin(\arctan(x)) &amp; = \frac{x}{\sqrt{1 + x^2}} \\
-  \cos(\arctan(x)) &amp; = \frac{1}{\sqrt{1 + x^2}}
-  \end{split}
-  \tag{A.4}
-\end{equation}\]</span>
-<p>Notant <span class="math inline">\(R\)</span> la rotation d’angle <span class="math inline">\(\arctan(\frac{n_2}{n_1})\)</span>, on a finalament :</p>
-<p><span class="math display">\[U_{\delta}R = \begin{pmatrix}a &amp; -\delta_{11}  \frac{n_2}{\sqrt{2(n_1^2+n_2^2)}} + \delta_{21} \frac{n_1}{\sqrt{2(n_1^2+n_2^2)}}\\
-a &amp; -\delta_{12}  \frac{n_2}{\sqrt{2(n_1^2+n_2^2)}} + \delta_{22} \frac{n_1}{\sqrt{2(n_1^2+n_2^2)}}\\
-\vdots &amp; \vdots \\
-a &amp; -\delta_{1n}  \frac{n_2}{\sqrt{2(n_1^2+n_2^2)}} + \delta_{2n} \frac{n_1}{\sqrt{2(n_1^2+n_2^2)}}
-\end{pmatrix}\]</span></p>
-<p>Puisque <span class="math inline">\(R\)</span> est une rotation, <span class="math inline">\(||\tilde{G}^T U_{\delta}||_2 = ||\tilde{G}^T U_{\delta}R||_2\)</span>. En développant <span class="math inline">\(\tilde{G}^T U_{\delta}R\)</span>, on obtient :</p>
-<span class="math display">\[\begin{equation}
-  \begin{split}
-   \tilde{G}^T U_{\delta}R = \left(\sum_{i=1}^n a \tilde{G}_i, \sum_{i=1}^n \left(-\delta_{1i}  \frac{n_2}{\sqrt{2(n_1^2+n_2^2)}} + \delta_{2i} \frac{n_1}{\sqrt{2(n_1^2+n_2^2)}}\right)\tilde{G}_i \right)
-  \end{split}
-\end{equation}\]</span>
-<p>Or <span class="math inline">\(\sum_{i=1}^n \tilde{G}_i = 0\)</span> par définition de <span class="math inline">\(\tilde{G}\)</span>, ce qui permet d’écrire, en posant <span class="math inline">\(U_{\delta}^{\prime} \in M_{n,1}(\mathbb{R})\)</span> la matrice colonne correspondant à la deuxième colonne de <span class="math inline">\(U_{\delta}R\)</span> :</p>
-<span class="math display">\[\begin{equation}
-  \begin{split}
-    F_{ST} &amp; = ||\tilde{G}^T U_{\delta}||_2^2 \\
-    &amp; = ||\tilde{G}^T U_{\delta}R||_2^2 \\
-    &amp; = ||\tilde{G}^T U_{\delta}^{\prime}||_2^2
-  \end{split}
-\end{equation}\]</span>
-<p>Remarquons que <span class="math inline">\(U_{\delta}^{\prime}\)</span> a une expression similaire à celle des scores de l’ACP exprimée dans <span class="citation">G. McVean (<a href="#ref-mcvean2009genealogical">2009</a>)</span>.</p>
+<div id="perspectives-et-conclusions" class="section level1">
+<h1><span class="header-section-number">Chapitre 5</span> Perspectives et conclusions</h1>
+<p>Nous discutons dans ce chapitre des extensions ou alternatives possibles à ce qui a été présenté jusqu’ici.</p>
+<div id="substitution-de-lanalyse-en-composantes-principales" class="section level2">
+<h2><span class="header-section-number">5.1</span> Substitution de l’Analyse en Composantes Principales</h2>
+<p>La méthode de scan à sélection basée sur la distance de Mahalanobis peut être vue comme la succession de trois étapes :</p>
+<ul>
+<li><p>une première étape visant à déterminer la structure de populations à partir de l’ACP.</p></li>
+<li><p>une deuxième étape consistant à effectuer la régression linéaire multiple de la matrice de génotypes normalisée par les scores de l’ACP.</p></li>
+<li><p>une troisième étape calculant la distance de chaque marqueur génétique à la moyenne de ces marqueurs pour une métrique donnée, ce qui permet d’identifier les marqueurs génétiques dont les coefficients de régression sont excessivement corrélés avec une ou plusieurs composantes principales. Dans le cas de la distance de Mahalanobis, la métrique est donnée par l’estimateur robuste de la matrice de covariance.</p></li>
+</ul>
+<p>En réalité, on retrouve ce schéma également pour le calcul de la <span class="math inline">\(F_{ST}\)</span> :</p>
+<ul>
+<li><p>structure de populations définie par la matrice de scores <span class="math inline">\(U_{\delta}\)</span> telle qu’elle est définie dans le chapitre 1.</p></li>
+<li><p>régression linéaire multiple de la matrice de <span class="math inline">\(\tilde{G}\)</span> par les scores <span class="math inline">\(U_{\delta}\)</span>.</p></li>
+<li><p>calcul de la distance euclidienne <span class="math inline">\(||\tilde{G}^TU_{\delta}||_2\)</span> de chaque marqueur à la moyenne des marqueurs (ici la métrique est la matrice identité et la moyenne des marqueurs est la fréquence).</p></li>
+</ul>
+<p>De la même façon, le calcul de la statistique <span class="math inline">\(T_{F-LK}\)</span> peut être décomposé suivant le schéma décrit ci-dessus. Ces trois étapes communes permettent donc de définir un schéma général pour le développement de nouvelles méthodes de scan génomique. La première étape pourrait par exemple être remplacée par des variantes de l’ACP telles qu’une ACP régularisée, une ACP à noyau ou une ACP pondérée.</p>
 </div>
-<div id="une-generalisation-de-la-statistique-t_f-lk" class="section level3 unnumbered">
-<h3>Une généralisation de la statistique <span class="math inline">\(T_{F-LK}\)</span></h3>
-<p>Soit <span class="math inline">\(U\Sigma V^T\)</span> la décomposition en valeurs singulières tronquée de rang <span class="math inline">\(K\)</span> de <span class="math inline">\(\tilde{G}\)</span>. Notons <span class="math inline">\(\mathcal{F}\)</span> la matrice d’apparentement génétique interpopulationnel. En utilisant l’estimateur usuel de la matrice de covariance, nous avons :</p>
-<span class="math display">\[\begin{equation}
-  \mathcal{F} = \frac{1}{p}U_{\delta}^T\tilde{G}\tilde{G}^TU_{\delta} 
-\end{equation}\]</span>
-<p>où <span class="math inline">\(U_{\delta}\)</span> est la matrice définie en proposition <a href="adaptation-locale-1.html#prp:udelta">2.1</a>. Par définition de la matrice d’apparentement génétique interindividuel, <span class="math inline">\(G_{RM} = \frac{1}{p}\tilde{G}\tilde{G}^T\)</span>, si bien que :</p>
-<span class="math display">\[\begin{equation}
-  \mathcal{F} = U_{\delta}^TG_{RM}U_{\delta}
-\end{equation}\]</span>
-<p>Or <span class="math inline">\(\tilde{G} \simeq U \Sigma V^T\)</span>, d’où <span class="math inline">\(G_{RM} \simeq U \Sigma ^2 U^T\)</span>. De la même manière qu’en proposition <a href="adaptation-locale-1.html#prp:fst-communality">2.2</a>, nous pouvons réécrire la statistique <span class="math inline">\(T_{F-LK}\)</span> en un locus <span class="math inline">\(j\)</span> de la façon suivante :</p>
-<span class="math display">\[\begin{equation}
-  \begin{split}
-    T_{F-LK} &amp;= \tilde{G}_{.,j}^T U_{\delta} \mathcal{F}^{-1} U_{\delta}^T \tilde{G}_{.,j} \\
-    &amp;= \tilde{G}_{.,j}^T U_{\delta} (U_{\delta}^TG_{RM}U_{\delta})^{-1} U_{\delta}^T \tilde{G}_{.,j} \\
-  \end{split}
-\end{equation}\]</span>
-<p>Encore une fois, si l’on considère <span class="math inline">\(U\)</span> plutôt que <span class="math inline">\(U_{\delta}\)</span>, l’expression <span class="math inline">\(\tilde{G}_{.,j}^T U_{\delta} (U_{\delta}^TG_{RM}U_{\delta})^{-1} U_{\delta}^T \tilde{G}_{.,j}\)</span> se simplifierait en <span class="math inline">\(\tilde{G}_{.,j}^T U \Sigma^{-2} U^T \tilde{G}_{.,j}\)</span> étant donnée l’approximation <span class="math inline">\(U^TG_{RM}U \simeq \Sigma^2\)</span>, ce qui permet de faire le lien entre la statistique <span class="math inline">\(T_{F-LK}\)</span> et la distance de Mahalanobis calculée à partir des loadings.</p>
+<div id="utilisation-du-desequilibre-de-liaison-pour-ameliorer-linference-de-la-structure" class="section level2">
+<h2><span class="header-section-number">5.2</span> Utilisation du déséquilibre de liaison pour améliorer l’inférence de la structure</h2>
+<p>Lorsque deux marqueurs génétiques sont proches l’un de l’autre, il y a de fortes chances qu’ils soient corrélés entre eux. Ce phénomène est connu sous le nom de déséquilibre de liaison. Lors de l’inférence de la structure de populations à l’aide de l’ACP, il est généralement recommandé de filtrer ce déséquilibre de liaison en effectuant une procédure de <em>pruning</em> <span class="citation">(Abdellaoui et al., <a href="#ref-abdellaoui2013population">2013</a>; Prive, Aschard, &amp; Blum, <a href="#ref-prive2017efficient">2017</a>)</span>. À l’inverse, <span class="citation">D. J. Lawson, Hellenthal, Myers, &amp; Falush (<a href="#ref-lawson2012inference">2012</a>)</span> suggèrent quant à eux d’inclure cette information et montrent qu’en utilisant leur logiciel fineSTRUCTURE sur des jeux de données denses, la structure de populations est bien mieux estimée qu’avec l’ACP telle qu’elle est implémentée dans EIGENSTRAT <span class="citation">(Price et al., <a href="#ref-price2006principal">2006</a>)</span>. L’utilisation de fineSTRUCTURE ou de méthodes qui prennent en compte le déséquilibre de liaison pour inférer la structure de populations peut donc s’avérer intéressante pour deux raisons. Cela permettrait de ne pas avoir à prétraiter les données pour le déséquilibre de liaison puisqu’il est directement pris en compte. Et surtout, nous nous attendons à ce qu’une meilleure estimation de la structure de population améliore la puissance des test statistiques et réduise le nombre de fausses découvertes. En pratique, pour définir un scan à sélection prenant en compte le déséquilibre de liaison pour l’estimation de la structure, il suffit d’utiliser les scores de l’ACP obtenus avec fineSTRUCTURE à la première étape.</p>
+</div>
+<div id="utilisation-de-variables-environnementales" class="section level2">
+<h2><span class="header-section-number">5.3</span> Utilisation de variables environnementales</h2>
+<p>Une autre alternative possible serait la prise en compte de variables environnementales pour la détection d’adaptation locale. Notre méthode actuelle suppose que les locus sous adaptation locale devraient être excessivement corrélés avec la structure de populations, qui est représentée par les composantes principales. Dans le cas où la sélection n’est pas liée à la structure de population, notre méthode n’est plus adaptée. Pour illustrer cela, il suffit de considérer une simulation où les locus sous sélection ne sont pas du tout corrélés à la structure de populations, mais à des variables environnementales qui ne sont pas non plus corrélés à la structure de populations. Nous observons sur la figure <a href="perspectives-et-conclusions.html#fig:rda-pca">5.1</a> que notre méthode ne détecte aucun des locus sous adaptation locale. Pour détecter des signaux de ce type, une approche consiste à décorréler les variables environnementales à l’aide d’une analyse des redondances (RDA) <span class="citation">(Lasky et al., <a href="#ref-lasky2012characterizing">2012</a>)</span>. Cette analyse produit des nouveaux scores qui sont des combinaisons linéaires des variables environnementales et qui peuvent être utilisées en lieu et places des scores de l’ACP réalisée sur les génotypes. Cette étape est suivie des étapes 2 (régression multiple) et 3 (distance robuste de Mahalanobis) décrites ci-dessus. Cette procédure fait l’objet d’un travail de recherche de Thibaut Capblancq, post-doctorant au Laboratoire d’Ecologie Alpine à Grenoble.</p>
+
+<div class="figure" style="text-align: center"><span id="fig:rda-pca"></span>
+<img src="thesis_files/figure-html/rda-pca-1.png" alt="Exemple de scan à sélection réalisé avec pcadapt sur une simulation réalisée par Éric Bazin contenant des locus sous sélection qui ne sont pas corrélés à la structure de la population. Les points rouges correspondent aux locus sous sélection pour la simulation." width="\textwidth" />
+<p class="caption">
+Figure 5.1: Exemple de scan à sélection réalisé avec pcadapt sur une simulation réalisée par Éric Bazin contenant des locus sous sélection qui ne sont pas corrélés à la structure de la population. Les points rouges correspondent aux locus sous sélection pour la simulation.
+</p>
 </div>
 </div>
+<div id="introgression-et-donnees-manquantes" class="section level2">
+<h2><span class="header-section-number">5.4</span> Introgression et données manquantes</h2>
+<p>Dans notre étude portant sur l’introgression, nous n’avons utilisé que des jeux de données complets, puisqu’ils ont été simulés ou imputés à l’aide de Beagle <span class="citation">(S. R. Browning &amp; Browning, <a href="#ref-browning2007rapid">2007</a>)</span>. Le recours à des logiciels d’imputation est souvent nécessaire car la plupart des méthodes développées ne permettent pas d’être utilisées en présence de valeurs manquantes, ce qui est aussi valable pour notre méthode de scan d’introgression. Il convient toutefois de rappeler que les logiciels d’imputation doivent être utilisés avec précaution, en filtrant les marqueurs ayant une proportion trop élevée de valeurs manquantes par exemple. Nous pouvons vraisemblablement trouver un moyen de tenir compte de ces valeurs manquantes dans notre statistique, en diminuant par exemple la valeur de la statistique de test proportionnellement</p>
+</div>
+<div id="conclusion" class="section level2">
+<h2><span class="header-section-number">5.5</span> Conclusion</h2>
+<p>Alors que le développement technologique des ressources de calcul semble s’essouffler, du fait de la difficulté croissante liée à la miniaturisation des semi-conducteurs, les données ne cessent quant à elles de s’accumuler, et ce, quelque soit le domaine d’activité. Cette tendance suggère l’utilisation d’algorithmes à faible complexité pour le traitement et l’analyse de ces données. L’Analyse en Composantes Principales se révèle donc être un outil de premier choix pour traiter ces nouveaux volumes de données. En génétique des populations, elle présente l’avantage supplémentaire de très bien s’interpréter par l’intermédiaire de la structure de populations. Pour ces raisons, nous avons développé au cours de cette thèse des méthodes statistiques reposant exclusivement sur l’Analyse en Composantes Principales.</p>
+<p>Dans le chapitre 2, nous avons montré comment l’utilisation de l’ACP permettait d’étendre les tests classiques de différenciation au cas de populations continues. D’abord parce que l’indice de fixation peut être vu comme la proportion de variance expliquée par un modèle à facteurs discrets, alors que la statistique de communalité renvoie à un modèle à facteurs qui peuvent être discrets ou continus. Ensuite parce que, de la même manière que notre nouvelle statistique, la statistique <span class="math inline">\(T_{F-LK}\)</span> correspond essentiellement à une distance de Mahalanobis dans le cas de populations discrètes.</p>
+<p>Dans le chapitre 3, nous proposons une nouvelle approche statistique pour la détection de régions introgressées, basée sur l’utilisation de scores de métissage locaux calculés à partir de l’ACP. Les avantages de cette méthode, par rapport à celles qui sont présentées, sont essentiellement pratiques. La détection de l’introgression via l’estimation des coefficients de métissage locaux requiert souvent l’utilisation conjointe d’une méthode de phasage. De plus, notre méthode est de complexité linéaire par rapport au nombre d’individus ainsi que par rapport au nombre de SNPs, ce qui la rend très rapide à utiliser même pour des jeux de données contenant 1,000,000 de SNPs ou plus.</p>
+<p>Dans le chapitre 4, nous avons en particulier présenté une nouvelle méthode permettant d’utiliser l’algorithme IRAM avec des données manquantes. Nous avons également constaté qu’elle était plus robuste que l’approche consistant à imputer par la moyenne.</p>
+
+</div>
+</div>
+
+
+
 <h3>References</h3>
 <div id="refs" class="references">
-<div id="ref-mcvean2009genealogical">
-<p>McVean, G. (2009). A genealogical interpretation of principal components analysis. <em>PLoS Genetics</em>, <em>5</em>(10), e1000686.</p>
+<div id="ref-abdellaoui2013population">
+<p>Abdellaoui, A., Hottenga, J.-J., De Knijff, P., Nivard, M. G., Xiao, X., Scheet, P., … others. (2013). Population structure, migration, and diversifying selection in the netherlands. <em>European Journal of Human Genetics</em>, <em>21</em>(11), 1277–1285.</p>
+</div>
+<div id="ref-prive2017efficient">
+<p>Prive, F., Aschard, H., &amp; Blum, M. G. (2017). Efficient management and analysis of large-scale genome-wide data with two r packages: Bigstatsr and bigsnpr. <em>bioRxiv</em>, 190926.</p>
+</div>
+<div id="ref-lawson2012inference">
+<p>Lawson, D. J., Hellenthal, G., Myers, S., &amp; Falush, D. (2012). Inference of population structure using dense haplotype data. <em>PLoS Genetics</em>, <em>8</em>(1), e1002453.</p>
+</div>
+<div id="ref-price2006principal">
+<p>Price, A. L., Patterson, N. J., Plenge, R. M., Weinblatt, M. E., Shadick, N. A., &amp; Reich, D. (2006). Principal components analysis corrects for stratification in genome-wide association studies. <em>Nature Genetics</em>, <em>38</em>(8), 904.</p>
+</div>
+<div id="ref-lasky2012characterizing">
+<p>Lasky, J. R., Des Marais, D. L., McKAY, J., Richards, J. H., Juenger, T. E., &amp; Keitt, T. H. (2012). Characterizing genomic variation of arabidopsis thaliana: The roles of geography and climate. <em>Molecular Ecology</em>, <em>21</em>(22), 5512–5529.</p>
+</div>
+<div id="ref-browning2007rapid">
+<p>Browning, S. R., &amp; Browning, B. L. (2007). Rapid and accurate haplotype phasing and missing-data inference for whole-genome association studies by use of localized haplotype clustering. <em>The American Journal of Human Genetics</em>, <em>81</em>(5), 1084–1097.</p>
 </div>
 </div>
             </section>
@@ -323,8 +302,8 @@ a &amp; -\delta_{1n}  \frac{n_2}{\sqrt{2(n_1^2+n_2^2)}} + \delta_{2n} \frac{n_1}
           </div>
         </div>
       </div>
-<a href="perspectives-et-conclusions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="informations-supplementaires.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="aspect-computationnel.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="details.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

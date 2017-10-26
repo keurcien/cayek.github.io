@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Méthodes statistiques en grande dimension pour l’étude de l’adaptation biologique à l’aide de larges bases de données génomiques</title>
-  <meta name="description" content="Méthodes statistiques en grande dimension pour l’étude de l’adaptation biologique à l’aide de larges bases de données génomiques">
+  <title>Application de l’Analyse en Composantes Principales pour étudier l’adaptation biologique en génomique des populations.</title>
+  <meta name="description" content="Application de l’Analyse en Composantes Principales pour étudier l’adaptation biologique en génomique des populations.">
   <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
 
-  <meta property="og:title" content="Méthodes statistiques en grande dimension pour l’étude de l’adaptation biologique à l’aide de larges bases de données génomiques" />
+  <meta property="og:title" content="Application de l’Analyse en Composantes Principales pour étudier l’adaptation biologique en génomique des populations." />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Méthodes statistiques en grande dimension pour l’étude de l’adaptation biologique à l’aide de larges bases de données génomiques" />
+  <meta name="twitter:title" content="Application de l’Analyse en Composantes Principales pour étudier l’adaptation biologique en génomique des populations." />
   
   
   
@@ -114,7 +114,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.3.2" data-path="introduction.html"><a href="introduction.html#les-marqueurs-genetiques"><i class="fa fa-check"></i><b>1.3.2</b> Les marqueurs génétiques</a></li>
 <li class="chapter" data-level="1.3.3" data-path="introduction.html"><a href="introduction.html#encodage-des-donnees-genetiques"><i class="fa fa-check"></i><b>1.3.3</b> Encodage des données génétiques</a></li>
 </ul></li>
-<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#les-motivations-de-la-these"><i class="fa fa-check"></i><b>1.4</b> Les motivations de la thèse</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#les-motivations-de-la-these"><i class="fa fa-check"></i><b>1.4</b> Les motivations de la thèse</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="introduction.html"><a href="introduction.html#resultats-principaux-et-organisation-du-manuscript"><i class="fa fa-check"></i><b>1.4.1</b> Résultats principaux et organisation du manuscript</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="adaptation-locale-1.html"><a href="adaptation-locale-1.html"><i class="fa fa-check"></i><b>2</b> Adaptation locale</a><ul>
 <li class="chapter" data-level="2.1" data-path="adaptation-locale-1.html"><a href="adaptation-locale-1.html#letat-de-lart-pour-les-scans-genomiques"><i class="fa fa-check"></i><b>2.1</b> L’état de l’art pour les scans génomiques</a><ul>
@@ -133,8 +135,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.3.2" data-path="adaptation-locale-1.html"><a href="adaptation-locale-1.html#la-distance-robuste-de-mahalanobis"><i class="fa fa-check"></i><b>2.3.2</b> La distance robuste de Mahalanobis</a></li>
 </ul></li>
 <li class="chapter" data-level="2.4" data-path="adaptation-locale-1.html"><a href="adaptation-locale-1.html#article-1"><i class="fa fa-check"></i><b>2.4</b> Article 1</a><ul>
-<li class="chapter" data-level="" data-path="adaptation-locale-1.html"><a href="adaptation-locale-1.html#contributions"><i class="fa fa-check"></i>Contributions</a></li>
-<li class="chapter" data-level="" data-path="adaptation-locale-1.html"><a href="adaptation-locale-1.html#resume"><i class="fa fa-check"></i>Résumé</a></li>
 <li class="chapter" data-level="" data-path="adaptation-locale-1.html"><a href="adaptation-locale-1.html#abstract"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="" data-path="adaptation-locale-1.html"><a href="adaptation-locale-1.html#significance-statement"><i class="fa fa-check"></i>Significance Statement</a></li>
 <li class="chapter" data-level="" data-path="adaptation-locale-1.html"><a href="adaptation-locale-1.html#introduction-1"><i class="fa fa-check"></i>Introduction</a></li>
@@ -156,39 +156,46 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html"><i class="fa fa-check"></i><b>3</b> Introgression adaptative</a><ul>
-<li class="chapter" data-level="3.1" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#methode-basee-sur-lutilisation-de-coefficients-de-metissage-locaux."><i class="fa fa-check"></i><b>3.1</b> Méthode basée sur l’utilisation de coefficients de métissage locaux.</a><ul>
+<li class="chapter" data-level="3.1" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#introgression-par-metissage"><i class="fa fa-check"></i><b>3.1</b> Introgression par métissage</a><ul>
 <li class="chapter" data-level="3.1.1" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#coefficients-de-metissage-locaux"><i class="fa fa-check"></i><b>3.1.1</b> Coefficients de métissage locaux</a></li>
 <li class="chapter" data-level="3.1.2" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#statistique-de-test"><i class="fa fa-check"></i><b>3.1.2</b> Statistique de test</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#methodes-basees-sur-la-diversite-nucleotidique."><i class="fa fa-check"></i><b>3.2</b> Méthodes basées sur la diversité nucléotidique.</a><ul>
-<li class="chapter" data-level="" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#diversite-nucleotidique-par-paire-de-sequences"><i class="fa fa-check"></i>Diversité nucléotidique par paire de séquences</a></li>
-<li class="chapter" data-level="3.2.1" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#le-modele-abba-baba"><i class="fa fa-check"></i><b>3.2.1</b> Le modèle ABBA-BABA</a></li>
-<li class="chapter" data-level="3.2.2" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#analyse-en-composantes-principales-locale"><i class="fa fa-check"></i><b>3.2.2</b> Analyse en Composantes Principales locale</a></li>
+<li class="chapter" data-level="3.2" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#introgression-par-flux-de-genes"><i class="fa fa-check"></i><b>3.2</b> Introgression par flux de gènes</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#diversite-nucleotidique-par-paires-de-sequences"><i class="fa fa-check"></i><b>3.2.1</b> Diversité nucléotidique par paires de séquences</a></li>
+<li class="chapter" data-level="3.2.2" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#le-modele-abba-baba"><i class="fa fa-check"></i><b>3.2.2</b> Le modèle ABBA-BABA</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#simulations"><i class="fa fa-check"></i><b>3.3</b> Simulations</a><ul>
-<li class="chapter" data-level="3.3.1" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#donnees-de-peupliers"><i class="fa fa-check"></i><b>3.3.1</b> Données de peupliers</a></li>
-<li class="chapter" data-level="3.3.2" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#generation-aleatoire-dindividus-hybrides"><i class="fa fa-check"></i><b>3.3.2</b> Génération aléatoire d’individus hybrides</a></li>
-<li class="chapter" data-level="3.3.3" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#simulations-a-partir-de-ms-et-seq-gen"><i class="fa fa-check"></i><b>3.3.3</b> Simulations à partir de ms et Seq-Gen</a></li>
-<li class="chapter" data-level="3.3.4" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#resultats-de-la-comparaison-des-logiciels"><i class="fa fa-check"></i><b>3.3.4</b> Résultats de la comparaison des logiciels</a></li>
+<li class="chapter" data-level="3.3" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#une-nouvelle-statistique-pour-les-scans-dintrogression"><i class="fa fa-check"></i><b>3.3</b> Une nouvelle statistique pour les scans d’introgression</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#analyse-en-composantes-principales-locale"><i class="fa fa-check"></i><b>3.3.1</b> Analyse en Composantes Principales locale</a></li>
+<li class="chapter" data-level="3.3.2" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#resultats-principaux"><i class="fa fa-check"></i><b>3.3.2</b> Résultats principaux</a></li>
 </ul></li>
 <li class="chapter" data-level="3.4" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#article-3"><i class="fa fa-check"></i><b>3.4</b> Article 3</a><ul>
+<li class="chapter" data-level="" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#scanning-genomes-for-adaptive-introgression-using-principal-component-analysis"><i class="fa fa-check"></i>Scanning genomes for adaptive introgression using principal component analysis</a></li>
 <li class="chapter" data-level="" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#introduction-3"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#materials-and-methods-2"><i class="fa fa-check"></i>Materials and methods</a></li>
+<li class="chapter" data-level="" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#a-pca-based-approach-to-detect-local-introgression"><i class="fa fa-check"></i>A PCA-based approach to detect local introgression</a></li>
+<li class="chapter" data-level="" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#materials-and-methods-2"><i class="fa fa-check"></i>Materials and Methods</a></li>
 <li class="chapter" data-level="" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#results-2"><i class="fa fa-check"></i>Results</a></li>
 <li class="chapter" data-level="" data-path="introgression-adaptative.html"><a href="introgression-adaptative.html#discussion-2"><i class="fa fa-check"></i>Discussion</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html"><i class="fa fa-check"></i><b>4</b> Aspect computationnel</a><ul>
-<li class="chapter" data-level="4.1" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html#donnees-dentree"><i class="fa fa-check"></i><b>4.1</b> Données d’entrée</a></li>
-<li class="chapter" data-level="4.2" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html#memory-mapping"><i class="fa fa-check"></i><b>4.2</b> Memory-mapping</a></li>
-<li class="chapter" data-level="4.3" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html#interface-shiny"><i class="fa fa-check"></i><b>4.3</b> Interface Shiny</a></li>
-<li class="chapter" data-level="4.4" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html#acp-et-donnees-manquantes"><i class="fa fa-check"></i><b>4.4</b> ACP et données manquantes</a></li>
+<li class="chapter" data-level="4.1" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html#evolution-de-pcadapt"><i class="fa fa-check"></i><b>4.1</b> Évolution de pcadapt</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html#du-langage-c-au-langage-r"><i class="fa fa-check"></i><b>4.1.1</b> Du langage C au langage R</a></li>
+<li class="chapter" data-level="4.1.2" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html#du-calcul-de-la-matrice-de-covariance-a-lalgorithme-iram"><i class="fa fa-check"></i><b>4.1.2</b> Du calcul de la matrice de covariance à l’algorithme IRAM</a></li>
+<li class="chapter" data-level="4.1.3" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html#du-format-.pcadapt-au-format-.bed"><i class="fa fa-check"></i><b>4.1.3</b> Du format .pcadapt au format .bed</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i>Conclusion</a></li>
+<li class="chapter" data-level="4.2" data-path="aspect-computationnel.html"><a href="aspect-computationnel.html#interface-shiny"><i class="fa fa-check"></i><b>4.2</b> Interface Shiny</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="perspectives-et-conclusions.html"><a href="perspectives-et-conclusions.html"><i class="fa fa-check"></i><b>5</b> Perspectives et conclusions</a><ul>
+<li class="chapter" data-level="5.1" data-path="perspectives-et-conclusions.html"><a href="perspectives-et-conclusions.html#substitution-de-lanalyse-en-composantes-principales"><i class="fa fa-check"></i><b>5.1</b> Substitution de l’Analyse en Composantes Principales</a></li>
+<li class="chapter" data-level="5.2" data-path="perspectives-et-conclusions.html"><a href="perspectives-et-conclusions.html#utilisation-du-desequilibre-de-liaison-pour-ameliorer-linference-de-la-structure"><i class="fa fa-check"></i><b>5.2</b> Utilisation du déséquilibre de liaison pour améliorer l’inférence de la structure</a></li>
+<li class="chapter" data-level="5.3" data-path="perspectives-et-conclusions.html"><a href="perspectives-et-conclusions.html#utilisation-de-variables-environnementales"><i class="fa fa-check"></i><b>5.3</b> Utilisation de variables environnementales</a></li>
+<li class="chapter" data-level="5.4" data-path="perspectives-et-conclusions.html"><a href="perspectives-et-conclusions.html#introgression-et-donnees-manquantes"><i class="fa fa-check"></i><b>5.4</b> Introgression et données manquantes</a></li>
+<li class="chapter" data-level="5.5" data-path="perspectives-et-conclusions.html"><a href="perspectives-et-conclusions.html#conclusion"><i class="fa fa-check"></i><b>5.5</b> Conclusion</a></li>
+</ul></li>
 <li class="appendix"><span><b>Appendice</b></span></li>
 <li class="chapter" data-level="A" data-path="details.html"><a href="details.html"><i class="fa fa-check"></i><b>A</b> Détails</a><ul>
-<li class="chapter" data-level="A.0.1" data-path="details.html"><a href="details.html#rapport-entre-la-communalite-et-lindice-de-fixation"><i class="fa fa-check"></i><b>A.0.1</b> Rapport entre la communalité et l’indice de fixation</a></li>
-<li class="chapter" data-level="A.0.2" data-path="details.html"><a href="details.html#lanalyse-en-composantes-principales-regularisee"><i class="fa fa-check"></i><b>A.0.2</b> L’Analyse en Composantes Principales régularisée</a></li>
+<li class="chapter" data-level="" data-path="details.html"><a href="details.html#rapport-entre-la-communalite-et-lindice-de-fixation"><i class="fa fa-check"></i>Rapport entre la communalité et l’indice de fixation</a></li>
+<li><a href="details.html#une-generalisation-de-la-statistique-t_f-lk">Une généralisation de la statistique <span class="math inline">\(T_{F-LK}\)</span></a></li>
 </ul></li>
 <li class="chapter" data-level="B" data-path="informations-supplementaires.html"><a href="informations-supplementaires.html"><i class="fa fa-check"></i><b>B</b> Informations supplémentaires</a><ul>
 <li class="chapter" data-level="" data-path="informations-supplementaires.html"><a href="informations-supplementaires.html#article-1-1"><i class="fa fa-check"></i>Article 1 </a></li>
@@ -199,9 +206,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="C.1" data-path="r-python.html"><a href="r-python.html#simulations-et-modeles-demographiques"><i class="fa fa-check"></i><b>C.1</b> Simulations et modèles démographiques</a><ul>
 <li class="chapter" data-level="C.1.1" data-path="r-python.html"><a href="r-python.html#modele-en-ile"><i class="fa fa-check"></i><b>C.1.1</b> Modèle en île</a></li>
 <li class="chapter" data-level="C.1.2" data-path="r-python.html"><a href="r-python.html#modele-de-divergence"><i class="fa fa-check"></i><b>C.1.2</b> Modèle de divergence</a></li>
-</ul></li>
-<li class="chapter" data-level="C.2" data-path="r-python.html"><a href="r-python.html#details-1"><i class="fa fa-check"></i><b>C.2</b> Détails</a><ul>
-<li class="chapter" data-level="C.2.1" data-path="r-python.html"><a href="r-python.html#donnees-manquantes"><i class="fa fa-check"></i><b>C.2.1</b> Données manquantes</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="bibliographie.html"><a href="bibliographie.html"><i class="fa fa-check"></i>Bibliographie</a></li>
@@ -214,7 +218,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Méthodes statistiques en grande dimension pour l’étude de l’adaptation biologique à l’aide de larges bases de données génomiques</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Application de l’Analyse en Composantes Principales pour étudier l’adaptation biologique en génomique des populations.</a>
           </h1>
         </div>
 
@@ -230,15 +234,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="modele-en-ile" class="section level3">
 <h3><span class="header-section-number">C.1.1</span> Modèle en île</h3>
 
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">if (!<span class="kw">file.exists</span>(<span class="st">&quot;ms/ms&quot;</span>)) {
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">if</span> (<span class="op">!</span><span class="kw">file.exists</span>(<span class="st">&quot;ms/ms&quot;</span>)) {
   <span class="kw">system</span>(<span class="st">&quot;gcc -o ms/ms ms/ms.c ms/streec.c ms/rand1.c -lm&quot;</span>)
 }
 
-### ms : list of parameters ###
+### ms : list of parameters <span class="al">###</span>
 nb_demes &lt;-<span class="st"> </span><span class="dv">3</span>
 nCHR_per_POP &lt;-<span class="st"> </span><span class="dv">50</span>
-nCHR &lt;-<span class="st"> </span>nb_demes *<span class="st"> </span>nCHR_per_POP
-nIND &lt;-<span class="st"> </span>nCHR /<span class="st"> </span><span class="dv">2</span>
+nCHR &lt;-<span class="st"> </span>nb_demes <span class="op">*</span><span class="st"> </span>nCHR_per_POP
+nIND &lt;-<span class="st"> </span>nCHR <span class="op">/</span><span class="st"> </span><span class="dv">2</span>
 nb_neutral &lt;-<span class="st"> </span><span class="dv">100</span>
 nb_adaptive &lt;-<span class="st"> </span><span class="dv">25</span>
 mig_rate_neutral &lt;-<span class="st"> </span><span class="dv">10</span>
@@ -246,18 +250,18 @@ mig_rate_adaptive &lt;-<span class="st"> </span><span class="fl">0.1</span>
 ###############################
 
 nCHR_per_POP_string &lt;-<span class="st"> </span>nCHR_per_POP
-for (k in <span class="dv">1</span>:(nb_demes -<span class="st"> </span><span class="dv">1</span>)) {
+<span class="cf">for</span> (k <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>(nb_demes <span class="op">-</span><span class="st"> </span><span class="dv">1</span>)) {
   nCHR_per_POP_string &lt;-<span class="st"> </span><span class="kw">paste</span>(nCHR_per_POP_string, nCHR_per_POP)
 }
 
 mig_rate_neutral_string &lt;-<span class="st"> &quot;x&quot;</span>
 mig_rate_adaptive_string &lt;-<span class="st"> &quot;x&quot;</span>
-for (k in <span class="dv">1</span>:nb_demes){
-  for (j in <span class="dv">1</span>:nb_demes){
-    if ((k ==<span class="st"> </span>j) &amp;&amp;<span class="st"> </span>(k &gt;<span class="st"> </span><span class="dv">1</span>)){
+<span class="cf">for</span> (k <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>nb_demes){
+  <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>nb_demes){
+    <span class="cf">if</span> ((k <span class="op">==</span><span class="st"> </span>j) <span class="op">&amp;&amp;</span><span class="st"> </span>(k <span class="op">&gt;</span><span class="st"> </span><span class="dv">1</span>)){
       mig_rate_neutral_string &lt;-<span class="st"> </span><span class="kw">paste</span>(mig_rate_neutral_string, <span class="st">&quot;x&quot;</span>)
       mig_rate_adaptive_string &lt;-<span class="st"> </span><span class="kw">paste</span>(mig_rate_adaptive_string, <span class="st">&quot;x&quot;</span>)
-    } else if (k !=<span class="st"> </span>j) {
+    } <span class="cf">else</span> <span class="cf">if</span> (k <span class="op">!=</span><span class="st"> </span>j) {
       mig_rate_neutral_string &lt;-<span class="st"> </span><span class="kw">paste</span>(mig_rate_neutral_string,
                                        mig_rate_neutral)
       mig_rate_adaptive_string &lt;-<span class="st"> </span><span class="kw">paste</span>(mig_rate_adaptive_string,
@@ -298,9 +302,9 @@ file.neutral &lt;-<span class="st"> </span><span class="kw">scan</span>(<span cl
 
 g.neutral &lt;-<span class="st"> </span><span class="ot">NULL</span>
 
-for (locus in <span class="dv">1</span>:nb_neutral){
-  res.locus1 &lt;-<span class="st"> </span>file.neutral[<span class="dv">4</span>:(nCHR +<span class="st"> </span><span class="dv">3</span>)]
-  file.neutral &lt;-<span class="st"> </span>file.neutral[-(<span class="dv">1</span>:(nCHR<span class="dv">+3</span>))]
+<span class="cf">for</span> (locus <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>nb_neutral){
+  res.locus1 &lt;-<span class="st"> </span>file.neutral[<span class="dv">4</span><span class="op">:</span>(nCHR <span class="op">+</span><span class="st"> </span><span class="dv">3</span>)]
+  file.neutral &lt;-<span class="st"> </span>file.neutral[<span class="op">-</span>(<span class="dv">1</span><span class="op">:</span>(nCHR<span class="op">+</span><span class="dv">3</span>))]
   g.neutral &lt;-<span class="st"> </span><span class="kw">cbind</span>(g.neutral, <span class="kw">as.numeric</span>(<span class="kw">as.factor</span>(res.locus1)))
 }
 
@@ -311,15 +315,15 @@ file.adaptive &lt;-<span class="st"> </span><span class="kw">scan</span>(<span c
 
 g.adaptive &lt;-<span class="st"> </span><span class="ot">NULL</span>
 
-for (locus in <span class="dv">1</span>:nb_adaptive){
-  res.locus1 &lt;-<span class="st"> </span>file.adaptive[<span class="dv">4</span>:(nCHR +<span class="st"> </span><span class="dv">3</span>)]
-  file.adaptive &lt;-<span class="st"> </span>file.adaptive[-(<span class="dv">1</span>:(nCHR<span class="dv">+3</span>))]
+<span class="cf">for</span> (locus <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>nb_adaptive){
+  res.locus1 &lt;-<span class="st"> </span>file.adaptive[<span class="dv">4</span><span class="op">:</span>(nCHR <span class="op">+</span><span class="st"> </span><span class="dv">3</span>)]
+  file.adaptive &lt;-<span class="st"> </span>file.adaptive[<span class="op">-</span>(<span class="dv">1</span><span class="op">:</span>(nCHR<span class="op">+</span><span class="dv">3</span>))]
   g.adaptive &lt;-<span class="st"> </span><span class="kw">cbind</span>(g.adaptive, <span class="kw">as.numeric</span>(<span class="kw">as.factor</span>(res.locus1)))
 }
 
 g &lt;-<span class="st"> </span><span class="kw">cbind</span>(g.neutral, g.adaptive)
 
-x &lt;-<span class="st"> </span>pcadapt::<span class="kw">pcadapt</span>(<span class="kw">t</span>(g), <span class="dt">K =</span> <span class="dv">2</span>)
+x &lt;-<span class="st"> </span>pcadapt<span class="op">::</span><span class="kw">pcadapt</span>(<span class="kw">t</span>(g), <span class="dt">K =</span> <span class="dv">2</span>)
 pop &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="kw">rep</span>(<span class="st">&quot;A&quot;</span>, <span class="dv">50</span>), <span class="kw">rep</span>(<span class="st">&quot;B&quot;</span>, <span class="dv">50</span>), <span class="kw">rep</span>(<span class="st">&quot;C&quot;</span>, <span class="dv">50</span>))
 <span class="kw">plot</span>(x, <span class="dt">option =</span> <span class="st">&quot;scores&quot;</span>, <span class="dt">pop =</span> pop)</code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:island-pca"></span>
@@ -439,7 +443,7 @@ nSNP <span class="op">=</span> <span class="dv">10</span>
 
 G  <span class="op">=</span> np.zeros([<span class="dv">3</span> <span class="op">*</span> Nsam, nSNP])
 
-<span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(nSNP):
+<span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(nSNP):
     <span class="cf">if</span> i <span class="op">&lt;</span> <span class="dv">1</span>:
         s10 <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> s
         s11 <span class="op">=</span> <span class="fl">0.0</span>
@@ -450,27 +454,18 @@ G  <span class="op">=</span> np.zeros([<span class="dv">3</span> <span class="op
         s10 <span class="op">=</span> <span class="fl">0.0</span>
         s11 <span class="op">=</span> <span class="fl">0.0</span>
     res <span class="op">=</span> simulate(Ne, Nsam, T1, T2, T3, s10, s11)
-    <span class="cf">for</span> j <span class="op">in</span> <span class="bu">range</span>(<span class="dv">3</span>):
+    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):
         Sj <span class="op">=</span> res.genotype(j)
-        <span class="cf">for</span> k <span class="op">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="bu">len</span>(Sj) <span class="op">/</span> <span class="dv">2</span>)):
+        <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="bu">len</span>(Sj) <span class="op">/</span> <span class="dv">2</span>)):
             idx <span class="op">=</span> j <span class="op">*</span> <span class="bu">int</span>(<span class="bu">len</span>(Sj) <span class="op">/</span> <span class="dv">2</span>) <span class="op">+</span> k
             G[idx][i] <span class="op">=</span> Sj[<span class="dv">2</span> <span class="op">*</span> k] <span class="op">+</span> Sj[<span class="dv">2</span> <span class="op">*</span> k <span class="op">+</span> <span class="dv">1</span>]
 
 np.savetxt(<span class="st">&#39;data/simuPOP.pcadapt&#39;</span>, G, fmt <span class="op">=</span> <span class="st">&#39;</span><span class="sc">%i</span><span class="st">&#39;</span>)</code></pre></div>
-</div>
-</div>
-<div id="details-1" class="section level2">
-<h2><span class="header-section-number">C.2</span> Détails</h2>
-<div id="donnees-manquantes" class="section level3">
-<h3><span class="header-section-number">C.2.1</span> Données manquantes</h3>
-<p>Les données manquantes sont prises en compte à différentes étapes de la méthode, cela va de l’estimation de matrice de covariance à la régression linéaire multiple. Nous supposons que les données manquantes sont MAR (<em>missing at random</em>) ou MCAR (<em>missing completely at random</em>) et qu’elles ne dépendent donc pas de leur valeur (elles ne sont pas MNAR).</p>
-<p>Pour chaque entrée de la matrice de covariance par individus, le calcul ne tient compte que des paires d’observations présentes.</p>
-<p>Si <span class="math inline">\(X_i\)</span> et <span class="math inline">\(X_j\)</span> désignent deux individus, <span class="math inline">\(\text{Cov}(X_i, X_j) = E[(X_i - \bar{X_i})(X_j - \bar{X_j})^T]\)</span> Un estimateur de <span class="math inline">\(\text{Cov}(X_i, X_j)\)</span> tenant compte des valeurs manquantes donne</p>
 
 <!--
 The bib chunk below must go last in this document according to how R Markdown renders. More info is at http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 -->
-<p></p>
+
 </div>
 </div>
 </div>
